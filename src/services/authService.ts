@@ -4,9 +4,13 @@ import {
   signOut,
   GoogleAuthProvider,
   signInWithPopup,
-  sendPasswordResetEmail
+  sendPasswordResetEmail,
+  getAdditionalUserInfo,
+  deleteUser,
+  fetchSignInMethodsForEmail,
+  updateProfile
 } from 'firebase/auth';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
 import { auth, db } from '../config/firebase';
 import type { UserProfile, UserStats } from '../types/user';
 import type { Mission } from '../types/curriculum';
@@ -79,7 +83,6 @@ class AuthService {
       const userCredential = await signInWithPopup(auth, provider);
       const firebaseUser = userCredential.user;
       
-      const { getAdditionalUserInfo, deleteUser } = await import('firebase/auth');
       const additionalInfo = getAdditionalUserInfo(userCredential);
       
       if (additionalInfo?.isNewUser) {
@@ -113,7 +116,6 @@ class AuthService {
 
   async checkEmailExists(email: string): Promise<boolean> {
     try {
-      const { fetchSignInMethodsForEmail } = await import('firebase/auth');
       const methods = await fetchSignInMethodsForEmail(auth, email);
       return methods.length > 0;
     } catch (error) {
@@ -143,7 +145,6 @@ class AuthService {
       
       const firebaseUser = auth.currentUser;
       if (firebaseUser && firebaseUser.uid === uid) {
-        const { updateProfile } = await import('firebase/auth');
         await updateProfile(firebaseUser, { displayName: newName });
       }
     } catch (error) {
@@ -156,9 +157,7 @@ class AuthService {
     try {
       const firebaseUser = auth.currentUser;
       if (firebaseUser && firebaseUser.uid === uid) {
-        const { deleteUser } = await import('firebase/auth');
         // Delete from Firestore first
-        const { deleteDoc } = await import('firebase/firestore');
         await deleteDoc(doc(db, 'users', uid));
         // Delete from Auth
         await deleteUser(firebaseUser);
