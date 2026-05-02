@@ -1,0 +1,242 @@
+.addition-mixer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  font-family: 'Fredoka', sans-serif;
+  color: #5D4037;
+}
+
+.mixer-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mixer-machine {
+  position: relative;
+  background: #FFF8F0;
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 0 8px 0 #E0D5C5;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.number-selectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.number-box {
+  background: var(--mbalo-surface);
+  border: 4px solid #E0D5C5;
+  border-radius: 20px;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 4px 0 rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.number-box:hover {
+  transform: translateY(-5px);
+  border-color: #2D5A27;
+}
+
+.plus-sign {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #E67E22;
+}
+
+.mixer-btn {
+  background: #E67E22;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #D35400;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mixer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #D35400;
+}
+
+.mixer-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #D35400;
+}
+
+.visual-teach-area {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: var(--mbalo-surface);
+  border-radius: 20px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.05);
+}
+
+.animal-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.animal-item {
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.combine-area {
+  margin-top: 2rem;
+  border-top: 4px dashed #E0D5C5;
+  padding-top: 2rem;
+}
+
+.total-sum {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #2D5A27;
+  margin-top: 1rem;
+  animation: bounceIn 0.5s;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.guess-input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.addition-guess-input {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 150px;
+  border: 4px solid #E0D5C5;
+  border-radius: 20px;
+  padding: 1rem;
+  outline: none;
+  font-family: 'Fredoka', sans-serif;
+  color: #5D4037;
+  font-weight: 900;
+}
+
+.addition-guess-input:focus {
+  border-color: #E67E22;
+}
+
+.teach-step-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #2D5A27;
+}
+
+.random-dice {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #F1C40F;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #D4AC0D;
+  transition: all 0.2s;
+  color: white;
+}
+
+.random-dice:hover {
+  transform: translateY(-2px);
+}
+
+.random-dice:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #D4AC0D;
+}
+
+@media (max-width: 600px) {
+  .mixer-machine {
+    padding: 2rem 1rem;
+  }
+
+  .number-selectors {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .number-box {
+    width: 70px;
+    height: 70px;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .plus-sign {
+    font-size: 2.5rem;
+  }
+
+  .addition-guess-input {
+    width: 100px;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  .mixer-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .total-sum {
+    font-size: 3rem;
+  }
+
+  .random-dice {
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+  }
+}

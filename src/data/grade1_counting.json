@@ -1,0 +1,4674 @@
+{
+  "grade": 1,
+  "subject": "Mathematics",
+  "curriculum": "South African CAPS",
+  "chapters": [
+    {
+      "id": "g1c1",
+      "title": "The Counting Journey",
+      "modules": [
+        {
+          "id": "t1",
+          "title": "One-to-One Correspondence (1-5)",
+          "description": "Learning to count each object once and only once.",
+          "learningGoal": "Master touching and counting objects in a set up to 5.",
+          "difficulty": "Beginner",
+          "unit": 1,
+          "icon": "hand-pointer",
+          "lessons": [
+            {
+              "id": "t1_l1",
+              "title": "Counting Picnic",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t1_q1",
+                  "question": "How many suns are in the sky?",
+                  "emoji": "☀️",
+                  "emojiCount": 1,
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "emoji-count",
+                  "explanation": "There is only 1 sun! ☀️"
+                },
+                {
+                  "id": "t1_q2",
+                  "question": "Count the tasty apples!",
+                  "emoji": "🍎",
+                  "emojiCount": 2,
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "emoji-count",
+                  "explanation": "One... two! There are 2 apples. 🍎🍎"
+                },
+                {
+                  "id": "t1_q3",
+                  "question": "How many soccer balls do you see?",
+                  "emoji": "⚽",
+                  "emojiCount": 3,
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "emoji-count",
+                  "explanation": "Count them: ⚽, ⚽, ⚽. That's 3!"
+                },
+                {
+                  "id": "t1_q4",
+                  "question": "Can you count the blue cars?",
+                  "emoji": "🚙",
+                  "emojiCount": 4,
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "emoji-count",
+                  "explanation": "Be careful! There are 4 cars. 🚙🚙🚙🚙"
+                },
+                {
+                  "id": "t1_q5",
+                  "question": "High five! How many fingers are held up?",
+                  "emoji": "🖐️",
+                  "emojiCount": 5,
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "emoji-count",
+                  "explanation": "A whole hand has 5 fingers! 🖐️"
+                },
+                {
+                  "id": "t1_q6",
+                  "question": "Which group shows exactly 2 stars?",
+                  "options": [
+                    "⭐",
+                    "⭐⭐",
+                    "⭐⭐⭐"
+                  ],
+                  "correctAnswer": "⭐⭐",
+                  "type": "visual-selection",
+                  "explanation": "This group has one, two stars! ⭐⭐"
+                },
+                {
+                  "id": "t1_q7",
+                  "question": "Touch the number 3!",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "That is the number 3. It comes after 2!"
+                },
+                {
+                  "id": "t1_q8",
+                  "question": "Are there more than 3 hearts here? ❤️❤️❤️❤️",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! There are 4 hearts, and 4 is more than 3."
+                },
+                {
+                  "id": "t1_q9",
+                  "question": "How many ducks are swimming? 🦆🦆🦆",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Count the ducks: 1, 2, 3! 🦆🦆🦆"
+                },
+                {
+                  "id": "t1_q10",
+                  "question": "What is the next number? 1, 2, 3, __",
+                  "options": [
+                    "2",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "sequence",
+                  "explanation": "After 1, 2, and 3 comes 4!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "title": "Number Recognition and Symbols (1-5)",
+          "description": "Matching the sound of a number to its written shape.",
+          "learningGoal": "Identify written digits 1, 2, 3, 4, and 5.",
+          "difficulty": "Beginner",
+          "unit": 2,
+          "icon": "pen-tool",
+          "lessons": [
+            {
+              "id": "t2_l1",
+              "title": "Digit Detective",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t2_q1",
+                  "question": "Which one of these is the number '1'?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "The number 1 looks like a straight line! 1"
+                },
+                {
+                  "id": "t2_q2",
+                  "question": "Can you find the number '2'?",
+                  "options": [
+                    "4",
+                    "2",
+                    "5"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "That's it! 2 comes right after 1."
+                },
+                {
+                  "id": "t2_q3",
+                  "question": "I have 3 cupcakes. Which number shows how many I have?",
+                  "emoji": "🧁🧁🧁",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "emoji-recognition",
+                  "explanation": "There are 3 cupcakes, so we use the number 3!"
+                },
+                {
+                  "id": "t2_q4",
+                  "question": "Look at these numbers: 1, 2, __, 4. What is the missing symbol?",
+                  "options": [
+                    "3",
+                    "5",
+                    "0"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "sequence-recognition",
+                  "explanation": "We count 1, 2, and then 3 comes next!"
+                },
+                {
+                  "id": "t2_q5",
+                  "question": "Which number looks like a chair turned upside down?",
+                  "options": [
+                    "2",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "The number 4 often looks like a little chair!"
+                },
+                {
+                  "id": "t2_q6",
+                  "question": "Match the digit to the word: 'Five'",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "The word 'Five' belongs to the number 5."
+                },
+                {
+                  "id": "t2_q7",
+                  "question": "How many fingers are on one hand? Pick the right number.",
+                  "emoji": "🖐️",
+                  "options": [
+                    "1",
+                    "3",
+                    "5"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "emoji-recognition",
+                  "explanation": "We have 5 fingers on one hand!"
+                },
+                {
+                  "id": "t2_q8",
+                  "question": "Which number is 'Three'?",
+                  "options": [
+                    "1",
+                    "3",
+                    "2"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Great job! That is the number 3."
+                },
+                {
+                  "id": "t2_q9",
+                  "question": "Is this the number 2? -> '5'",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "No",
+                  "type": "true-false",
+                  "explanation": "No, that is the number 5. The number 2 looks like a swan!"
+                },
+                {
+                  "id": "t2_q10",
+                  "question": "Count the ladybugs and find the number! 🐞🐞🐞🐞",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "emoji-recognition",
+                  "explanation": "There are 4 ladybugs. We write that as 4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "title": "Counting Larger Groups (6-10)",
+          "description": "Applying counting rules to bigger sets.",
+          "learningGoal": "Accurately count groups up to 10.",
+          "difficulty": "Intermediate",
+          "unit": 3,
+          "icon": "th-large",
+          "lessons": [
+            {
+              "id": "t3_l1",
+              "title": "The Big Count",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t3_q1",
+                  "question": "How many buzzing bees can you see?",
+                  "emoji": "🐝",
+                  "emojiCount": 6,
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "emoji-count",
+                  "explanation": "Count them: 1, 2, 3, 4, 5... and one more makes 6! 🐝"
+                },
+                {
+                  "id": "t3_q2",
+                  "question": "Count the colorful balloons!",
+                  "emoji": "🎈",
+                  "emojiCount": 7,
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "emoji-count",
+                  "explanation": "There are 7 balloons in the bunch! 🎈"
+                },
+                {
+                  "id": "t3_q3",
+                  "question": "How many legs does an octopus have?",
+                  "emoji": "🐙",
+                  "emojiCount": 8,
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "emoji-count",
+                  "explanation": "An octopus has 8 legs. Let's count them: 1, 2, 3, 4, 5, 6, 7, 8!"
+                },
+                {
+                  "id": "t3_q4",
+                  "question": "Count the yummy lollipops!",
+                  "emoji": "🍭",
+                  "emojiCount": 9,
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "emoji-count",
+                  "explanation": "Great counting! There are 9 lollipops. 🍭"
+                },
+                {
+                  "id": "t3_q5",
+                  "question": "How many fingers do you have on TWO hands?",
+                  "emoji": "🙌",
+                  "emojiCount": 10,
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "emoji-count",
+                  "explanation": "5 on one hand and 5 on the other makes 10 fingers! 🙌"
+                },
+                {
+                  "id": "t3_q6",
+                  "question": "Which group has exactly 6 stars?",
+                  "options": [
+                    "⭐⭐⭐⭐⭐",
+                    "⭐⭐⭐⭐⭐⭐",
+                    "⭐⭐⭐⭐⭐⭐⭐"
+                  ],
+                  "correctAnswer": "⭐⭐⭐⭐⭐⭐",
+                  "type": "visual-selection",
+                  "explanation": "This group has 6 stars! ⭐"
+                },
+                {
+                  "id": "t3_q7",
+                  "question": "What number comes after 8?",
+                  "options": [
+                    "7",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "sequence",
+                  "explanation": "When we count, we say 7, 8, and then 9!"
+                },
+                {
+                  "id": "t3_q8",
+                  "question": "Is this group 10? 🍩🍩🍩🍩🍩🍩🍩🍩🍩",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "No",
+                  "type": "true-false",
+                  "explanation": "No, that is only 9 donuts. We need one more to make 10!"
+                },
+                {
+                  "id": "t3_q9",
+                  "question": "Count the bouncing balls: ⚽⚽⚽⚽⚽⚽⚽",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "There are 7 soccer balls! ⚽"
+                },
+                {
+                  "id": "t3_q10",
+                  "question": "Find the number that shows a full set of ten!",
+                  "options": [
+                    "1",
+                    "0",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "10 is written with a 1 and a 0 together!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "title": "Ordering and Sequences",
+          "description": "Arranging numbers from smallest to biggest.",
+          "learningGoal": "Complete number patterns up to 10.",
+          "difficulty": "Intermediate",
+          "unit": 4,
+          "icon": "sort-numeric-down",
+          "lessons": [
+            {
+              "id": "t4_l1",
+              "title": "Line Them Up!",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t4_q1",
+                  "question": "What number is missing? 1, 2, __, 4, 5",
+                  "sequence": [
+                    1,
+                    2,
+                    -1,
+                    4,
+                    5
+                  ],
+                  "options": [
+                    "1",
+                    "3",
+                    "5"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "sequence",
+                  "explanation": "When we count in order, 3 comes after 2 and before 4!"
+                },
+                {
+                  "id": "t4_q2",
+                  "question": "Which number comes just BEFORE 2?",
+                  "options": [
+                    "1",
+                    "3",
+                    "0"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "We start with 1, then comes 2. So 1 is before 2!"
+                },
+                {
+                  "id": "t4_q3",
+                  "question": "Help the train! What number comes AFTER 5? [3] [4] [5] [__]",
+                  "sequence": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "options": [
+                    "4",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "sequence",
+                  "explanation": "After 5, the next number we say is 6!"
+                },
+                {
+                  "id": "t4_q4",
+                  "question": "Put these in order from smallest to biggest: 3, 1, 2",
+                  "options": [
+                    "3, 2, 1",
+                    "1, 2, 3",
+                    "2, 1, 3"
+                  ],
+                  "correctAnswer": "1, 2, 3",
+                  "type": "multiple-choice",
+                  "explanation": "We always start with the smallest number: 1, 2, 3!"
+                },
+                {
+                  "id": "t4_q5",
+                  "question": "What number is missing? 6, 7, 8, __, 10",
+                  "sequence": [
+                    6,
+                    7,
+                    8,
+                    -1,
+                    10
+                  ],
+                  "options": [
+                    "7",
+                    "9",
+                    "5"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "sequence",
+                  "explanation": "The missing number is 9. It lives between 8 and 10!"
+                },
+                {
+                  "id": "t4_q6",
+                  "question": "Which number is the biggest?",
+                  "options": [
+                    "4",
+                    "8",
+                    "2"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "8 is the biggest because it comes last when we count these numbers."
+                },
+                {
+                  "id": "t4_q7",
+                  "question": "Can you count backwards? 3, 2, __",
+                  "sequence": [
+                    3,
+                    2
+                  ],
+                  "options": [
+                    "1",
+                    "4",
+                    "0"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "sequence",
+                  "explanation": "Counting down: 3... 2... 1!"
+                },
+                {
+                  "id": "t4_q8",
+                  "question": "Which number is between 7 and 9?",
+                  "options": [
+                    "6",
+                    "8",
+                    "10"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "7, 8, 9. The number 8 is right in the middle!"
+                },
+                {
+                  "id": "t4_q9",
+                  "question": "What number comes just BEFORE 10?",
+                  "options": [
+                    "8",
+                    "9",
+                    "11"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "We say 9 just before we reach 10!"
+                },
+                {
+                  "id": "t4_q10",
+                  "question": "What comes next in this pattern?",
+                  "type": "pattern-grid",
+                  "patternGrid": ["2", "4", "6", "8"],
+                  "options": [
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "correctAnswer": "10",
+                  "explanation": "This is counting in twos! 2, 4, 6, 8, and then 10."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t5",
+          "title": "Comparing Quantities",
+          "description": "Using terms like 'more than', 'less than', or 'equal'.",
+          "learningGoal": "Compare two groups of objects visually.",
+          "difficulty": "Intermediate",
+          "unit": 5,
+          "icon": "balance-scale",
+          "lessons": [
+            {
+              "id": "t5_l1",
+              "title": "Which is Bigger?",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t5_q1",
+                  "question": "Which group has MORE?",
+                  "options": [
+                    "🍎🍎",
+                    "🍎🍎🍎🍎"
+                  ],
+                  "correctAnswer": "🍎🍎🍎🍎",
+                  "type": "visual-comparison",
+                  "explanation": "4 apples is a bigger group than 2 apples!"
+                },
+                {
+                  "id": "t5_q2",
+                  "question": "Which group has LESS?",
+                  "options": [
+                    "🐱🐱🐱",
+                    "🐱"
+                  ],
+                  "correctAnswer": "🐱",
+                  "type": "visual-comparison",
+                  "explanation": "1 cat is less than 3 cats."
+                },
+                {
+                  "id": "t5_q3",
+                  "question": "Is 5 more than 2?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! When we count, 5 comes after 2, so it is more."
+                },
+                {
+                  "id": "t5_q4",
+                  "question": "Which number is the smallest?",
+                  "options": [
+                    "3",
+                    "6",
+                    "9"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "3 is the smallest because it is the first one we say when counting."
+                },
+                {
+                  "id": "t5_q5",
+                  "question": "Are these groups equal (the same)? 🌟🌟 vs 🌟🌟",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "They are equal! Both sides have exactly 2 stars."
+                },
+                {
+                  "id": "t5_q6",
+                  "question": "Which is LESS: 8 or 10?",
+                  "options": [
+                    "8",
+                    "10"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "8 is less than 10."
+                },
+                {
+                  "id": "t5_q7",
+                  "question": "Pick the group that is EQUAL to 5.",
+                  "options": [
+                    "🖐️",
+                    "✌️",
+                    "☝️"
+                  ],
+                  "correctAnswer": "🖐️",
+                  "type": "visual-selection",
+                  "explanation": "A hand with all fingers up is exactly 5!"
+                },
+                {
+                  "id": "t5_q8",
+                  "question": "Which number is GREATER than 7?",
+                  "options": [
+                    "5",
+                    "6",
+                    "8"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "8 is greater (bigger) than 7."
+                },
+                {
+                  "id": "t5_q9",
+                  "question": "I have 4 cookies 🍪 and you have 4 cookies 🍪. Who has more?",
+                  "options": [
+                    "I do",
+                    "You do",
+                    "We are equal"
+                  ],
+                  "correctAnswer": "We are equal",
+                  "type": "multiple-choice",
+                  "explanation": "4 and 4 are the same number, so we are equal!"
+                },
+                {
+                  "id": "t5_q10",
+                  "question": "Which group is the BIGGEST?",
+                  "options": [
+                    "🐝🐝🐝",
+                    "🐝🐝🐝🐝🐝",
+                    "🐝🐝"
+                  ],
+                  "correctAnswer": "🐝🐝🐝🐝🐝",
+                  "type": "visual-comparison",
+                  "explanation": "The group with 5 bees is the biggest one here!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t6",
+          "title": "The Number Line (0-10)",
+          "description": "Visualizing numbers as points in space.",
+          "learningGoal": "Identify positions on a horizontal number line.",
+          "difficulty": "Advanced",
+          "unit": 6,
+          "icon": "ruler-horizontal",
+          "lessons": [
+            {
+              "id": "t6_l1",
+              "title": "Number Line Hops",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t6_q1",
+                  "question": "Find the number 0 on the number line!",
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "number-line",
+                  "numberLineConfig": {
+                    "min": 0,
+                    "max": 5,
+                    "step": 1
+                  },
+                  "explanation": "We start at 0! It means there is nothing yet."
+                },
+                {
+                  "id": "t6_q2",
+                  "question": "A frog hops from 1 to the next number. Where does he land?",
+                  "options": [
+                    "0",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "number-line",
+                  "numberLineConfig": {
+                    "min": 0,
+                    "max": 5,
+                    "step": 1
+                  },
+                  "explanation": "One hop forward from 1 lands on 2!"
+                },
+                {
+                  "id": "t6_q3",
+                  "question": "What number is missing on this line? 0, 1, 2, 3, __, 5",
+                  "sequence": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    -1,
+                    5
+                  ],
+                  "options": [
+                    "2",
+                    "4",
+                    "6"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "sequence",
+                  "explanation": "The number 4 sits right between 3 and 5."
+                },
+                {
+                  "id": "t6_q4",
+                  "question": "Which number is closer to 0?",
+                  "options": [
+                    "2",
+                    "5",
+                    "9"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "2 is closer to the start of our number line than 5 or 9."
+                },
+                {
+                  "id": "t6_q5",
+                  "question": "If you are at 5 and hop forward 1 time, where do you land?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "Moving forward means the numbers get bigger. 5 plus 1 is 6."
+                },
+                {
+                  "id": "t6_q6",
+                  "question": "Which number is at the very end of our line?",
+                  "options": [
+                    "1",
+                    "5",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "On a 0 to 10 line, 10 is the last number!"
+                },
+                {
+                  "id": "t6_q7",
+                  "question": "What number is missing? 5, 6, 7, __, 9, 10",
+                  "sequence": [
+                    5,
+                    6,
+                    7,
+                    -1,
+                    9,
+                    10
+                  ],
+                  "options": [
+                    "6",
+                    "8",
+                    "10"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "sequence",
+                  "explanation": "The number 8 comes after 7 and before 9."
+                },
+                {
+                  "id": "t6_q8",
+                  "question": "If you hop BACKWARDS from 3, what number do you land on?",
+                  "options": [
+                    "2",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "Hopping backwards makes the numbers smaller. Before 3 is 2."
+                },
+                {
+                  "id": "t6_q9",
+                  "question": "Is 7 further away from 0 than 3 is?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! You have to take more hops to get to 7 than to 3."
+                },
+                {
+                  "id": "t6_q10",
+                  "question": "Find the middle number between 0 and 10.",
+                  "options": [
+                    "3",
+                    "5",
+                    "8"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "5 is right in the middle of our 0 to 10 number line!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t7",
+          "title": "Number Names and Words",
+          "description": "Connecting digits to their South African English names.",
+          "learningGoal": "Match symbols (1) to words (one).",
+          "difficulty": "Advanced",
+          "unit": 7,
+          "icon": "spell-check",
+          "lessons": [
+            {
+              "id": "t7_l1",
+              "title": "Word Match Master",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "t7_q1",
+                  "question": "Match the numbers to their names!",
+                  "type": "drag-match",
+                  "matchPairs": [
+                    { "left": "1", "right": "One" },
+                    { "left": "2", "right": "Two" },
+                    { "left": "3", "right": "Three" }
+                  ],
+                  "explanation": "Great job! 1 is One, 2 is Two, and 3 is Three."
+                },
+                {
+                  "id": "t7_q2",
+                  "question": "Match the bigger numbers to their names!",
+                  "type": "drag-match",
+                  "matchPairs": [
+                    { "left": "4", "right": "Four" },
+                    { "left": "5", "right": "Five" },
+                    { "left": "6", "right": "Six" }
+                  ],
+                  "explanation": "Great job! 4 is Four, 5 is Five, and 6 is Six."
+                },
+                {
+                  "id": "t7_q3",
+                  "question": "Which word matches this group? 🍎🍎🍎",
+                  "options": [
+                    "Two",
+                    "Three",
+                    "Four"
+                  ],
+                  "correctAnswer": "Three",
+                  "type": "multiple-choice",
+                  "explanation": "There are 3 apples, and the word for 3 is 'Three'."
+                },
+                {
+                  "id": "t7_q4",
+                  "question": "How do we write the name for 4?",
+                  "options": [
+                    "Four",
+                    "Five",
+                    "Fire"
+                  ],
+                  "correctAnswer": "Four",
+                  "type": "multiple-choice",
+                  "explanation": "The number 4 is spelled 'Four'."
+                },
+                {
+                  "id": "t7_q5",
+                  "question": "Match the word to the number: 'Five'",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "High five! The word 'Five' is for the number 5."
+                },
+                {
+                  "id": "t7_q6",
+                  "question": "Which number word starts with the 'S' sound?",
+                  "options": [
+                    "Four",
+                    "Six",
+                    "Two"
+                  ],
+                  "correctAnswer": "Six",
+                  "type": "multiple-choice",
+                  "explanation": "Six starts with an 'S'. It is the word for 6."
+                },
+                {
+                  "id": "t7_q7",
+                  "question": "Count the stars and pick the word: ⭐⭐⭐⭐⭐⭐⭐",
+                  "options": [
+                    "Six",
+                    "Seven",
+                    "Eight"
+                  ],
+                  "correctAnswer": "Seven",
+                  "type": "multiple-choice",
+                  "explanation": "There are 7 stars. The word is 'Seven'."
+                },
+                {
+                  "id": "t7_q8",
+                  "question": "What is the name for the number 8?",
+                  "options": [
+                    "Eight",
+                    "Nine",
+                    "Ten"
+                  ],
+                  "correctAnswer": "Eight",
+                  "type": "multiple-choice",
+                  "explanation": "The number 8 is written as 'Eight'."
+                },
+                {
+                  "id": "t7_q9",
+                  "question": "Is 'Nine' the name for the number 9?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! 9 is written as 'Nine'."
+                },
+                {
+                  "id": "t7_q10",
+                  "question": "Pick the word for the biggest number in our lesson: 10",
+                  "options": [
+                    "Eight",
+                    "Nine",
+                    "Ten"
+                  ],
+                  "correctAnswer": "Ten",
+                  "type": "multiple-choice",
+                  "explanation": "The number 10 is written as 'Ten'!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1c2",
+      "title": "The Addition Adventure",
+      "modules": [
+        {
+          "id": "g1c2m1",
+          "title": "Adding to 5",
+          "description": "Putting small groups together to make a bigger number.",
+          "learningGoal": "Add two numbers with a sum up to 5.",
+          "difficulty": "Beginner",
+          "unit": 1,
+          "icon": "plus",
+          "lessons": [
+            {
+              "id": "g1c2m1_l1",
+              "title": "First Steps in Adding",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c2m1_q1",
+                  "question": "1 apple + 1 apple = how many apples? 🍎 + 🍎",
+                  "emoji": "🍎",
+                  "emojiCount": 2,
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "emoji-count",
+                  "explanation": "1 + 1 = 2! Two yummy apples! 🍎🍎"
+                },
+                {
+                  "id": "g1c2m1_q2",
+                  "question": "2 + 1 = ?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 1 = 3! Count on your fingers: 2... then 1 more makes 3!"
+                },
+                {
+                  "id": "g1c2m1_q3",
+                  "question": "1 + 2 = 3. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 1 + 2 = 3. You got it!"
+                },
+                {
+                  "id": "g1c2m1_q4",
+                  "question": "3 + 2 = ?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 2 = 5! Hold up 3 fingers, then 2 more. Count them all!"
+                },
+                {
+                  "id": "g1c2m1_q5",
+                  "question": "2 + 2 = ?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 2 = 4! Two pairs make four!"
+                },
+                {
+                  "id": "g1c2m1_q6",
+                  "question": "0 + 5 = ?",
+                  "options": [
+                    "0",
+                    "5",
+                    "10"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "Adding zero changes nothing! 0 + 5 is still 5."
+                },
+                {
+                  "id": "g1c2m1_q7",
+                  "question": "Which sum equals 4?",
+                  "options": [
+                    "1 + 1",
+                    "2 + 2",
+                    "3 + 2"
+                  ],
+                  "correctAnswer": "2 + 2",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 2 makes 4! The others make 2 and 5."
+                },
+                {
+                  "id": "g1c2m1_q8",
+                  "question": "Count the hearts: ❤️ + ❤️❤️❤️",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "emoji-count",
+                  "explanation": "1 heart plus 3 more hearts makes 4 hearts!"
+                },
+                {
+                  "id": "g1c2m1_q9",
+                  "question": "4 + 1 = ?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "4... and the next number is 5!"
+                },
+                {
+                  "id": "g1c2m1_q10",
+                  "question": "What is 1 + 1 + 1?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "One, two, three! 1 + 1 + 1 = 3."
+                }
+              ],
+              "isCompleted": false
+            }
+          ]
+        },
+        {
+          "id": "g1c2m2",
+          "title": "Adding Up to 10",
+          "description": "Learning to add bigger numbers using sets and number lines.",
+          "learningGoal": "Master basic addition sums with results from 6 to 10.",
+          "difficulty": "Intermediate",
+          "unit": 2,
+          "icon": "plus-circle",
+          "lessons": [
+            {
+              "id": "g1c2m2_l1",
+              "title": "The Big Addition Challenge",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c2m2_q1",
+                  "question": "5 + 1 = ?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "5 fingers on one hand and 1 on the other makes 6!"
+                },
+                {
+                  "id": "g1c2m2_q2",
+                  "question": "Count the fish: 🐟🐟🐟 + 🐟🐟🐟🐟",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "emoji-count",
+                  "explanation": "3 fish plus 4 fish equals 7 fish!"
+                },
+                {
+                  "id": "g1c2m2_q3",
+                  "question": "4 + 4 = ?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "Double 4 is 8!"
+                },
+                {
+                  "id": "g1c2m2_q4",
+                  "question": "6 + 3 = ?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "Count on from 6: 7, 8, 9!"
+                },
+                {
+                  "id": "g1c2m2_q5",
+                  "question": "Is 5 + 5 = 10?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! Two full hands make 10!"
+                },
+                {
+                  "id": "g1c2m2_q6",
+                  "question": "7 + 2 = ?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "7... 8, 9! 7 + 2 = 9."
+                },
+                {
+                  "id": "g1c2m2_q7",
+                  "question": "Build the number 10 using two pieces!",
+                  "type": "sum-composition",
+                  "sumTarget": 10,
+                  "sumPieces": [8, 2, 5, 3, 1],
+                  "explanation": "8 and 2 more makes a perfect 10!"
+                },
+                {
+                  "id": "g1c2m2_q8",
+                  "question": "Which sum equals 6?",
+                  "options": [
+                    "3 + 3",
+                    "2 + 3",
+                    "4 + 1"
+                  ],
+                  "correctAnswer": "3 + 3",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 3 = 6. It's a double!"
+                },
+                {
+                  "id": "g1c2m2_q9",
+                  "question": "Count the stars: ⭐⭐⭐⭐ + ⭐⭐⭐",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "emoji-count",
+                  "explanation": "4 stars and 3 stars makes 7 stars!"
+                },
+                {
+                  "id": "g1c2m2_q10",
+                  "question": "Can you make 10 with these pieces?",
+                  "type": "sum-composition",
+                  "sumTarget": 10,
+                  "sumPieces": [1, 9, 4, 6, 2],
+                  "explanation": "9 and 1 more is 10! Also 4 and 6 make 10."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c2m3",
+          "title": "Doubles and Near Doubles",
+          "description": "Learning that 1+1, 2+2, and 3+3 are special matches.",
+          "learningGoal": "Recall doubles up to 10 quickly.",
+          "difficulty": "Intermediate",
+          "unit": 3,
+          "icon": "clone",
+          "lessons": [
+            {
+              "id": "g1c2m3_l1",
+              "title": "Double Trouble!",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c2m3_q1",
+                  "question": "What is double 1? (1 + 1)",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "Double 1 is 2! Think of your two eyes: 1 + 1 = 2."
+                },
+                {
+                  "id": "g1c2m3_q2",
+                  "question": "What is 2 + 2?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 2 = 4. Like the four legs on a dog! 🐕"
+                },
+                {
+                  "id": "g1c2m3_q3",
+                  "question": "If I double 3, what do I get? 🍎🍎🍎 + 🍎🍎🍎",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "emoji-count",
+                  "explanation": "Double 3 is 6! 3 + 3 = 6."
+                },
+                {
+                  "id": "g1c2m3_q4",
+                  "question": "Double 4 is 8. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 4 + 4 = 8. Think of a spider's 8 legs!"
+                },
+                {
+                  "id": "g1c2m3_q5",
+                  "question": "What is the double of 5?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 5 = 10. That's all your fingers! 🙌"
+                },
+                {
+                  "id": "g1c2m3_q6",
+                  "question": "Look at this: 2 + 3. This is a 'Near Double'. What is the answer?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "It's almost double 2! 2 + 2 is 4, so 2 + 3 is just one more: 5."
+                },
+                {
+                  "id": "g1c2m3_q7",
+                  "question": "Which one of these is a 'Double'?",
+                  "options": [
+                    "2 + 3",
+                    "4 + 4",
+                    "1 + 5"
+                  ],
+                  "correctAnswer": "4 + 4",
+                  "type": "multiple-choice",
+                  "explanation": "A double is when both numbers are the same. 4 + 4 is a double!"
+                },
+                {
+                  "id": "g1c2m3_q8",
+                  "question": "If 3 + 3 = 6, then what is 3 + 4?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 4 is a near double. It is one more than 6, which is 7!"
+                },
+                {
+                  "id": "g1c2m3_q9",
+                  "question": "Double __ = 4. What number is missing?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "Double 2 makes 4!"
+                },
+                {
+                  "id": "g1c2m3_q10",
+                  "question": "Finish the doubles pattern: 2, 4, 6, 8, __",
+                  "options": [
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "sequence",
+                  "explanation": "These are the answers to our doubles: 1+1, 2+2, 3+3, 4+4... and 5+5 is 10!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c2m4",
+          "title": "Addition Story Problems",
+          "description": "Solving real-life math stories.",
+          "learningGoal": "Solve simple word problems using addition.",
+          "difficulty": "Intermediate",
+          "unit": 4,
+          "icon": "book-open",
+          "lessons": [
+            {
+              "id": "g1c2m4_l1",
+              "title": "Math Stories",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c2m4_q1",
+                  "question": "Thabo has 2 marbles. His friend gives him 1 more. How many marbles does Thabo have now?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "2 marbles + 1 marble = 3 marbles!"
+                },
+                {
+                  "id": "g1c2m4_q2",
+                  "question": "There are 3 birds on a branch. 2 more birds fly to the branch. How many birds are there in total?",
+                  "emoji": "🐦🐦🐦 + 🐦🐦",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "emoji-count",
+                  "explanation": "3 + 2 = 5 birds!"
+                },
+                {
+                  "id": "g1c2m4_q3",
+                  "question": "Sarah finds 4 shells on the beach. She finds 4 more. How many shells does she have?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "4 shells + 4 shells is a double! That makes 8."
+                },
+                {
+                  "id": "g1c2m4_q4",
+                  "question": "A farm has 5 cows and 0 sheep. How many animals are on the farm?",
+                  "options": [
+                    "0",
+                    "5",
+                    "10"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 0 = 5. The number stays the same!"
+                },
+                {
+                  "id": "g1c2m4_q5",
+                  "question": "You have 6 pencils. You buy 2 more. How many pencils do you have now?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "Start at 6 and count on: 7, 8!"
+                },
+                {
+                  "id": "g1c2m4_q6",
+                  "question": "Mom baked 3 cupcakes. Dad baked 3 cupcakes. How many cupcakes are there to eat?",
+                  "emoji": "🧁🧁🧁 + 🧁🧁🧁",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "emoji-count",
+                  "explanation": "3 + 3 = 6 cupcakes. Yum!"
+                },
+                {
+                  "id": "g1c2m4_q7",
+                  "question": "A bus has 7 children. 3 more children get on. How many children are on the bus?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 3 = 10 children on the bus!"
+                },
+                {
+                  "id": "g1c2m4_q8",
+                  "question": "Lindiwe has 1 blue balloon and 4 red balloons. How many balloons does she have altogether?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "1 + 4 = 5 balloons!"
+                },
+                {
+                  "id": "g1c2m4_q9",
+                  "question": "There are 5 frogs in a pond. 4 more frogs jump in. How many frogs are in the pond?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 4 = 9 frogs!"
+                },
+                {
+                  "id": "g1c2m4_q10",
+                  "question": "If you have 2 sweets and I give you 2 more, you will have 4 sweets. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 2 + 2 = 4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c2m5",
+          "title": "Adding with the Number Line",
+          "description": "Jumping forward on the line to find sums.",
+          "learningGoal": "Use a number line to add numbers up to 10.",
+          "difficulty": "Advanced",
+          "unit": 5,
+          "icon": "arrow-right",
+          "lessons": [
+            {
+              "id": "g1c2m5_l1",
+              "title": "Number Line Jumps",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c2m5_q1",
+                  "question": "Start at 2. Jump forward 1 space. Where are you?",
+                  "options": [
+                    "1",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Starting at 2 and taking 1 hop forward lands you on 3! 2 + 1 = 3."
+                },
+                {
+                  "id": "g1c2m5_q2",
+                  "question": "Start at 4. Take 2 jumps forward. [4] -> [5] -> [__]",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "Two jumps from 4 lands on 6. 4 + 2 = 6!"
+                },
+                {
+                  "id": "g1c2m5_q3",
+                  "question": "To solve 5 + 3, you start at 5 and take how many jumps?",
+                  "options": [
+                    "3 jumps",
+                    "5 jumps",
+                    "10 jumps"
+                  ],
+                  "correctAnswer": "3 jumps",
+                  "type": "multiple-choice",
+                  "explanation": "You always start at the first number and jump the amount of the second number!"
+                },
+                {
+                  "id": "g1c2m5_q4",
+                  "question": "Start at 7. Jump forward 3 times. What is the sum?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "7... 8, 9, 10! You landed on 10."
+                },
+                {
+                  "id": "g1c2m5_q5",
+                  "question": "If you are at 0 and take 5 big jumps, where do you land?",
+                  "options": [
+                    "0",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "0 + 5 = 5. You are now at number 5!"
+                },
+                {
+                  "id": "g1c2m5_q6",
+                  "question": "Does 6 + 2 land on the same spot as 2 + 6?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! Both sums equal 8. It doesn't matter which number you start with!"
+                },
+                {
+                  "id": "g1c2m5_q7",
+                  "question": "Start at 8. Jump forward 1. Where are you?",
+                  "options": [
+                    "7",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "One hop forward from 8 is 9."
+                },
+                {
+                  "id": "g1c2m5_q8",
+                  "question": "Start at 1. Jump forward 4. What is 1 + 4?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "1... 2, 3, 4, 5! You landed on 5."
+                },
+                {
+                  "id": "g1c2m5_q9",
+                  "question": "You are at 3. You want to get to 5. How many jumps do you need?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "From 3, you jump to 4, then to 5. That is 2 jumps!"
+                },
+                {
+                  "id": "g1c2m5_q10",
+                  "question": "Which jump is bigger? 2 + 5 or 2 + 3?",
+                  "options": [
+                    "2 + 5",
+                    "2 + 3"
+                  ],
+                  "correctAnswer": "2 + 5",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 5 lands on 7, which is further down the line than 5!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c2m6",
+          "title": "Making 10",
+          "description": "Finding number pairs that equal 10.",
+          "learningGoal": "Identify all pairs (like 7+3 or 6+4) that make 10.",
+          "difficulty": "Advanced",
+          "unit": 6,
+          "icon": "hands-asl-interpreting",
+          "lessons": [
+            {
+              "id": "g1c2m6_l1",
+              "title": "Friends of 10",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c2m6_q1",
+                  "question": "I have 9. How many more do I need to make 10?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "9 + 1 = 10. They are best friends!"
+                },
+                {
+                  "id": "g1c2m6_q2",
+                  "question": "Which number is the partner for 5 to make 10?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 5 = 10. Two full hands make a ten!"
+                },
+                {
+                  "id": "g1c2m6_q3",
+                  "question": "8 + __ = 10. What is the missing friend?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 2 = 10. Count on: 9, 10!"
+                },
+                {
+                  "id": "g1c2m6_q4",
+                  "question": "Does 7 + 3 make 10?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! 7 + 3 is a perfect way to make 10."
+                },
+                {
+                  "id": "g1c2m6_q5",
+                  "question": "I have 6 apples. How many more do I need to fill a box of 10?",
+                  "emoji": "🍎🍎🍎🍎🍎🍎",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "emoji-count",
+                  "explanation": "6 + 4 = 10. We need 4 more apples!"
+                },
+                {
+                  "id": "g1c2m6_q6",
+                  "question": "Which pair makes 10?",
+                  "options": [
+                    "6 + 3",
+                    "7 + 3",
+                    "8 + 3"
+                  ],
+                  "correctAnswer": "7 + 3",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 3 = 10. The others make 9 and 11."
+                },
+                {
+                  "id": "g1c2m6_q7",
+                  "question": "If 0 + 10 = 10, then 10 + 0 = ?",
+                  "options": [
+                    "0",
+                    "10",
+                    "20"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "Even if we swap them, 10 + 0 is still 10!"
+                },
+                {
+                  "id": "g1c2m6_q8",
+                  "question": "Count the stars to make 10: ⭐⭐⭐⭐ + ?",
+                  "options": [
+                    "⭐⭐⭐⭐⭐",
+                    "⭐⭐⭐⭐⭐⭐",
+                    "⭐⭐⭐⭐⭐⭐⭐"
+                  ],
+                  "correctAnswer": "⭐⭐⭐⭐⭐⭐",
+                  "type": "visual-selection",
+                  "explanation": "We have 4 stars, we need 6 more to make 10!"
+                },
+                {
+                  "id": "g1c2m6_q9",
+                  "question": "1 + 9 makes 10. What about 2 + 8?",
+                  "options": [
+                    "Makes 9",
+                    "Makes 10",
+                    "Makes 11"
+                  ],
+                  "correctAnswer": "Makes 10",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 8 also makes 10! It's another set of partners."
+                },
+                {
+                  "id": "g1c2m6_q10",
+                  "question": "You have 10 sweets and you get 0 more. Do you still have 10?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! 10 + 0 = 10."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c2m7",
+          "title": "Addition Review & Mixed Practice",
+          "description": "Putting all our addition skills together for numbers up to 10.",
+          "learningGoal": "Confidently solve a variety of addition problems using different methods.",
+          "difficulty": "Advanced",
+          "unit": 7,
+          "icon": "star",
+          "lessons": [
+            {
+              "id": "g1c2m7_l1",
+              "title": "Addition Superstar",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c2m7_q1",
+                  "question": "What is 4 + 3?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "4... 5, 6, 7! 4 + 3 = 7."
+                },
+                {
+                  "id": "g1c2m7_q2",
+                  "question": "Which one is a double? 🦁🦁 + 🦁🦁",
+                  "options": [
+                    "2 + 2",
+                    "2 + 3",
+                    "2 + 4"
+                  ],
+                  "correctAnswer": "2 + 2",
+                  "type": "emoji-count",
+                  "explanation": "2 + 2 is a double and it equals 4!"
+                },
+                {
+                  "id": "g1c2m7_q3",
+                  "question": "If you are at 5 on the number line and jump 5 more, where do you land?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 5 = 10. You reached the end of the line!"
+                },
+                {
+                  "id": "g1c2m7_q4",
+                  "question": "0 + 8 = ?",
+                  "options": [
+                    "0",
+                    "8",
+                    "10"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "Adding zero changes nothing. It's still 8!"
+                },
+                {
+                  "id": "g1c2m7_q5",
+                  "question": "Thandi has 3 pens. She finds 3 more. How many does she have?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "Double 3 is 6!"
+                },
+                {
+                  "id": "g1c2m7_q6",
+                  "question": "Which pair makes 10?",
+                  "options": [
+                    "5 + 4",
+                    "6 + 4",
+                    "7 + 4"
+                  ],
+                  "correctAnswer": "6 + 4",
+                  "type": "multiple-choice",
+                  "explanation": "6 and 4 are friends of 10!"
+                },
+                {
+                  "id": "g1c2m7_q7",
+                  "question": "Is 1 + 9 the same as 9 + 1?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! In addition, the order doesn't change the answer."
+                },
+                {
+                  "id": "g1c2m7_q8",
+                  "question": "Count the total: 🥥🥥🥥🥥🥥 + 🥥",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "emoji-count",
+                  "explanation": "5 coconuts plus 1 more makes 6."
+                },
+                {
+                  "id": "g1c2m7_q9",
+                  "question": "7 + 2 = ?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "7... 8, 9! The answer is 9."
+                },
+                {
+                  "id": "g1c2m7_q10",
+                  "question": "You made it to the end! What is 5 + 2?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 2 = 7. Well done, Addition Superstar!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1c3",
+      "title": "Mastering Bigger Sums",
+      "modules": [
+        {
+          "id": "g1c3m1",
+          "title": "Adding Three Numbers",
+          "description": "Learning to put three different groups together.",
+          "learningGoal": "Add three single-digit numbers with a sum up to 10.",
+          "difficulty": "Intermediate",
+          "unit": 1,
+          "icon": "layer-group",
+          "lessons": [
+            {
+              "id": "g1c3m1_l1",
+              "title": "The Triple Addition",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c3m1_q1",
+                  "question": "1 + 1 + 1 = ?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "One, two, three! 1 + 1 + 1 = 3."
+                },
+                {
+                  "id": "g1c3m1_q2",
+                  "question": "2 + 2 + 1 = ?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 2 is 4, and one more makes 5!"
+                },
+                {
+                  "id": "g1c3m1_q3",
+                  "question": "3 + 1 + 2 = ?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 1 = 4. Then 4 + 2 = 6."
+                },
+                {
+                  "id": "g1c3m1_q4",
+                  "question": "Count the fruit: 🍎 + 🍌 + 🍎",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "emoji-count",
+                  "explanation": "One apple, one banana, and another apple makes 3 fruits!"
+                },
+                {
+                  "id": "g1c3m1_q5",
+                  "question": "5 + 0 + 1 = ?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 0 is still 5, and one more is 6."
+                },
+                {
+                  "id": "g1c3m1_q6",
+                  "question": "2 + 3 + 2 = ?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 3 = 5. Then 5 + 2 = 7!"
+                },
+                {
+                  "id": "g1c3m1_q7",
+                  "question": "4 + 4 + 2 = ?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 4 is 8, and 2 more makes 10."
+                },
+                {
+                  "id": "g1c3m1_q8",
+                  "question": "1 + 2 + 3 = 6. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 1 + 2 = 3, and 3 + 3 = 6."
+                },
+                {
+                  "id": "g1c3m1_q9",
+                  "question": "3 + 3 + 3 = ?",
+                  "options": [
+                    "6",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "Three, six, nine! 3 + 3 + 3 = 9."
+                },
+                {
+                  "id": "g1c3m1_q10",
+                  "question": "Which sum equals 10?",
+                  "options": [
+                    "2+2+2",
+                    "5+2+3",
+                    "1+1+1"
+                  ],
+                  "correctAnswer": "5+2+3",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 2 = 7, and 7 + 3 = 10!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c3m2",
+          "title": "Addition to 15",
+          "description": "Moving beyond ten into the teen numbers.",
+          "learningGoal": "Solve addition problems with sums between 11 and 15.",
+          "difficulty": "Advanced",
+          "unit": 2,
+          "icon": "arrow-up-right-dots",
+          "lessons": [
+            {
+              "id": "g1c3m2_l1",
+              "title": "The Teen Totals",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c3m2_q1",
+                  "question": "10 + 1 = ?",
+                  "options": [
+                    "10",
+                    "11",
+                    "12"
+                  ],
+                  "correctAnswer": "11",
+                  "type": "multiple-choice",
+                  "explanation": "10 and 1 more is 11!"
+                },
+                {
+                  "id": "g1c3m2_q2",
+                  "question": "9 + 3 = ?",
+                  "options": [
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "correctAnswer": "12",
+                  "type": "multiple-choice",
+                  "explanation": "Start at 9 and count: 10, 11, 12."
+                },
+                {
+                  "id": "g1c3m2_q3",
+                  "question": "Count the stars: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ + ⭐⭐⭐",
+                  "options": [
+                    "12",
+                    "13",
+                    "14"
+                  ],
+                  "correctAnswer": "13",
+                  "type": "emoji-count",
+                  "explanation": "10 stars and 3 stars make 13 stars."
+                },
+                {
+                  "id": "g1c3m2_q4",
+                  "question": "8 + 6 = ?",
+                  "options": [
+                    "13",
+                    "14",
+                    "15"
+                  ],
+                  "correctAnswer": "14",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 6 = 14!"
+                },
+                {
+                  "id": "g1c3m2_q5",
+                  "question": "10 + 5 = ?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "A full ten and a five makes 15."
+                },
+                {
+                  "id": "g1c3m2_q6",
+                  "question": "7 + 5 = ?",
+                  "options": [
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "correctAnswer": "12",
+                  "type": "multiple-choice",
+                  "explanation": "7... 8, 9, 10, 11, 12!"
+                },
+                {
+                  "id": "g1c3m2_q7",
+                  "question": "Is 6 + 6 = 12?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! Double 6 is 12."
+                },
+                {
+                  "id": "g1c3m2_q8",
+                  "question": "11 + 2 = ?",
+                  "options": [
+                    "12",
+                    "13",
+                    "14"
+                  ],
+                  "correctAnswer": "13",
+                  "type": "multiple-choice",
+                  "explanation": "11... 12, 13!"
+                },
+                {
+                  "id": "g1c3m2_q9",
+                  "question": "9 + 5 = ?",
+                  "options": [
+                    "13",
+                    "14",
+                    "15"
+                  ],
+                  "correctAnswer": "14",
+                  "type": "multiple-choice",
+                  "explanation": "9 and 5 more is 14."
+                },
+                {
+                  "id": "g1c3m2_q10",
+                  "question": "Which sum equals 15?",
+                  "options": [
+                    "10 + 5",
+                    "9 + 4",
+                    "8 + 5"
+                  ],
+                  "correctAnswer": "10 + 5",
+                  "type": "multiple-choice",
+                  "explanation": "10 + 5 = 15!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c3m3",
+          "title": "Addition to 20",
+          "description": "The final challenge for Grade 1 addition.",
+          "learningGoal": "Add numbers with sums up to 20.",
+          "difficulty": "Expert",
+          "unit": 3,
+          "icon": "trophy",
+          "lessons": [
+            {
+              "id": "g1c3m3_l1",
+              "title": "The Road to 20",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c3m3_q1",
+                  "question": "10 + 10 = ?",
+                  "options": [
+                    "10",
+                    "20",
+                    "30"
+                  ],
+                  "correctAnswer": "20",
+                  "type": "multiple-choice",
+                  "explanation": "Two tens make 20!"
+                },
+                {
+                  "id": "g1c3m3_q2",
+                  "question": "15 + 1 = ?",
+                  "options": [
+                    "14",
+                    "16",
+                    "17"
+                  ],
+                  "correctAnswer": "16",
+                  "type": "multiple-choice",
+                  "explanation": "15 and one more is 16."
+                },
+                {
+                  "id": "g1c3m3_q3",
+                  "question": "9 + 9 = ?",
+                  "options": [
+                    "17",
+                    "18",
+                    "19"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "Double 9 is 18."
+                },
+                {
+                  "id": "g1c3m3_q4",
+                  "question": "12 + 5 = ?",
+                  "options": [
+                    "16",
+                    "17",
+                    "18"
+                  ],
+                  "correctAnswer": "17",
+                  "type": "multiple-choice",
+                  "explanation": "12... 13, 14, 15, 16, 17!"
+                },
+                {
+                  "id": "g1c3m3_q5",
+                  "question": "10 + 9 = ?",
+                  "options": [
+                    "18",
+                    "19",
+                    "20"
+                  ],
+                  "correctAnswer": "19",
+                  "type": "multiple-choice",
+                  "explanation": "10 and 9 makes 19."
+                },
+                {
+                  "id": "g1c3m3_q6",
+                  "question": "Does 8 + 8 = 16?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Correct! Double 8 is 16."
+                },
+                {
+                  "id": "g1c3m3_q7",
+                  "question": "13 + 3 = ?",
+                  "options": [
+                    "15",
+                    "16",
+                    "17"
+                  ],
+                  "correctAnswer": "16",
+                  "type": "multiple-choice",
+                  "explanation": "13... 14, 15, 16!"
+                },
+                {
+                  "id": "g1c3m3_q8",
+                  "question": "7 + 7 + 1 = ?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 7 is 14, plus 1 more is 15."
+                },
+                {
+                  "id": "g1c3m3_q9",
+                  "question": "Count the hearts: ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ + ❤️❤️❤️❤️❤️⭐⭐",
+                  "options": [
+                    "15",
+                    "17",
+                    "20"
+                  ],
+                  "correctAnswer": "17",
+                  "type": "emoji-count",
+                  "explanation": "10 hearts and 7 more shapes make 17!"
+                },
+                {
+                  "id": "g1c3m3_q10",
+                  "question": "19 + 1 = ?",
+                  "options": [
+                    "18",
+                    "19",
+                    "20"
+                  ],
+                  "correctAnswer": "20",
+                  "type": "multiple-choice",
+                  "explanation": "The number after 19 is 20!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1c4",
+      "title": "Addition Adventure Stories",
+      "modules": [
+        {
+          "id": "g1c4m1",
+          "title": "School & Classroom Stories",
+          "description": "Solving problems about pens, books, and friends at school.",
+          "learningGoal": "Extract numbers from school-themed stories to find the total sum.",
+          "difficulty": "Intermediate",
+          "unit": 1,
+          "icon": "school",
+          "lessons": [
+            {
+              "id": "g1c4m1_l1",
+              "title": "Classroom Counting",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c4m1_q1",
+                  "question": "A teacher has 3 red pens and 2 blue pens. How many pens does she have in total?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "3 pens + 2 pens = 5 pens!"
+                },
+                {
+                  "id": "g1c4m1_q2",
+                  "question": "There are 4 boys and 4 girls sitting at a table. How many children are at the table?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 4 is a double! That makes 8 children."
+                },
+                {
+                  "id": "g1c4m1_q3",
+                  "question": "Lindiwe has 6 library books. She borrows 1 more. How many books does she have now?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 1 = 7. She has 7 books."
+                },
+                {
+                  "id": "g1c4m1_q4",
+                  "question": "You have 2 pencils in your case. Your friend gives you 3 more. Do you have 5 pencils now?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 2 + 3 = 5."
+                },
+                {
+                  "id": "g1c4m1_q5",
+                  "question": "The class has 5 soccer balls and 5 netball balls. How many balls are there altogether?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 5 = 10 balls!"
+                },
+                {
+                  "id": "g1c4m1_q6",
+                  "question": "A lunch box has 2 sandwiches and 2 apples. How many items are in the lunch box?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 2 = 4 items."
+                },
+                {
+                  "id": "g1c4m1_q7",
+                  "question": "There are 7 chairs in the room. The teacher brings in 3 more chairs. How many chairs are there now?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 3 = 10. We made a ten!"
+                },
+                {
+                  "id": "g1c4m1_q8",
+                  "question": "If Sipho has 1 ruler and buys 1 more, he has 3 rulers. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "False",
+                  "type": "true-false",
+                  "explanation": "False! 1 + 1 = 2, not 3."
+                },
+                {
+                  "id": "g1c4m1_q9",
+                  "question": "One desk has 4 crayons. Another desk has 5 crayons. How many crayons in total?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 5 = 9 crayons."
+                },
+                {
+                  "id": "g1c4m1_q10",
+                  "question": "3 friends are playing tag. 4 more friends join them. How many friends are playing now?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 4 = 7 friends!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c4m2",
+          "title": "Farm & Animal Stories",
+          "description": "Counting animals on a South African farm.",
+          "learningGoal": "Solve addition word problems using animal characters.",
+          "difficulty": "Intermediate",
+          "unit": 2,
+          "icon": "cow",
+          "lessons": [
+            {
+              "id": "g1c4m2_l1",
+              "title": "Counting Creatures",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c4m2_q1",
+                  "question": "A farm has 5 cows and 2 calves. How many cattle are there in total?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 2 = 7!"
+                },
+                {
+                  "id": "g1c4m2_q2",
+                  "question": "There are 4 chickens in the coop. 6 more chickens walk in. How many chickens are there?",
+                  "options": [
+                    "8",
+                    "10",
+                    "12"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 6 = 10 chickens."
+                },
+                {
+                  "id": "g1c4m2_q3",
+                  "question": "A dog has 4 puppies. Another dog has 3 puppies. How many puppies are there altogether?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 3 = 7 puppies!"
+                },
+                {
+                  "id": "g1c4m2_q4",
+                  "question": "A pond has 8 frogs. 2 more jump in. How many frogs are in the pond?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 2 = 10."
+                },
+                {
+                  "id": "g1c4m2_q5",
+                  "question": "If you see 2 sheep and 5 goats, there are 7 animals. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 2 + 5 = 7."
+                },
+                {
+                  "id": "g1c4m2_q6",
+                  "question": "There are 3 birds in a tree. 3 more birds land in the tree. How many birds are there?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 3 = 6 birds."
+                },
+                {
+                  "id": "g1c4m2_q7",
+                  "question": "A farmer picks 6 mielies in the morning and 3 in the afternoon. How many mielies does he have?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 3 = 9 mielies."
+                },
+                {
+                  "id": "g1c4m2_q8",
+                  "question": "A cat catches 1 mouse. Later it catches 2 more. How many mice did it catch?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "1 + 2 = 3 mice."
+                },
+                {
+                  "id": "g1c4m2_q9",
+                  "question": "There are 7 ducks swimming. 1 more duck joins them. How many ducks are there?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 1 = 8 ducks."
+                },
+                {
+                  "id": "g1c4m2_q10",
+                  "question": "A kraal has 4 sheep and 1 bull. How many animals are in the kraal?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 1 = 5!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c4m3",
+          "title": "Market & Shopping Stories",
+          "description": "Using addition to buy fruit and treats.",
+          "learningGoal": "Solve addition word problems in a shopping context.",
+          "difficulty": "Advanced",
+          "unit": 3,
+          "icon": "basket-shopping",
+          "lessons": [
+            {
+              "id": "g1c4m3_l1",
+              "title": "The Fruit Market",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c4m3_q1",
+                  "question": "Mom buys 2 oranges and 4 bananas. How many fruits does she have?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 4 = 6 fruits."
+                },
+                {
+                  "id": "g1c4m3_q2",
+                  "question": "Sweets cost 5 Madibas XP and a chocolate costs 5 Madibas XP. How much in total?",
+                  "options": [
+                    "8",
+                    "10",
+                    "12"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 5 = 10!"
+                },
+                {
+                  "id": "g1c4m3_q3",
+                  "question": "You buy 7 apples. You go back and buy 3 more. How many apples do you have?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 3 = 10 apples."
+                },
+                {
+                  "id": "g1c4m3_q4",
+                  "question": "A bag has 8 potatoes. Dad adds 1 more potato. How many are in the bag?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 1 = 9."
+                },
+                {
+                  "id": "g1c4m3_q5",
+                  "question": "If a juice is 4 coins and a bread is 4 coins, you need 8 coins. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 4 + 4 = 8."
+                },
+                {
+                  "id": "g1c4m3_q6",
+                  "question": "Lerato buys 3 green lollipops and 5 red lollipops. How many lollipops does she have?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 5 = 8 lollipops!"
+                },
+                {
+                  "id": "g1c4m3_q7",
+                  "question": "A shop has 6 soccer jerseys. They get 2 new ones. How many jerseys do they have?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 2 = 8 jerseys."
+                },
+                {
+                  "id": "g1c4m3_q8",
+                  "question": "You have 9 stickers and buy 1 more. You now have 10. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 9 + 1 = 10."
+                },
+                {
+                  "id": "g1c4m3_q9",
+                  "question": "There are 4 boxes of milk on the shelf. The worker puts 4 more boxes. How many are there?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 4 = 8 boxes."
+                },
+                {
+                  "id": "g1c4m3_q10",
+                  "question": "A man buys 2 packs of eggs. Each pack has 3 eggs. How many eggs in total?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 3 = 6 eggs."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1c5",
+      "title": "Addition: The Expert Path",
+      "modules": [
+        {
+          "id": "g1c5m1",
+          "title": "Missing Number Mysteries",
+          "description": "Finding the missing part of the sum to reach the total.",
+          "learningGoal": "Solve for the missing addend in equations up to 20.",
+          "difficulty": "Advanced",
+          "unit": 1,
+          "icon": "user-secret",
+          "lessons": [
+            {
+              "id": "g1c5m1_l1",
+              "title": "Who is Missing?",
+              "type": "quiz",
+              "pointsValue": 120,
+              "questions": [
+                {
+                  "id": "g1c5m1_q1",
+                  "question": "8 + __ = 12. What is the missing number?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "Count on from 8: 9, 10, 11, 12. That is 4 steps!"
+                },
+                {
+                  "id": "g1c5m1_q2",
+                  "question": "__ + 5 = 15. What number goes in the blank?",
+                  "options": [
+                    "5",
+                    "10",
+                    "15"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "10 + 5 makes 15."
+                },
+                {
+                  "id": "g1c5m1_q3",
+                  "question": "Double __ = 14. What number was doubled?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 7 = 14, so the missing number is 7!"
+                },
+                {
+                  "id": "g1c5m1_q4",
+                  "question": "12 + __ = 12. What is the secret number?",
+                  "options": [
+                    "0",
+                    "1",
+                    "12"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "If the answer stays the same, you added zero!"
+                },
+                {
+                  "id": "g1c5m1_q5",
+                  "question": "14 + __ = 16. How many jumps do we need?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "14... 15, 16. Two jumps!"
+                },
+                {
+                  "id": "g1c5m1_q6",
+                  "question": "Is the missing number in '9 + __ = 18' the number 9?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! Double 9 is 18."
+                },
+                {
+                  "id": "g1c5m1_q7",
+                  "question": "6 + __ = 13. Find the missing friend.",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 6 is 12, so 6 + 7 must be 13."
+                },
+                {
+                  "id": "g1c5m1_q8",
+                  "question": "11 + __ = 20. How much more to reach twenty?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "11 + 9 = 20."
+                },
+                {
+                  "id": "g1c5m1_q9",
+                  "question": "If 10 + __ = 13, then the answer is 3. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Correct! Ten and three make thirteen."
+                },
+                {
+                  "id": "g1c5m1_q10",
+                  "question": "15 + __ = 19. What is the gap?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "15... 16, 17, 18, 19. The gap is 4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c5m2",
+          "title": "The Bridge Method (Crossing 10)",
+          "description": "Learning to break numbers apart to make a ten first.",
+          "learningGoal": "Understand how to 'Make 10' as a strategy for larger addition.",
+          "difficulty": "Expert",
+          "unit": 2,
+          "icon": "bridge-water",
+          "lessons": [
+            {
+              "id": "g1c5m2_l1",
+              "title": "Crossing the Ten Bridge",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c5m2_q1",
+                  "question": "To solve 8 + 5, we can do 8 + 2 + 3. What is the answer?",
+                  "options": [
+                    "12",
+                    "13",
+                    "14"
+                  ],
+                  "correctAnswer": "13",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 2 makes 10, then add the left-over 3 to get 13!"
+                },
+                {
+                  "id": "g1c5m2_q2",
+                  "question": "What is 7 + 4? (Hint: Make 10 first)",
+                  "options": [
+                    "10",
+                    "11",
+                    "12"
+                  ],
+                  "correctAnswer": "11",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 3 = 10. Then 10 + 1 = 11."
+                },
+                {
+                  "id": "g1c5m2_q3",
+                  "question": "9 + 6 is the same as 10 + 5. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! You take 1 from the 6 to make the 9 a 10."
+                },
+                {
+                  "id": "g1c5m2_q4",
+                  "question": "8 + 7 = ?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 2 = 10. Then 10 + 5 = 15."
+                },
+                {
+                  "id": "g1c5m2_q5",
+                  "question": "Which sum is the easiest way to solve 9 + 4?",
+                  "options": [
+                    "9 + 1 + 3",
+                    "9 + 2 + 2",
+                    "9 + 0 + 4"
+                  ],
+                  "correctAnswer": "9 + 1 + 3",
+                  "type": "multiple-choice",
+                  "explanation": "Adding 1 to 9 makes 10, which is easier to count from!"
+                },
+                {
+                  "id": "g1c5m2_q6",
+                  "question": "6 + 5 = ?",
+                  "options": [
+                    "10",
+                    "11",
+                    "12"
+                  ],
+                  "correctAnswer": "11",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 4 = 10, plus 1 more is 11."
+                },
+                {
+                  "id": "g1c5m2_q7",
+                  "question": "Does 8 + 8 = 10 + 6?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! Both equal 16."
+                },
+                {
+                  "id": "g1c5m2_q8",
+                  "question": "7 + 6 = ?",
+                  "options": [
+                    "12",
+                    "13",
+                    "14"
+                  ],
+                  "correctAnswer": "13",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 3 = 10. 10 + 3 = 13."
+                },
+                {
+                  "id": "g1c5m2_q9",
+                  "question": "To solve 9 + 8, you make a 10 and add __.",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "9 + 1 = 10. You took 1 from the 8, so 7 are left. 10 + 7 = 17."
+                },
+                {
+                  "id": "g1c5m2_q10",
+                  "question": "5 + 8 = ?",
+                  "options": [
+                    "12",
+                    "13",
+                    "14"
+                  ],
+                  "correctAnswer": "13",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 2 = 10, and 10 + 3 = 13!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c5m3",
+          "title": "Double Digits Plus Single Digits",
+          "description": "Adding numbers like 14 + 3 or 11 + 6.",
+          "learningGoal": "Add a single-digit number to a double-digit number up to 20.",
+          "difficulty": "Expert",
+          "unit": 3,
+          "icon": "stairs",
+          "lessons": [
+            {
+              "id": "g1c5m3_l1",
+              "title": "The High Climb",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c5m3_q1",
+                  "question": "14 + 2 = ?",
+                  "options": [
+                    "15",
+                    "16",
+                    "17"
+                  ],
+                  "correctAnswer": "16",
+                  "type": "multiple-choice",
+                  "explanation": "Think 4 + 2 = 6, so 14 + 2 = 16!"
+                },
+                {
+                  "id": "g1c5m3_q2",
+                  "question": "11 + 7 = ?",
+                  "options": [
+                    "17",
+                    "18",
+                    "19"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "1 + 7 = 8, so 11 + 7 = 18."
+                },
+                {
+                  "id": "g1c5m3_q3",
+                  "question": "13 + 5 = ?",
+                  "options": [
+                    "17",
+                    "18",
+                    "19"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "3 + 5 = 8, so 13 + 5 = 18."
+                },
+                {
+                  "id": "g1c5m3_q4",
+                  "question": "If you have 12 stickers and get 6 more, you have 18. True or False?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "True! 2 + 6 = 8, so 12 + 6 = 18."
+                },
+                {
+                  "id": "g1c5m3_q5",
+                  "question": "15 + 4 = ?",
+                  "options": [
+                    "18",
+                    "19",
+                    "20"
+                  ],
+                  "correctAnswer": "19",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 4 = 9, so 15 + 4 = 19."
+                },
+                {
+                  "id": "g1c5m3_q6",
+                  "question": "10 + 8 = ?",
+                  "options": [
+                    "16",
+                    "18",
+                    "20"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "Ten and eight is eighteen!"
+                },
+                {
+                  "id": "g1c5m3_q7",
+                  "question": "12 + 3 = ?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 3 = 5, so 12 + 3 = 15."
+                },
+                {
+                  "id": "g1c5m3_q8",
+                  "question": "17 + 2 = ?",
+                  "options": [
+                    "18",
+                    "19",
+                    "20"
+                  ],
+                  "correctAnswer": "19",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 2 = 9, so 17 + 2 = 19."
+                },
+                {
+                  "id": "g1c5m3_q9",
+                  "question": "Does 11 + 9 = 20?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! 1 + 9 = 10, so 11 + 9 is 20."
+                },
+                {
+                  "id": "g1c5m3_q10",
+                  "question": "14 + 4 = ?",
+                  "options": [
+                    "17",
+                    "18",
+                    "19"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 4 = 8, so 14 + 4 = 18."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1c6",
+      "title": "Addition: The Grand Finale",
+      "modules": [
+        {
+          "id": "g1c6m1",
+          "title": "Mental Math Sprinter",
+          "description": "Speedy addition using doubles and near-doubles up to 20.",
+          "learningGoal": "Quickly solve sums by recognizing patterns and doubles.",
+          "difficulty": "Expert",
+          "unit": 1,
+          "icon": "bolt",
+          "lessons": [
+            {
+              "id": "g1c6m1_l1",
+              "title": "Fast Finger Addition",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c6m1_q1",
+                  "question": "What is double 9 plus 1? (9 + 9 + 1)",
+                  "options": [
+                    "18",
+                    "19",
+                    "20"
+                  ],
+                  "correctAnswer": "19",
+                  "type": "multiple-choice",
+                  "explanation": "Double 9 is 18, and one more is 19!"
+                },
+                {
+                  "id": "g1c6m1_q2",
+                  "question": "If 7 + 7 = 14, what is 7 + 8?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 8 is a near-double. It's just one more than 14!"
+                },
+                {
+                  "id": "g1c6m1_q3",
+                  "question": "What is double 10?",
+                  "options": [
+                    "10",
+                    "20",
+                    "30"
+                  ],
+                  "correctAnswer": "20",
+                  "type": "multiple-choice",
+                  "explanation": "10 + 10 = 20. A perfect score!"
+                },
+                {
+                  "id": "g1c6m1_q4",
+                  "question": "6 + 6 + 2 = ?",
+                  "options": [
+                    "12",
+                    "13",
+                    "14"
+                  ],
+                  "correctAnswer": "14",
+                  "type": "multiple-choice",
+                  "explanation": "Double 6 is 12, then add 2 more to get 14."
+                },
+                {
+                  "id": "g1c6m1_q5",
+                  "question": "Is 8 + 9 the same as 17?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 8 + 8 = 16, so 8 + 9 = 17."
+                },
+                {
+                  "id": "g1c6m1_q6",
+                  "question": "Double 5 plus double 5 is... ?",
+                  "options": [
+                    "10",
+                    "15",
+                    "20"
+                  ],
+                  "correctAnswer": "20",
+                  "type": "multiple-choice",
+                  "explanation": "10 + 10 = 20!"
+                },
+                {
+                  "id": "g1c6m1_q7",
+                  "question": "Which sum is the largest?",
+                  "options": [
+                    "9 + 8",
+                    "10 + 6",
+                    "7 + 9"
+                  ],
+                  "correctAnswer": "9 + 8",
+                  "type": "multiple-choice",
+                  "explanation": "9 + 8 = 17. The others are 16!"
+                },
+                {
+                  "id": "g1c6m1_q8",
+                  "question": "4 + 4 + 4 = ?",
+                  "options": [
+                    "8",
+                    "12",
+                    "16"
+                  ],
+                  "correctAnswer": "12",
+                  "type": "multiple-choice",
+                  "explanation": "4, 8, 12! Triple four is 12."
+                },
+                {
+                  "id": "g1c6m1_q9",
+                  "question": "If you double 0, what do you get?",
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "0 + 0 is still 0!"
+                },
+                {
+                  "id": "g1c6m1_q10",
+                  "question": "What is double 6 plus double 2?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "16",
+                  "type": "multiple-choice",
+                  "explanation": "12 + 4 = 16."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c6m2",
+          "title": "Three-Part Stories",
+          "description": "Complex word problems with three different items to add.",
+          "learningGoal": "Solve multi-step word problems within a single equation.",
+          "difficulty": "Expert",
+          "unit": 2,
+          "icon": "puzzle-piece",
+          "lessons": [
+            {
+              "id": "g1c6m2_l1",
+              "title": "The Big Story Mix",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c6m2_q1",
+                  "question": "Busi has 4 blue marbles, 3 red marbles, and 3 green marbles. How many in total?",
+                  "options": [
+                    "8",
+                    "10",
+                    "12"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "4 + 3 + 3 = 10. You made a ten!"
+                },
+                {
+                  "id": "g1c6m2_q2",
+                  "question": "A basket has 5 bananas, 5 apples, and 5 pears. How many fruits are there?",
+                  "options": [
+                    "10",
+                    "15",
+                    "20"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "5 + 5 + 5 = 15. High five!"
+                },
+                {
+                  "id": "g1c6m2_q3",
+                  "question": "You see 2 lions, 2 zebras, and 6 monkeys. How many animals are there?",
+                  "options": [
+                    "8",
+                    "10",
+                    "12"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 2 + 6 = 10 animals."
+                },
+                {
+                  "id": "g1c6m2_q4",
+                  "question": "Mom buys 8 eggs, then 4 more, then 2 more. How many eggs now?",
+                  "options": [
+                    "12",
+                    "14",
+                    "16"
+                  ],
+                  "correctAnswer": "14",
+                  "type": "multiple-choice",
+                  "explanation": "8 + 2 is 10, plus 4 is 14!"
+                },
+                {
+                  "id": "g1c6m2_q5",
+                  "question": "A garden has 7 red flowers, 1 yellow flower, and 7 white flowers. How many flowers total?",
+                  "options": [
+                    "14",
+                    "15",
+                    "16"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 7 is 14, and 1 more is 15."
+                },
+                {
+                  "id": "g1c6m2_q6",
+                  "question": "If you have 1 cat, 1 dog, and 1 bird, you have 3 pets. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 1 + 1 + 1 = 3."
+                },
+                {
+                  "id": "g1c6m2_q7",
+                  "question": "There are 6 cars, 6 trucks, and 0 bikes. How many vehicles are there?",
+                  "options": [
+                    "10",
+                    "12",
+                    "14"
+                  ],
+                  "correctAnswer": "12",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 6 = 12."
+                },
+                {
+                  "id": "g1c6m2_q8",
+                  "question": "Sipho finds 9 shells. He finds 2 more, then another 2. How many shells?",
+                  "options": [
+                    "11",
+                    "13",
+                    "15"
+                  ],
+                  "correctAnswer": "13",
+                  "type": "multiple-choice",
+                  "explanation": "9 + 2 = 11, and 11 + 2 = 13."
+                },
+                {
+                  "id": "g1c6m2_q9",
+                  "question": "3 birds + 3 birds + 4 birds = 10 birds. True or False?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "True! 3 + 3 = 6, and 6 + 4 = 10."
+                },
+                {
+                  "id": "g1c6m2_q10",
+                  "question": "A box has 2 pencils, 8 crayons, and 5 pens. How many things are inside?",
+                  "options": [
+                    "13",
+                    "15",
+                    "17"
+                  ],
+                  "correctAnswer": "15",
+                  "type": "multiple-choice",
+                  "explanation": "2 + 8 makes 10, then add 5 to get 15!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c6m3",
+          "title": "Addition Mastery Test",
+          "description": "The ultimate mix of everything you've learned.",
+          "learningGoal": "Demonstrate mastery of all addition concepts up to 20.",
+          "difficulty": "Expert",
+          "unit": 3,
+          "icon": "graduation-cap",
+          "lessons": [
+            {
+              "id": "g1c6m3_l1",
+              "title": "Addition Graduation",
+              "type": "quiz",
+              "pointsValue": 200,
+              "questions": [
+                {
+                  "id": "g1c6m3_q1",
+                  "question": "11 + 9 = ?",
+                  "options": [
+                    "19",
+                    "20",
+                    "21"
+                  ],
+                  "correctAnswer": "20",
+                  "type": "multiple-choice",
+                  "explanation": "11 and 9 are partners that make 20!"
+                },
+                {
+                  "id": "g1c6m3_q2",
+                  "question": "What is 2 more than double 8?",
+                  "options": [
+                    "16",
+                    "18",
+                    "20"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "Double 8 is 16, plus 2 more is 18."
+                },
+                {
+                  "id": "g1c6m3_q3",
+                  "question": "14 + __ = 20. Find the missing number.",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "14 + 6 = 20."
+                },
+                {
+                  "id": "g1c6m3_q4",
+                  "question": "Is 5 + 5 + 5 + 5 = 20?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! Four fives make 20."
+                },
+                {
+                  "id": "g1c6m3_q5",
+                  "question": "Which makes 15? 7 + 8 OR 9 + 5?",
+                  "options": [
+                    "7 + 8",
+                    "9 + 5"
+                  ],
+                  "correctAnswer": "7 + 8",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 8 = 15. 9 + 5 is only 14!"
+                },
+                {
+                  "id": "g1c6m3_q6",
+                  "question": "12 + 0 + 7 = ?",
+                  "options": [
+                    "18",
+                    "19",
+                    "20"
+                  ],
+                  "correctAnswer": "19",
+                  "type": "multiple-choice",
+                  "explanation": "12 + 7 = 19."
+                },
+                {
+                  "id": "g1c6m3_q7",
+                  "question": "Count: 🍎🍎🍎🍎 + 🍎🍎🍎🍎 + 🍎🍎🍎🍎",
+                  "options": [
+                    "8",
+                    "10",
+                    "12"
+                  ],
+                  "correctAnswer": "12",
+                  "type": "emoji-count",
+                  "explanation": "4 + 4 + 4 = 12 apples."
+                },
+                {
+                  "id": "g1c6m3_q8",
+                  "question": "Start at 13. Jump forward 5. Where are you?",
+                  "options": [
+                    "17",
+                    "18",
+                    "19"
+                  ],
+                  "correctAnswer": "18",
+                  "type": "multiple-choice",
+                  "explanation": "13 + 5 = 18."
+                },
+                {
+                  "id": "g1c6m3_q9",
+                  "question": "If I have 10 and you have 7, how many do we have together?",
+                  "options": [
+                    "16",
+                    "17",
+                    "18"
+                  ],
+                  "correctAnswer": "17",
+                  "type": "multiple-choice",
+                  "explanation": "10 + 7 = 17."
+                },
+                {
+                  "id": "g1c6m3_q10",
+                  "question": "Final question: What is 10 + 5 + 5?",
+                  "options": [
+                    "15",
+                    "20",
+                    "25"
+                  ],
+                  "correctAnswer": "20",
+                  "type": "multiple-choice",
+                  "explanation": "10 + 10 = 20. You did it!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1c7",
+      "title": "The Subtraction Safari",
+      "modules": [
+        {
+          "id": "g1c7m1",
+          "title": "Taking Away from 5",
+          "description": "Learning how to subtract small numbers and see what's left.",
+          "learningGoal": "Subtract single-digit numbers from a total of 5 or less.",
+          "difficulty": "Beginner",
+          "unit": 1,
+          "icon": "minus",
+          "lessons": [
+            {
+              "id": "g1c7m1_l1",
+              "title": "First Steps in Taking Away",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c7m1_q1",
+                  "question": "If you have 2 apples and you eat 1, how many are left? 🍎🍎 - 🍎",
+                  "emoji": "🍎",
+                  "emojiCount": 1,
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "emoji-count",
+                  "explanation": "2 minus 1 leaves you with 1 apple! 🍎"
+                },
+                {
+                  "id": "g1c7m1_q2",
+                  "question": "3 - 1 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "Take 1 away from 3. You have 2 left!"
+                },
+                {
+                  "id": "g1c7m1_q3",
+                  "question": "5 - 2 = ?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Hold up 5 fingers. Put 2 down. You have 3 fingers standing!"
+                },
+                {
+                  "id": "g1c7m1_q4",
+                  "question": "If you have 4 sweets and you give 4 away, how many do you have left?",
+                  "options": [
+                    "0",
+                    "1",
+                    "4"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "4 - 4 = 0. When you take everything away, nothing is left!"
+                },
+                {
+                  "id": "g1c7m1_q5",
+                  "question": "2 - 0 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "Taking away zero means nothing changes! You still have 2."
+                },
+                {
+                  "id": "g1c7m1_q6",
+                  "question": "4 - 1 = 3. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! If you have 4 and take 1 away, you have 3."
+                },
+                {
+                  "id": "g1c7m1_q7",
+                  "question": "Count the remaining stars: ⭐⭐⭐⭐⭐ - ⭐⭐⭐",
+                  "options": [
+                    "2",
+                    "3",
+                    "5"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "emoji-count",
+                  "explanation": "5 minus 3 leaves 2 stars! ⭐⭐"
+                },
+                {
+                  "id": "g1c7m1_q8",
+                  "question": "5 - 4 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "5 take away 4 leaves only 1."
+                },
+                {
+                  "id": "g1c7m1_q9",
+                  "question": "3 - 2 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "5"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "3 minus 2 equals 1."
+                },
+                {
+                  "id": "g1c7m1_q10",
+                  "question": "If I have 1 toy and I take away 1 toy, I have 0 toys. True or False?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "True! 1 - 1 = 0."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c7m2",
+          "title": "Subtracting from 10",
+          "description": "Practicing subtraction with numbers up to 10.",
+          "learningGoal": "Subtract single-digit numbers from a total of 10.",
+          "difficulty": "Intermediate",
+          "unit": 2,
+          "icon": "hand-dots",
+          "lessons": []
+        },
+        {
+          "id": "g1c7m2",
+          "title": "Subtraction Stories",
+          "description": "Solving take-away problems in real life.",
+          "learningGoal": "Understand word problems that require subtraction.",
+          "difficulty": "Intermediate",
+          "unit": 3,
+          "icon": "book-open-reader",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "g1c7",
+      "title": "The Subtraction Safari",
+      "modules": [
+        {
+          "id": "g1c7m1",
+          "title": "Taking Away from 5",
+          "description": "Learning how to subtract small numbers and see what's left.",
+          "learningGoal": "Subtract single-digit numbers from a total of 5 or less.",
+          "difficulty": "Beginner",
+          "unit": 1,
+          "icon": "minus",
+          "lessons": [
+            {
+              "id": "g1c7m1_l1",
+              "title": "First Steps in Taking Away",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c7m1_q1",
+                  "question": "If you have 2 apples and you eat 1, how many are left? 🍎🍎 - 🍎",
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "emoji-count",
+                  "explanation": "2 minus 1 leaves you with 1 apple! 🍎"
+                },
+                {
+                  "id": "g1c7m1_q2",
+                  "question": "3 - 1 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "Take 1 away from 3. You have 2 left!"
+                },
+                {
+                  "id": "g1c7m1_q3",
+                  "question": "5 - 2 = ?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Hold up 5 fingers, put 2 down. You have 3 left!"
+                },
+                {
+                  "id": "g1c7m1_q4",
+                  "question": "If you have 4 toys and give 1 to a friend, how many do you have? 🧸🧸🧸🧸 - 🧸",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "emoji-count",
+                  "explanation": "4 - 1 = 3. Sharing is caring!"
+                },
+                {
+                  "id": "g1c7m1_q5",
+                  "question": "5 - 5 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "5"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "If you have 5 and take all 5 away, you have zero left!"
+                },
+                {
+                  "id": "g1c7m1_q6",
+                  "question": "4 - 2 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "4 take away 2 leaves exactly 2."
+                },
+                {
+                  "id": "g1c7m1_q7",
+                  "question": "3 - 0 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "3"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Taking away zero means nothing changes. You still have 3!"
+                },
+                {
+                  "id": "g1c7m1_q8",
+                  "question": "If you have 5 birds and 1 flies away, how many stay? 🐦🐦🐦🐦🐦 - 🐦",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "emoji-count",
+                  "explanation": "5 - 1 = 4 birds left in the tree."
+                },
+                {
+                  "id": "g1c7m1_q9",
+                  "question": "Is 2 - 2 = 0?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! Any number minus itself is always zero."
+                },
+                {
+                  "id": "g1c7m1_q10",
+                  "question": "4 - 3 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "4 minus 3 leaves just 1."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c7m2",
+          "title": "Subtracting from 10",
+          "description": "Practicing subtraction with numbers up to 10.",
+          "learningGoal": "Subtract single-digit numbers from a total of 10.",
+          "difficulty": "Intermediate",
+          "unit": 2,
+          "icon": "hand-dots",
+          "lessons": [
+            {
+              "id": "g1c7m2_l1",
+              "title": "The Ten Frame Take-Away",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c7m2_q1",
+                  "question": "10 - 3 = ?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "If you have 10 and take 3 away, 7 are left."
+                },
+                {
+                  "id": "g1c7m2_q2",
+                  "question": "If you have 8 marbles and lose 2, how many do you have?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "8 - 2 = 6."
+                },
+                {
+                  "id": "g1c7m2_q3",
+                  "question": "10 - 5 = ?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "Five is half of ten, so 10 - 5 = 5!"
+                },
+                {
+                  "id": "g1c7m2_q4",
+                  "question": "You have 9 balloons and 4 pop 🎈. How many are left?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "9 - 4 = 5 balloons left."
+                },
+                {
+                  "id": "g1c7m2_q5",
+                  "question": "10 - 1 = ?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "correctAnswer": "9",
+                  "type": "multiple-choice",
+                  "explanation": "The number before 10 is 9!"
+                },
+                {
+                  "id": "g1c7m2_q6",
+                  "question": "7 - 3 = ?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "If you take 3 away from 7, you have 4 left."
+                },
+                {
+                  "id": "g1c7m2_q7",
+                  "question": "10 - 8 = ?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "8 and 2 make 10, so 10 - 8 = 2."
+                },
+                {
+                  "id": "g1c7m2_q8",
+                  "question": "Is 10 - 10 = 0?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! Taking everything away leaves zero."
+                },
+                {
+                  "id": "g1c7m2_q9",
+                  "question": "6 - 4 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "6 minus 4 equals 2."
+                },
+                {
+                  "id": "g1c7m2_q10",
+                  "question": "10 - 6 = ?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "Since 6 + 4 = 10, then 10 - 6 = 4."
+                }
+              ]
+            },
+            {
+              "id": "g1c7m2_l2",
+              "title": "Finger Counting Backwards",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c7m2_l2_q1",
+                  "question": "Start at 10 and count back 2. Where are you?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "10... 9, 8! You are at 8."
+                },
+                {
+                  "id": "g1c7m2_l2_q2",
+                  "question": "9 - 2 = ?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "correctAnswer": "7",
+                  "type": "multiple-choice",
+                  "explanation": "Counting back from 9: 8, 7."
+                },
+                {
+                  "id": "g1c7m2_l2_q3",
+                  "question": "10 - 4 = ?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 4 = 6."
+                },
+                {
+                  "id": "g1c7m2_l2_q4",
+                  "question": "8 - 3 = ?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "8 minus 3 leaves 5."
+                },
+                {
+                  "id": "g1c7m2_l2_q5",
+                  "question": "If you have 10 and take 0 away, do you still have 10?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Correct! Zero away means no change."
+                },
+                {
+                  "id": "g1c7m2_l2_q6",
+                  "question": "7 - 5 = ?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "7 minus 5 equals 2."
+                },
+                {
+                  "id": "g1c7m2_l2_q7",
+                  "question": "10 - 7 = ?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "10 minus 7 leaves 3."
+                },
+                {
+                  "id": "g1c7m2_l2_q8",
+                  "question": "9 - 3 = ?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "9 minus 3 equals 6."
+                },
+                {
+                  "id": "g1c7m2_l2_q9",
+                  "question": "Is 8 - 1 = 7?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correctAnswer": "Yes",
+                  "type": "true-false",
+                  "explanation": "Yes! 1 less than 8 is 7."
+                },
+                {
+                  "id": "g1c7m2_l2_q10",
+                  "question": "10 - 9 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "If you take almost everything away, only 1 is left!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c7m3",
+          "title": "Subtraction Story Problems",
+          "description": "Real-life scenarios where things go away.",
+          "learningGoal": "Identify subtraction keywords like 'left', 'lost', and 'gave away'.",
+          "difficulty": "Intermediate",
+          "unit": 3,
+          "icon": "book-open-reader",
+          "lessons": [
+            {
+              "id": "g1c7m3_l1",
+              "title": "Safari Stories",
+              "type": "quiz",
+              "pointsValue": 100,
+              "questions": [
+                {
+                  "id": "g1c7m3_q1",
+                  "question": "There are 6 birds in a tree. 4 fly away. How many birds stay?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "6 - 4 = 2 birds remaining."
+                },
+                {
+                  "id": "g1c7m3_q2",
+                  "question": "You have 10 Madibas XP. You spend 5 on a sticker. How much is left?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 5 = 5. You still have half left!"
+                },
+                {
+                  "id": "g1c7m3_q3",
+                  "question": "A farmer has 8 cows. 3 walk into the barn. How many are still in the field?",
+                  "options": [
+                    "5",
+                    "6",
+                    "11"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "8 - 3 = 5 cows left in the field."
+                },
+                {
+                  "id": "g1c7m3_q4",
+                  "question": "You find 7 shells on the beach. You lose 2 in the sand. How many shells do you have now?",
+                  "options": [
+                    "4",
+                    "5",
+                    "9"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "7 - 2 = 5 shells."
+                },
+                {
+                  "id": "g1c7m3_q5",
+                  "question": "The baker makes 9 cupcakes. He sells 7. How many cupcakes are left in the shop?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "9 - 7 = 2. Almost all sold!"
+                },
+                {
+                  "id": "g1c7m3_q6",
+                  "question": "There are 5 monkeys on a branch. All 5 jump off. How many monkeys are left?",
+                  "options": [
+                    "0",
+                    "1",
+                    "5"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "5 - 5 = 0. The branch is empty!"
+                },
+                {
+                  "id": "g1c7m3_q7",
+                  "question": "A bus starts with 10 people. 4 people get off at the first stop. How many stay on the bus?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 4 = 6 people remaining."
+                },
+                {
+                  "id": "g1c7m3_q8",
+                  "question": "Sarah had 6 crayons. She gave 3 to her brother. How many does Sarah have left?",
+                  "options": [
+                    "2",
+                    "3",
+                    "9"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "6 - 3 = 3. She shared half!"
+                },
+                {
+                  "id": "g1c7m3_q9",
+                  "question": "You have 8 slices of pizza. Your friends eat 6 slices. How many slices are left for you?",
+                  "options": [
+                    "1",
+                    "2",
+                    "14"
+                  ],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "8 - 6 = 2 slices."
+                },
+                {
+                  "id": "g1c7m3_q10",
+                  "question": "10 zebras were at the water hole. 2 ran away. How many zebras are left?",
+                  "options": [
+                    "7",
+                    "8",
+                    "12"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 2 = 8. They are still hanging out!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c7m4",
+          "title": "The 'Difference' Detective",
+          "description": "Comparing two groups to find the difference.",
+          "learningGoal": "Use subtraction to compare quantities.",
+          "difficulty": "Advanced",
+          "unit": 4,
+          "icon": "magnifying-glass",
+          "lessons": [
+            {
+              "id": "g1c7m4_l1",
+              "title": "How Many More?",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c7m4_q1",
+                  "question": "Thabo has 9 cars. Sarah has 6 cars. How many more cars does Thabo have?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "9 - 6 = 3. Thabo has 3 more!"
+                },
+                {
+                  "id": "g1c7m4_q2",
+                  "question": "Box A has 10 pencils. Box B has 7. What is the difference?",
+                  "options": [
+                    "3",
+                    "4",
+                    "17"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "Difference means subtract! 10 - 7 = 3."
+                },
+                {
+                  "id": "g1c7m4_q3",
+                  "question": "An elephant eats 10 buns. A monkey eats 4 buns. How many more buns did the elephant eat?",
+                  "options": [
+                    "5",
+                    "6",
+                    "14"
+                  ],
+                  "correctAnswer": "6",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 4 = 6. That's a big difference!"
+                },
+                {
+                  "id": "g1c7m4_q4",
+                  "question": "Team Gold has 8 points. Team Green has 5 points. How many points ahead is Team Gold?",
+                  "options": [
+                    "2",
+                    "3",
+                    "13"
+                  ],
+                  "correctAnswer": "3",
+                  "type": "multiple-choice",
+                  "explanation": "8 - 5 = 3 points ahead."
+                },
+                {
+                  "id": "g1c7m4_q5",
+                  "question": "A blue pencil is 10cm long. A red pencil is 8cm long. How much longer is the blue one?",
+                  "options": [
+                    "2cm",
+                    "3cm",
+                    "18cm"
+                  ],
+                  "correctAnswer": "2cm",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 8 = 2cm."
+                },
+                {
+                  "id": "g1c7m4_q6",
+                  "question": "Lerato has 7 stickers. Sipho has 7 stickers. What is the difference?",
+                  "options": [
+                    "0",
+                    "7",
+                    "14"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "7 - 7 = 0. They have the same amount!"
+                },
+                {
+                  "id": "g1c7m4_q7",
+                  "question": "There are 9 girls and 5 boys in a class. How many more girls are there?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "correctAnswer": "4",
+                  "type": "multiple-choice",
+                  "explanation": "9 - 5 = 4 more girls."
+                },
+                {
+                  "id": "g1c7m4_q8",
+                  "question": "A cat weighs 5kg. A dog weighs 9kg. How much less does the cat weigh?",
+                  "options": [
+                    "4kg",
+                    "5kg",
+                    "14kg"
+                  ],
+                  "correctAnswer": "4kg",
+                  "type": "multiple-choice",
+                  "explanation": "9 - 5 = 4kg difference."
+                },
+                {
+                  "id": "g1c7m4_q9",
+                  "question": "Bongi scored 10 goals. Tumi scored 2 goals. How many fewer goals did Tumi score?",
+                  "options": [
+                    "7",
+                    "8",
+                    "12"
+                  ],
+                  "correctAnswer": "8",
+                  "type": "multiple-choice",
+                  "explanation": "10 - 2 = 8. Bongi is on fire!"
+                },
+                {
+                  "id": "g1c7m4_q10",
+                  "question": "One tree has 6 apples. Another has 1 apple. How many more apples are on the first tree?",
+                  "options": [
+                    "4",
+                    "5",
+                    "7"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "6 - 1 = 5."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1c7m5",
+          "title": "Zero Heroes & Subtracting All",
+          "description": "Understanding what happens with 0 and total subtraction.",
+          "learningGoal": "Master the concept of subtracting 0 and subtracting a number from itself.",
+          "difficulty": "Advanced",
+          "unit": 5,
+          "icon": "star",
+          "lessons": [
+            {
+              "id": "g1c7m5_l1",
+              "title": "The Power of Zero",
+              "type": "quiz",
+              "pointsValue": 150,
+              "questions": [
+                {
+                  "id": "g1c7m5_q1",
+                  "question": "Match the problems to their answers!",
+                  "type": "drag-match",
+                  "matchPairs": [
+                    { "left": "10 - 10", "right": "0" },
+                    { "left": "10 - 0", "right": "10" },
+                    { "left": "5 - 0", "right": "5" }
+                  ],
+                  "explanation": "Great! When you subtract everything, you get 0. When you subtract nothing, it stays the same!"
+                },
+                {
+                  "id": "g1c7m5_q2",
+                  "question": "7 - 7 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "14"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "If you have 7 and take all 7 away, you have 0 left."
+                },
+                {
+                  "id": "g1c7m5_q3",
+                  "question": "If you have 10 Madibas XP and spend 0, how much do you have left?",
+                  "options": [
+                    "0",
+                    "5",
+                    "10"
+                  ],
+                  "correctAnswer": "10",
+                  "type": "multiple-choice",
+                  "explanation": "Since you spent nothing, your total stays the same!"
+                },
+                {
+                  "id": "g1c7m5_q4",
+                  "question": "4 - 4 = ?",
+                  "options": [
+                    "0",
+                    "4",
+                    "8"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "Subtracting a number from itself always results in zero."
+                },
+                {
+                  "id": "g1c7m5_q5",
+                  "question": "1 - 0 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "correctAnswer": "1",
+                  "type": "multiple-choice",
+                  "explanation": "Even with small numbers, taking away zero leaves the number exactly as it was."
+                },
+                {
+                  "id": "g1c7m5_q6",
+                  "question": "You have 6 apples and eat all 6. How many are left?",
+                  "options": [
+                    "0",
+                    "1",
+                    "6"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "6 - 6 = 0. All gone!"
+                },
+                {
+                  "id": "g1c7m5_q7",
+                  "question": "8 - 0 = 8. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "True! Subtracting zero does not decrease the value."
+                },
+                {
+                  "id": "g1c7m5_q8",
+                  "question": "10 - 10 = ?",
+                  "options": [
+                    "0",
+                    "1",
+                    "10"
+                  ],
+                  "correctAnswer": "0",
+                  "type": "multiple-choice",
+                  "explanation": "When the numbers are the same, the difference is zero."
+                },
+                {
+                  "id": "g1c7m5_q9",
+                  "question": "There are 5 birds. 0 fly away. How many stay?",
+                  "options": [
+                    "0",
+                    "5",
+                    "10"
+                  ],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "5 - 0 = 5 birds remaining."
+                },
+                {
+                  "id": "g1c7m5_q10",
+                  "question": "3 - 3 = 0. Is this true?",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "True! 3 minus 3 equals zero."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

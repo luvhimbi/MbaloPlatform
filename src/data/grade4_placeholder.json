@@ -1,0 +1,22 @@
+{
+  "grade": 4,
+  "chapters": [
+    {
+      "id": "g4c1",
+      "title": "Grade 4 Number Sense",
+      "modules": [
+        {
+          "id": "g4m1",
+          "title": "Place Value Quest",
+          "description": "Understanding numbers up to 10,000",
+          "learningGoal": "Master place value concepts for large numbers.",
+          "difficulty": "Intermediate",
+          "unit": 1,
+          "icon": "map",
+          "status": "available",
+          "lessons": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+﻿{
+    "chapters":  [
+                     {
+                         "modules":  [
+                                         {
+                                             "id":  "g7m1",
+                                             "learningGoal":  "Explore Grade 7 curriculum.",
+                                             "lessons":  [
+
+                                                         ],
+                                             "description":  "Advanced math missions coming soon.",
+                                             "icon":  "star",
+                                             "status":  "available",
+                                             "difficulty":  "Advanced",
+                                             "title":  "Welcome to Grade 7",
+                                             "unit":  1
+                                         }
+                                     ],
+                         "title":  "Grade 7 Math Adventure",
+                         "id":  "g7c1"
+                     }
+                 ],
+    "grade":  7
+}

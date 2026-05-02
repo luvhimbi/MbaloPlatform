@@ -1,0 +1,478 @@
+/* ==========================================
+   Progress Analytics — Safari Mission Control
+   ========================================== */
+
+.progress-main {
+  padding: var(--space-lg) var(--space-xl);
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+.progress-header h1 {
+  font-size: 2.2rem;
+}
+
+/* Mascot Insight */
+.mascot-insight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--space-lg) var(--space-xl);
+  margin-bottom: var(--space-xl);
+  width: 100%;
+}
+
+.mascot-insight .mascot-guide-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.mascot-insight .speech-bubble {
+  max-width: 500px;
+  font-size: 1.05rem;
+}
+
+.mascot-guide-img {
+  display: block;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.reflective-text {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  color: var(--mbalo-green);
+  border-color: var(--mbalo-green);
+}
+
+body.dark-mode .reflective-text {
+  color: var(--mbalo-text);
+  border-color: var(--mbalo-border);
+}
+
+/* Daily Adventure Goal */
+.daily-adventure-goal {
+  border-color: var(--mbalo-orange);
+  background: var(--mbalo-orange-light);
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-xl);
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.goal-title-group h3 {
+  margin: 0;
+  color: var(--mbalo-orange-dark);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.goal-title-group p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--mbalo-orange);
+}
+
+.goal-count {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--mbalo-orange-dark);
+}
+
+.goal-track {
+  height: 18px;
+  background: var(--mbalo-bg-card);
+  border-color: var(--mbalo-orange-light);
+}
+
+/* Stats Grid */
+.stats-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.stat-overview-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  font-weight: 700;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* XP Bars */
+.xp-bar-track {
+  margin-top: auto;
+  height: 14px;
+  background: var(--mbalo-bg-card);
+  border: 2px solid var(--mbalo-border);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: var(--mbalo-teal);
+  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.1);
+  border-radius: var(--radius-pill);
+  transition: width 0.6s var(--transition-bounce);
+}
+
+.xp-bar-fill-orange {
+  background: var(--mbalo-orange);
+}
+
+/* Module Mastery */
+.analytics-full-width {
+  width: 100%;
+}
+
+.module-mastery-section {
+  padding: var(--space-xl);
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--mbalo-teal);
+  margin-bottom: var(--space-xl);
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.mastery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-lg);
+}
+
+.mastery-card {
+  padding: var(--space-lg);
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mastery-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.mastery-icon {
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+}
+
+.mastery-title-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.mastery-module-name {
+  font-size: 1.05rem;
+  color: var(--mbalo-text);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.mastery-learning-goal {
+  font-size: 0.8rem;
+  color: var(--mbalo-text-muted);
+  font-weight: 600;
+}
+
+.mastery-percentage {
+  color: var(--mbalo-teal);
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.mastery-action-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.mastery-status-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--mbalo-text-muted);
+}
+
+/* Rank Badge */
+.rank-badge-card {
+  border-width: 4px;
+  border-color: var(--mbalo-pink-light);
+}
+
+.reflective-rank {
+  color: var(--mbalo-pink);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.btn-game-sm {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}
+
+/* Practice Alert */
+.personalized-practice-alert {
+  padding: var(--space-md) var(--space-lg);
+  border-left: 6px solid var(--mbalo-orange);
+  margin-bottom: var(--space-lg);
+}
+
+.practice-alert-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.alert-icon-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.alert-text h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--mbalo-brown);
+}
+
+body.dark-mode .alert-text h3 {
+  color: var(--mbalo-text);
+}
+
+.alert-text p {
+  margin: 4px 0 0 0;
+  font-size: 0.95rem;
+  color: var(--mbalo-text-muted);
+  font-weight: 600;
+}
+
+/* ========================
+   TABLET (max 1100px)
+   ======================== */
+@media (max-width: 1100px) {
+  .stats-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================
+   MOBILE (max 768px)
+   ======================== */
+@media (max-width: 768px) {
+  .progress-main {
+    padding: var(--space-md);
+  }
+
+  .progress-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .mascot-insight {
+    padding: var(--space-md);
+  }
+
+  .mascot-insight .mascot-guide-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: var(--space-md);
+  }
+
+  .mascot-insight .speech-bubble {
+    margin: 0;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .mascot-insight .speech-bubble::after {
+    display: none;
+  }
+
+  .mascot-guide-img {
+    width: 100px !important;
+  }
+
+  .stats-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .stat-overview-card {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-content {
+    align-items: center;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .daily-adventure-goal {
+    padding: var(--space-md);
+  }
+
+  .goal-title-group h3 {
+    font-size: 1.1rem;
+  }
+
+  .goal-title-group p {
+    font-size: 0.8rem;
+  }
+
+  .goal-count {
+    font-size: 1.2rem;
+  }
+
+  /* Mastery */
+  .mastery-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .mastery-card {
+    padding: var(--space-md);
+  }
+
+  .mastery-card-header {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .mastery-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mastery-module-name {
+    font-size: 0.95rem;
+  }
+
+  .mastery-percentage {
+    font-size: 1.2rem;
+  }
+
+  .mastery-action-box {
+    flex-direction: column;
+    gap: var(--space-sm);
+    align-items: stretch;
+  }
+
+  .mastery-action-box button {
+    width: 100%;
+  }
+
+  .module-mastery-section {
+    padding: var(--space-md);
+  }
+
+  /* Practice Alert */
+  .practice-alert-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+
+  .alert-icon-group {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .personalized-practice-alert {
+    border-left: none;
+    border-top: 6px solid var(--mbalo-orange);
+    padding: var(--space-md);
+  }
+
+  .alert-text h3 {
+    font-size: 1.05rem;
+  }
+}
+
+/* ========================
+   SMALL MOBILE (max 400px)
+   ======================== */
+@media (max-width: 400px) {
+  .progress-main {
+    padding: 8px;
+  }
+
+  .stats-overview-grid {
+    gap: 8px;
+  }
+
+  .stat-overview-card {
+    padding: var(--space-sm);
+  }
+
+  .stat-value {
+    font-size: 1.1rem;
+  }
+
+  .progress-header h1 {
+    font-size: 1.4rem;
+  }
+}

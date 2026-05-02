@@ -1,0 +1,274 @@
+/* =====================================================
+   MBALO DASHBOARD STYLES
+   ===================================================== */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--mbalo-bg);
+  color: var(--mbalo-brown);
+}
+
+.dashboard-content-wrapper {
+  flex: 1;
+  padding: var(--space-xl);
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content-wrapper {
+    padding: var(--space-md);
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .dashboard-content-wrapper {
+    padding: var(--space-sm);
+  }
+}
+
+.dashboard-header {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Decorations removed for cleaner UI */
+
+.dashboard-main {
+  flex: 1;
+  padding: var(--space-md) var(--space-xl);
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .dashboard-main {
+    padding: var(--space-sm);
+  }
+}
+
+/* Emotional Design: Background Patterns */
+/* Background patterns removed for cleaner UI */
+
+.dashboard-header {
+  margin-bottom: var(--space-sm);
+  padding: var(--space-sm) 0 0;
+  background: transparent;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    margin: 0 0 var(--space-sm);
+    padding: var(--space-xs) 0 0;
+  }
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.grade-selector-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--mbalo-text);
+  font-family: var(--font-primary);
+  cursor: pointer;
+  padding: var(--space-xs) 0;
+  transition: opacity 0.2s;
+}
+
+.grade-selector-btn:hover {
+  opacity: 0.8;
+}
+
+.grade-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+/* Missions Section */
+.missions-section {
+  margin-bottom: var(--space-xl);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  color: var(--mbalo-teal-dark);
+}
+
+.missions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mission-card-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg);
+  gap: var(--space-xl);
+}
+
+.mission-content {
+  flex: 1;
+}
+
+.mission-content h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.mission-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: 4px;
+}
+
+.difficulty-badge {
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.difficulty-badge.beginner {
+  background: var(--mbalo-teal-light);
+  color: var(--mbalo-teal-dark);
+}
+
+.difficulty-badge.intermediate {
+  background: var(--mbalo-yellow-light);
+  color: var(--mbalo-orange-dark);
+}
+
+.difficulty-badge.advanced {
+  background: var(--mbalo-red-light);
+  color: var(--mbalo-red-dark);
+}
+
+.learning-goal {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--mbalo-text);
+}
+
+.mission-note {
+  display: flex;
+  gap: 8px;
+  background: var(--mbalo-bg);
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  margin-bottom: 8px;
+  border-left: 4px solid var(--mbalo-orange);
+}
+
+.mission-note p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--mbalo-text-muted);
+}
+
+.mission-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--mbalo-text-muted);
+}
+
+.dashboard-content-single {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-main {
+    padding: var(--space-lg);
+    padding-bottom: 100px; /* Space for mobile nav */
+  }
+
+  .welcome-section {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .welcome-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
+
+  .mission-card-child {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+  }
+
+  .mission-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .mission-title-row {
+    flex-wrap: wrap;
+  }
+
+  .mission-note {
+    text-align: left;
+    margin: var(--space-md) 0;
+  }
+
+  .mission-meta {
+    margin-bottom: var(--space-sm);
+  }
+
+  .btn-game {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-main {
+    padding: var(--space-xs);
+    padding-bottom: 100px;
+  }
+
+  .grade-text {
+    font-size: 1.1rem;
+  }
+}

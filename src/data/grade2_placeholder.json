@@ -1,0 +1,145 @@
+{
+  "grade": 2,
+  "subject": "Mathematics",
+  "curriculum": "South African CAPS",
+  "chapters": [
+    {
+      "id": "g2c1",
+      "title": "Numbers to 100",
+      "modules": [
+        {
+          "id": "g2t1",
+          "title": "Place Value Basics",
+          "description": "Understanding Tens and Units.",
+          "learningGoal": "Identify tens and units in two-digit numbers.",
+          "difficulty": "Beginner",
+          "unit": 1,
+          "icon": "book",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "g2l1",
+              "title": "Tens and Units Fun",
+              "type": "quiz",
+              "questions": [
+                {
+                  "id": "g2q1",
+                  "question": "In the number 25, which digit is in the 'Tens' place?",
+                  "options": ["2", "5", "20", "50"],
+                  "correctAnswer": "2",
+                  "type": "multiple-choice",
+                  "explanation": "In the number 25, the 2 is in the tens place (it means 20) and the 5 is in the units place."
+                },
+                {
+                  "id": "g2q2",
+                  "question": "What is 10 more than 40?",
+                  "options": ["30", "50", "60", "41"],
+                  "correctAnswer": "50",
+                  "type": "multiple-choice",
+                  "explanation": "40 + 10 = 50. When we add 10 to a number, we add 1 to the tens digit!"
+                },
+                {
+                  "id": "g2q3",
+                  "question": "How many tens are in the number 70?",
+                  "emoji": "🔟",
+                  "emojiCount": 7,
+                  "options": ["5", "6", "7", "8"],
+                  "correctAnswer": "7",
+                  "type": "emoji-count",
+                  "explanation": "70 has 7 tens. Each 🔟 represents one ten: 10, 20, 30, 40, 50, 60, 70!"
+                },
+                {
+                  "id": "g2q4",
+                  "question": "Is 45 greater than 54?",
+                  "options": ["True", "False"],
+                  "correctAnswer": "False",
+                  "type": "true-false",
+                  "explanation": "54 is greater than 45. Look at the tens digit first: 5 tens > 4 tens!"
+                },
+                {
+                  "id": "g2q5",
+                  "question": "What number comes next? 20, 30, 40, __",
+                  "sequence": [20, 30, 40],
+                  "options": ["45", "50", "55", "60"],
+                  "correctAnswer": "50",
+                  "type": "sequence",
+                  "explanation": "We are counting by tens: 20, 30, 40, 50. Each time we add 10!"
+                }
+              ],
+              "isCompleted": false,
+              "pointsValue": 100
+            }
+          ]
+        },
+        {
+          "id": "g2t2",
+          "title": "Addition to 20",
+          "description": "Adding numbers with totals up to 20.",
+          "learningGoal": "Solve simple addition problems fluently.",
+          "difficulty": "Intermediate",
+          "unit": 2,
+          "icon": "plus",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "g2l2",
+              "title": "Adding Adventures",
+              "type": "quiz",
+              "questions": [
+                {
+                  "id": "g2q6",
+                  "question": "What is 7 + 5?",
+                  "options": ["11", "12", "13", "14"],
+                  "correctAnswer": "12",
+                  "type": "multiple-choice",
+                  "explanation": "7 + 5 = 12. You can count on from 7: 8, 9, 10, 11, 12!"
+                },
+                {
+                  "id": "g2q7",
+                  "question": "Match the sums to their answers!",
+                  "matchPairs": [
+                    { "left": "3 + 4", "right": "7" },
+                    { "left": "5 + 5", "right": "10" },
+                    { "left": "8 + 6", "right": "14" }
+                  ],
+                  "options": [],
+                  "correctAnswer": "",
+                  "type": "drag-match",
+                  "explanation": "3+4=7, 5+5=10, and 8+6=14. Great addition!"
+                },
+                {
+                  "id": "g2q8",
+                  "question": "Is 9 + 9 equal to 18?",
+                  "options": ["True", "False"],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 9 + 9 = 18. Double 9 is 18!"
+                },
+                {
+                  "id": "g2q9",
+                  "question": "Count the total butterflies!",
+                  "emoji": "🦋",
+                  "emojiCount": 15,
+                  "options": ["13", "14", "15", "16"],
+                  "correctAnswer": "15",
+                  "type": "emoji-count",
+                  "explanation": "There are 15 butterflies! Count them in groups of 5: 5, 10, 15!"
+                },
+                {
+                  "id": "g2q10",
+                  "question": "What number is missing? 6 + __ = 11",
+                  "options": ["4", "5", "6", "7"],
+                  "correctAnswer": "5",
+                  "type": "multiple-choice",
+                  "explanation": "6 + 5 = 11. Think: what do I add to 6 to make 11? Count up from 6 to 11!"
+                }
+              ],
+              "isCompleted": false,
+              "pointsValue": 100
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

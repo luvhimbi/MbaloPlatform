@@ -1,0 +1,225 @@
+/* =====================================================
+   NEW QUESTION TYPES STYLES (Safari/Mbalo System)
+   ===================================================== */
+
+/* ─── Common Question Layout ─── */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ─── Number Line Question ─── */
+.number-line-wrapper {
+  padding: var(--space-2xl) var(--space-md);
+  background: var(--mbalo-surface);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--mbalo-border);
+  box-shadow: var(--mbalo-shadow-md);
+  margin-bottom: var(--space-xl);
+}
+
+.number-line-display {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.number-line-axis {
+  width: 100%;
+  height: 4px;
+  background-color: var(--mbalo-brown-light);
+  border-radius: 2px;
+  position: relative;
+}
+
+.number-line-tick {
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: 24px;
+  background-color: var(--mbalo-brown-light);
+}
+
+.number-line-label {
+  position: absolute;
+  top: 20px;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--mbalo-brown);
+}
+
+.number-line-indicator {
+  position: absolute;
+  top: -45px;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left 0.3s var(--transition-bounce);
+}
+
+.indicator-bubble {
+  width: 32px;
+  height: 32px;
+  background-color: var(--mbalo-blue);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 0 var(--mbalo-blue-dark);
+}
+
+.indicator-stem {
+  width: 4px;
+  height: 15px;
+  background-color: var(--mbalo-blue);
+}
+
+/* ─── Pattern Grid Question ─── */
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.pattern-cell {
+  background: var(--mbalo-surface);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-height: 80px;
+  color: var(--mbalo-brown);
+  box-shadow: var(--mbalo-shadow-sm);
+}
+
+.pattern-cell.question-mark {
+  background: var(--mbalo-blue-light);
+  border-color: var(--mbalo-blue);
+  color: var(--mbalo-blue);
+}
+
+/* ─── Sum Composition Question ─── */
+.sum-comp-target {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--mbalo-brown);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.sum-comp-slots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  min-height: 80px;
+}
+
+.sum-slot {
+  width: 70px;
+  height: 70px;
+  border: 3px dashed var(--mbalo-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sum-slot.filled {
+  border-style: solid;
+  border-color: var(--mbalo-green);
+  background-color: var(--mbalo-surface);
+  box-shadow: var(--mbalo-shadow-md);
+}
+
+.sum-piece-active {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--mbalo-green);
+}
+
+.sum-comp-pieces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.sum-piece {
+  width: 60px;
+  height: 60px;
+  background: var(--mbalo-surface);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--mbalo-brown);
+  cursor: pointer;
+  transition: transform 0.15s var(--transition-bounce), box-shadow 0.15s ease;
+  box-shadow: var(--mbalo-shadow-sm);
+}
+
+.sum-piece:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--mbalo-shadow-md);
+}
+
+.sum-piece.selected {
+  border-color: var(--mbalo-orange);
+  background-color: var(--mbalo-orange-light);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 0 var(--mbalo-orange-dark);
+}
+
+.sum-piece.used {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-check-sum {
+  margin-top: var(--space-xl);
+  width: 100%;
+}
+
+/* ─── Feedback States ─── */
+.option-btn.correct, .pattern-cell.correct, .sum-slot.correct {
+  background-color: var(--mbalo-green-light) !important;
+  border-color: var(--mbalo-green) !important;
+  color: var(--mbalo-green) !important;
+  box-shadow: 0 4px 0 var(--mbalo-green-dark) !important;
+}
+
+.option-btn.incorrect, .pattern-cell.incorrect, .sum-slot.incorrect {
+  background-color: var(--mbalo-red-light) !important;
+  border-color: var(--mbalo-red) !important;
+  color: var(--mbalo-red) !important;
+  box-shadow: 0 4px 0 var(--mbalo-red-dark) !important;
+}

@@ -1,0 +1,226 @@
+/* =============================================
+   Long Division Question — Visual Math Layout
+   ============================================= */
+
+.division-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+/* The classic long division bracket */
+.division-bracket {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+.division-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.division-divisor {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--mbalo-text);
+  line-height: 1;
+  padding: 8px 20px;
+}
+
+.division-bar {
+  width: 100%;
+  height: 5px;
+  background: var(--mbalo-text);
+  border-radius: 3px;
+}
+
+.division-dividend {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--mbalo-text);
+  line-height: 1;
+  padding: 8px 20px;
+}
+
+.division-symbol {
+  display: flex;
+  align-items: stretch;
+  margin-right: 4px;
+}
+
+.division-bracket-arm {
+  width: 5px;
+  background: var(--mbalo-text);
+  border-radius: 3px;
+  min-height: 100%;
+}
+
+/* Drop zone — where kids put the answer */
+.division-drop-zone {
+  width: 80px;
+  height: 80px;
+  border: 4px dashed var(--mbalo-border);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: var(--mbalo-surface);
+  flex-shrink: 0;
+}
+
+.division-drop-zone:hover,
+.division-drop-zone:focus {
+  border-color: var(--mbalo-orange);
+  background: var(--mbalo-orange-light);
+}
+
+.division-drop-zone.has-answer {
+  border-style: solid;
+  border-color: var(--mbalo-teal);
+  background: var(--mbalo-teal-light);
+}
+
+.division-drop-zone.is-correct {
+  border-color: var(--mbalo-green);
+  background: var(--mbalo-green-light, #e8f5e9);
+}
+
+.division-drop-zone.is-incorrect {
+  border-color: var(--mbalo-red, #e74c3c);
+  background: var(--mbalo-red-light, #fdecea);
+}
+
+.drop-placeholder {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--mbalo-border);
+  user-select: none;
+}
+
+.dropped-value {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--mbalo-teal-dark, var(--mbalo-teal));
+  cursor: pointer;
+}
+
+/* Equation readout */
+.division-equals {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--mbalo-text-muted);
+  background: var(--mbalo-sand);
+  padding: 12px 24px;
+  border-radius: var(--radius-xl);
+  border: 3px solid var(--mbalo-border);
+}
+
+.equals-answer {
+  color: var(--mbalo-orange);
+  font-size: 1.6rem;
+}
+
+/* Draggable answer chips */
+.division-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.division-option-chip {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-xl);
+  border: 4px solid var(--mbalo-border);
+  border-bottom-width: 8px;
+  background: var(--mbalo-surface);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--mbalo-text);
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-family: inherit;
+  user-select: none;
+  box-shadow: var(--mbalo-shadow-md);
+}
+
+.division-option-chip:hover:not(:disabled) {
+  transform: translateY(-3px);
+  border-color: var(--mbalo-orange);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.division-option-chip:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 4px;
+  box-shadow: none;
+  cursor: grabbing;
+}
+
+.division-option-chip.is-selected {
+  border-color: var(--mbalo-orange);
+  background: var(--mbalo-orange-light);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px rgba(230, 126, 34, 0.2);
+}
+
+.division-option-chip.is-used {
+  opacity: 0.35;
+  pointer-events: none;
+  transform: scale(0.9);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .division-divisor,
+  .division-dividend {
+    font-size: 2rem;
+    padding: 6px 14px;
+  }
+
+  .division-drop-zone {
+    width: 64px;
+    height: 64px;
+    margin-right: 12px;
+  }
+
+  .drop-placeholder {
+    font-size: 1.6rem;
+  }
+
+  .dropped-value {
+    font-size: 1.8rem;
+  }
+
+  .division-option-chip {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .division-equals {
+    font-size: 1.1rem;
+    padding: 10px 16px;
+  }
+
+  .equals-answer {
+    font-size: 1.3rem;
+  }
+}

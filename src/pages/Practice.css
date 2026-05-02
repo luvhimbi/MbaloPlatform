@@ -1,0 +1,245 @@
+/* ==========================================
+   Practice Hub Styles
+   ========================================== */
+
+.practice-hub-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  animation: practiceFadeIn 0.3s ease-out;
+}
+
+@keyframes practiceFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hub-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.hub-title-group h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: var(--mbalo-brown);
+}
+
+.hub-title-group p {
+  margin: 4px 0 0 0;
+  font-size: 1.1rem;
+}
+
+/* Section Layout */
+.hub-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.hub-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--mbalo-text-muted);
+}
+
+/* Cards */
+.hub-card {
+  background: var(--mbalo-surface);
+  border-radius: var(--radius-2xl);
+  border: 3px solid var(--mbalo-border);
+  box-shadow: 0 6px 0 var(--mbalo-border);
+  transition: all 0.2s var(--transition-bounce);
+  overflow: hidden;
+}
+
+.practice-personalized-card {
+  padding: var(--space-lg);
+  max-width: 500px;
+}
+
+.practice-personalized-card.empty {
+  opacity: 0.7;
+  background: var(--mbalo-sand);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.card-mascot {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.card-text h3 {
+  font-size: 1.25rem;
+  margin: 0 0 4px 0;
+}
+
+.card-text p {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-sm);
+  color: var(--mbalo-text-muted);
+}
+
+/* Tools Grid */
+.hub-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.tool-card {
+  padding: var(--space-xl);
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  cursor: pointer;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--mbalo-teal);
+}
+
+.tool-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.tool-icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.bg-orange { background-color: var(--mbalo-orange); box-shadow: 0 4px 0 var(--mbalo-orange-dark); }
+.bg-blue { background-color: var(--mbalo-blue); box-shadow: 0 4px 0 var(--mbalo-blue-dark); }
+.bg-green { background-color: var(--mbalo-teal); box-shadow: 0 4px 0 #20401C; }
+
+.tool-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+}
+
+.tool-info p {
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+.tool-action {
+  font-weight: 800;
+  color: var(--mbalo-teal);
+  font-size: 0.85rem;
+}
+
+.practice-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--mbalo-orange);
+  color: white;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+  align-self: center;
+}
+
+/* ========================
+   TABLET (max 900px)
+   ======================== */
+@media (max-width: 900px) {
+  .hub-tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================
+   MOBILE (max 600px)
+   ======================== */
+@media (max-width: 600px) {
+  .hub-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+  }
+
+  .hub-title-group h1 {
+    font-size: 1.6rem;
+  }
+
+  .hub-title-group p {
+    font-size: 0.95rem;
+  }
+
+  .hub-grid {
+    gap: var(--space-xl);
+  }
+
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+
+  .card-mascot {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .tool-card {
+    padding: var(--space-lg);
+  }
+
+  .tool-icon-circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .tool-info h3 {
+    font-size: 1.05rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .practice-personalized-card {
+    padding: var(--space-lg);
+  }
+}

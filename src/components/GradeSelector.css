@@ -1,0 +1,249 @@
+/* =====================================================
+   GRADE SELECTOR — Bottom Sheet Modal
+   ===================================================== */
+
+.grade-selector-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(93, 64, 55, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.grade-selector-sheet {
+  background: var(--mbalo-bg);
+  border: 4px solid var(--mbalo-border);
+  border-bottom: none;
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+  width: 100%;
+  max-width: 520px;
+  padding: var(--space-lg) var(--space-xl) var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  animation: slideUp 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.sheet-handle {
+  width: 48px;
+  height: 5px;
+  background: var(--mbalo-border);
+  border-radius: var(--radius-full);
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.sheet-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.sheet-mascot {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.sheet-header h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--mbalo-text);
+  margin: 0 0 4px 0;
+}
+
+.sheet-header p {
+  font-size: 0.95rem;
+  color: var(--mbalo-text-muted);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Grade Cards Grid */
+.grade-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.grade-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: var(--space-lg) var(--space-md);
+  background: var(--mbalo-sand);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 0 var(--mbalo-border);
+  position: relative;
+  font-family: var(--font-primary);
+}
+
+.grade-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--mbalo-teal);
+  box-shadow: 0 6px 0 var(--mbalo-teal-light);
+}
+
+.grade-card:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.grade-card.active {
+  background: var(--mbalo-teal);
+  border-color: var(--mbalo-teal);
+  box-shadow: 0 4px 0 var(--mbalo-teal-dark);
+  color: white;
+}
+
+.grade-icon {
+  color: var(--mbalo-teal);
+}
+
+.grade-card.active .grade-icon {
+  color: white;
+}
+
+.grade-number {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--mbalo-brown);
+}
+
+.grade-sublabel {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--mbalo-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.grade-card.active .grade-number,
+.grade-card.active .grade-sublabel {
+  color: white;
+}
+
+.current-badge {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background: var(--mbalo-orange);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Close / Keep Button */
+.sheet-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: 14px;
+  background: none;
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--mbalo-text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sheet-close-btn:hover {
+  background: var(--mbalo-sand);
+  border-color: var(--mbalo-text-muted);
+}
+
+/* Desktop — center the sheet */
+@media (min-width: 769px) {
+  .grade-selector-overlay {
+    align-items: center;
+  }
+
+  .grade-selector-sheet {
+    border-radius: var(--radius-2xl);
+    border-bottom: 4px solid var(--mbalo-border);
+    max-height: 70vh;
+  }
+
+  .sheet-handle {
+    display: none;
+  }
+}
+
+/* Mobile Refinements */
+@media (max-width: 520px) {
+  .grade-selector-sheet {
+    padding: var(--space-lg) var(--space-lg) var(--space-xl);
+    gap: var(--space-lg);
+  }
+
+  .grade-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .grade-card {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .grade-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .sheet-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .sheet-mascot {
+    width: 52px;
+    height: 52px;
+  }
+
+  /* Make last card span 2 columns if it's the only one on its row */
+  .grade-card:last-child:nth-child(odd) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 360px) {
+  .grade-cards-grid {
+    gap: 8px;
+  }
+  
+  .grade-card {
+    padding: var(--space-sm);
+  }
+
+  .grade-number {
+    font-size: 0.9rem;
+  }
+}

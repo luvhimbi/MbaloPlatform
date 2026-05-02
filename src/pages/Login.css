@@ -1,0 +1,339 @@
+/* =====================================================
+   MBALO LOGIN PAGE STYLES (INTEGRATED DESIGN)
+   ===================================================== */
+
+.login-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mbalo-bg);
+  /* Removed gradients as per design system */
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+/* ─── Center Wrapper ─── */
+.login-center-wrapper {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.8s var(--transition-smooth);
+}
+
+/* ─── Mascot Section ─── */
+.login-mascot-guide {
+  max-width: 420px;
+  margin: 0 auto var(--space-xl);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.login-mascot-guide .speech-bubble {
+  margin-bottom: 35px;
+  margin-right: -15px;
+  font-size: 1.1rem;
+  max-width: 280px;
+  position: relative;
+  z-index: 1;
+}
+
+.login-mascot-guide .mascot-guide-img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Header ─── */
+.login-form-header {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.login-form-header h1 {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: var(--mbalo-text);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.login-form-header p {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  color: var(--mbalo-text-muted);
+}
+
+.login-mission-row {
+  margin-top: var(--space-md);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ─── Login Form Area (Integrated, Not a card) ─── */
+.login-form-area {
+  padding: var(--space-md) 0;
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+/* ─── Form Elements ─── */
+.form-group-game {
+  margin-bottom: var(--space-lg);
+}
+
+.form-label-game {
+  display: block;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--mbalo-text);
+  margin-bottom: 6px;
+}
+
+.form-input-game {
+  width: 100%;
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  padding: 14px 18px;
+  background-color: var(--mbalo-bg);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-lg);
+  color: var(--mbalo-text);
+  outline: none;
+  transition: all 0.3s var(--transition-smooth);
+  box-shadow: var(--mbalo-shadow-md);
+}
+
+.form-input-game:focus {
+  border-color: var(--mbalo-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--mbalo-teal-light);
+}
+
+.form-input-game.error {
+  border-color: var(--mbalo-red);
+  box-shadow: 0 4px 0 var(--mbalo-red-light);
+}
+
+.form-error-msg {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--mbalo-red);
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Password Toggle */
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.password-toggle:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Form Helpers */
+.form-helpers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+.remember-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.remember-check input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--mbalo-teal);
+}
+
+.remember-check span {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--mbalo-text-muted);
+}
+
+.forgot-link {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--mbalo-teal);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.forgot-link:hover {
+  border-bottom-color: var(--mbalo-teal);
+}
+
+/* Divider */
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: var(--space-xl) 0;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 3px;
+  background-color: var(--mbalo-border);
+  border-radius: 2px;
+}
+
+.login-divider span {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--mbalo-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Google Button */
+.btn-google {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 14px;
+  background-color: var(--mbalo-bg);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-lg);
+  color: var(--mbalo-text);
+  cursor: pointer;
+  transition: all 0.3s var(--transition-smooth);
+  box-shadow: var(--mbalo-shadow-md);
+}
+
+.btn-google:hover {
+  background-color: var(--mbalo-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--mbalo-shadow-lg);
+}
+
+.google-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Signup Prompt */
+.signup-prompt {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.signup-prompt p {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--mbalo-text-muted);
+}
+
+.signup-prompt a {
+  font-weight: 800;
+  color: var(--mbalo-teal);
+  text-decoration: none;
+  position: relative;
+}
+
+.signup-prompt a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--mbalo-teal);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.signup-prompt a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Trust Badges */
+.login-trust-badges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: var(--space-sm);
+}
+
+.login-support-note {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--mbalo-text-light);
+}
+
+
+/* Responsive */
+@media (max-width: 576px) {
+  .login-main {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .login-form-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .login-form-area {
+    padding: var(--space-lg) 0;
+  }
+}

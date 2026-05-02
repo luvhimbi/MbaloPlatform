@@ -1,0 +1,24 @@
+﻿{
+    "chapters":  [
+                     {
+                         "modules":  [
+                                         {
+                                             "id":  "g6m1",
+                                             "learningGoal":  "Explore Grade 6 curriculum.",
+                                             "lessons":  [
+
+                                                         ],
+                                             "description":  "Advanced math missions coming soon.",
+                                             "icon":  "star",
+                                             "status":  "available",
+                                             "difficulty":  "Advanced",
+                                             "title":  "Welcome to Grade 6",
+                                             "unit":  1
+                                         }
+                                     ],
+                         "title":  "Grade 6 Math Adventure",
+                         "id":  "g6c1"
+                     }
+                 ],
+    "grade":  6
+}

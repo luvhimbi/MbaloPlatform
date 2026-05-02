@@ -1,0 +1,800 @@
+/* =====================================================
+   MBALO DESIGN SYSTEM
+   Fredoka + Bootstrap + Gamified Kid-Friendly UI
+   ===================================================== */
+
+/* ─── Design Tokens ─── */
+:root {
+  /* Primary Palette — flat, no gradients */
+  /* Safari Palette — Wild Math Adventure */
+  --mbalo-green:       #2D5A27;
+  --mbalo-green-dark:  #1E3D1A;
+  --mbalo-green-light: #E8F5E9;
+  --mbalo-orange:      #E67E22;
+  --mbalo-orange-dark: #D35400;
+  --mbalo-orange-light:#FFF3E0;
+  --mbalo-yellow:      #F1C40F;
+  --mbalo-yellow-dark: #D4AC0D;
+  --mbalo-yellow-light:#FEF9E7;
+  --mbalo-blue:        #3498DB;
+  --mbalo-blue-dark:   #2980B9;
+  --mbalo-blue-light:  #EBF5FB;
+  --mbalo-sand:        #F9F4E8;
+  --mbalo-brown:       #5D4037;
+  --mbalo-brown-light: #8D6E63;
+  --mbalo-border:      #D7CCC8;
+  
+  /* Primary Action Alias */
+  --mbalo-teal:        #2D5A27; /* Green is primary in Safari */
+  --mbalo-teal-dark:   #1E3D1A;
+  --mbalo-teal-light:  #E8F5E9;
+  --mbalo-red:         #E74C3C;
+  --mbalo-red-dark:    #C0392B;
+  --mbalo-red-light:   #FDEDEC;
+  --mbalo-pink:        #EC4899;
+  --mbalo-pink-light:  #FCE7F3;
+
+  /* Neutrals */
+  --mbalo-white:       #FFFFFF; /* Absolute white for text/icons on dark bg */
+  --mbalo-bg:          #F9F4E8; /* Main page background */
+  --mbalo-surface:     #FFFFFF; /* Flipping surface for cards/sections */
+  --mbalo-text:        #5D4037;
+  --mbalo-text-muted:  #8D6E63;
+  --mbalo-text-light:  #BCAAA4;
+  --mbalo-border:      #D7CCC8;
+  --mbalo-surface-soft:#FDF6E3; /* Flipping soft surface */
+  --mbalo-focus:       #E67E22;
+
+  /* Shadows — Earthy tactile feel */
+  --mbalo-shadow-sm:   0 2px 0 rgba(93, 64, 55, 0.1);
+  --mbalo-shadow-md:   0 4px 0 rgba(93, 64, 55, 0.15);
+  --mbalo-shadow-lg:   0 6px 0 rgba(93, 64, 55, 0.2);
+  --mbalo-shadow-btn:  0 4px 0 var(--mbalo-green-dark);
+  --mbalo-shadow-card: 0 4px 0 var(--mbalo-border);
+
+  /* Typography */
+  --font-primary: 'Fredoka', sans-serif;
+
+  /* Border Radius — bubbly/rounded */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-pill:  50px;
+  --radius-full:  50%;
+
+  /* Spacing scale */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Transitions */
+  --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Dark Mode Overrides ─── */
+body.dark-mode {
+  --mbalo-bg:          #2D1B15; /* Deep Safari Brown */
+  --mbalo-surface:     #3D2B25; /* Dark brown surface */
+  --mbalo-text:        #F9F4E8;
+  --mbalo-text-muted:  #D7CCC8;
+  --mbalo-text-light:  #A1887F;
+  --mbalo-border:      #4D3B35;
+  --mbalo-surface-soft:#3D2B25;
+  --mbalo-sand:        #3D2B25;
+  --mbalo-white:       #FFFFFF; /* Keep as absolute white for dark mode text */
+  
+  /* Overriding light variants for dark mode */
+  --mbalo-green-light: #2D3A27;
+  --mbalo-orange-light:#4D3525;
+  --mbalo-yellow-light:#4D4525;
+  --mbalo-blue-light:  #25354D;
+  --mbalo-teal-light:  #2D3A27;
+  --mbalo-red-light:   #4D2525;
+  --mbalo-pink-light:  #4D253D;
+  
+  /* Shadows */
+  --mbalo-shadow-sm:   0 2px 0 rgba(0, 0, 0, 0.3);
+  --mbalo-shadow-md:   0 4px 0 rgba(0, 0, 0, 0.4);
+  --mbalo-shadow-lg:   0 6px 0 rgba(0, 0, 0, 0.5);
+  --mbalo-shadow-card: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .card-game {
+  background: var(--mbalo-surface);
+  border-color: var(--mbalo-border);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
+  color: var(--mbalo-text);
+}
+
+body.dark-mode .btn-game-outline {
+  background-color: var(--mbalo-surface);
+  color: var(--mbalo-text);
+  border-color: var(--mbalo-border);
+}
+
+body.dark-mode .speech-bubble {
+  background-color: var(--mbalo-surface);
+  color: var(--mbalo-text);
+  border-color: var(--mbalo-border);
+}
+
+body.dark-mode .speech-bubble::after {
+  background-color: var(--mbalo-surface);
+  border-right-color: var(--mbalo-border);
+  border-bottom-color: var(--mbalo-border);
+}
+
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select {
+  background-color: #2D1B15;
+  color: var(--mbalo-text);
+  border-color: var(--mbalo-border);
+}
+
+body.dark-mode .mbalo-swal-popup {
+  background-color: #2D1B15 !important;
+  border-color: #4D3B35 !important;
+}
+
+body.dark-mode .mbalo-swal-title {
+  color: var(--mbalo-text) !important;
+}
+
+body.dark-mode .swal2-html-container {
+  color: var(--mbalo-text-muted) !important;
+}
+
+/* ─── Global Reset & Base ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--mbalo-text);
+  background-color: var(--mbalo-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--mbalo-focus);
+  outline-offset: 3px;
+}
+
+/* ─── Typography System ─── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--mbalo-text);
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 { font-size: 3.2rem; font-weight: 700; }
+h2 { font-size: 2.4rem; font-weight: 600; }
+h3 { font-size: 1.8rem; font-weight: 600; }
+h4 { font-size: 1.4rem; font-weight: 500; }
+h5 { font-size: 1.1rem; font-weight: 500; }
+
+p {
+  margin-top: 0;
+  color: var(--mbalo-text-muted);
+  font-size: 1.05rem;
+}
+
+.text-fun {
+  color: var(--mbalo-teal);
+}
+
+.text-energy {
+  color: var(--mbalo-orange);
+}
+
+.text-star {
+  color: var(--mbalo-yellow-dark);
+}
+
+.text-magic {
+  color: var(--mbalo-purple);
+}
+
+/* ─── Gamified Button System ─── */
+.btn-game {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 14px 36px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  transition: transform 0.15s var(--transition-bounce),
+              box-shadow 0.15s var(--transition-smooth);
+  position: relative;
+  text-decoration: none;
+}
+
+.btn-game:hover {
+  transform: translateY(-2px);
+}
+
+.btn-game:active {
+  transform: translateY(2px);
+  box-shadow: none !important;
+}
+
+.btn-game:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+  transform: none;
+}
+
+/* Primary — teal */
+.btn-game-primary {
+  background-color: var(--mbalo-teal);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 0 var(--mbalo-teal-dark);
+}
+
+.btn-game-primary:hover {
+  background-color: var(--mbalo-teal);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 0 var(--mbalo-teal-dark);
+}
+
+.btn-game-secondary, .btn-game-orange {
+  background-color: var(--mbalo-orange);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 0 var(--mbalo-orange-dark);
+}
+
+.btn-game-secondary:hover, .btn-game-orange:hover {
+  background-color: var(--mbalo-orange);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 0 var(--mbalo-orange-dark);
+}
+
+.btn-game-teal {
+  background-color: var(--mbalo-teal);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 0 var(--mbalo-teal-dark);
+}
+
+/* Outline — white card style */
+.btn-game-outline {
+  background-color: var(--mbalo-surface);
+  color: var(--mbalo-teal);
+  border: 3px solid var(--mbalo-teal);
+  box-shadow: 0 4px 0 var(--mbalo-border);
+}
+
+.btn-game-outline:hover {
+  color: var(--mbalo-teal);
+  box-shadow: 0 6px 0 var(--mbalo-border);
+}
+
+/* Star/reward button — yellow */
+.btn-game-star {
+  background-color: var(--mbalo-yellow);
+  color: #5D4037 !important; /* Always dark brown on yellow */
+  box-shadow: 0 4px 0 var(--mbalo-yellow-dark);
+}
+
+.btn-game-star:hover {
+  color: #5D4037 !important;
+  box-shadow: 0 6px 0 var(--mbalo-yellow-dark);
+}
+
+/* ─── Card System — Gamified ─── */
+.card-game {
+  background: transparent;
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--mbalo-border);
+  box-shadow: var(--mbalo-shadow-card);
+  padding: var(--space-xl);
+  transition: transform 0.2s var(--transition-bounce),
+              box-shadow 0.2s var(--transition-smooth),
+              border-color 0.2s var(--transition-smooth);
+}
+
+.card-game-white {
+  background: transparent;
+}
+
+.card-game:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 0 var(--mbalo-border);
+}
+
+.card-game-teal {
+  border-color: var(--mbalo-teal-light);
+}
+.card-game-teal:hover {
+  border-color: var(--mbalo-teal);
+}
+
+.card-game-orange {
+  border-color: var(--mbalo-orange-light);
+}
+.card-game-orange:hover {
+  border-color: var(--mbalo-orange);
+}
+
+.card-game-blue {
+  border-color: var(--mbalo-blue-light);
+}
+.card-game-blue:hover {
+  border-color: var(--mbalo-blue);
+}
+
+.card-game-yellow {
+  border-color: var(--mbalo-yellow-light);
+}
+.card-game-yellow:hover {
+  border-color: var(--mbalo-yellow);
+}
+
+.card-game-pink {
+  border-color: var(--mbalo-pink-light);
+}
+.card-game-pink:hover {
+  border-color: var(--mbalo-pink);
+}
+
+/* ─── Badge / Pill System ─── */
+.badge-game {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-teal {
+  background-color: var(--mbalo-teal-light);
+  color: var(--mbalo-teal-dark);
+}
+
+.badge-orange {
+  background-color: var(--mbalo-orange-light);
+  color: var(--mbalo-orange-dark);
+}
+
+.badge-blue {
+  background-color: var(--mbalo-blue-light);
+  color: var(--mbalo-blue-dark);
+}
+
+.badge-yellow {
+  background-color: var(--mbalo-yellow-light);
+  color: var(--mbalo-yellow-dark);
+}
+
+.badge-green {
+  background-color: var(--mbalo-green-light);
+  color: #2DA841;
+}
+
+.badge-pink {
+  background-color: var(--mbalo-pink-light);
+  color: var(--mbalo-pink);
+}
+
+/* ─── XP / Progress Bar ─── */
+.xp-bar-track {
+  background-color: var(--mbalo-border);
+  border-radius: var(--radius-pill);
+  height: 14px;
+  overflow: hidden;
+  border: 2px solid var(--mbalo-white);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.xp-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background-color: var(--mbalo-teal);
+  transition: width 0.6s var(--transition-bounce);
+}
+
+.xp-bar-fill-orange {
+  background-color: var(--mbalo-orange);
+}
+
+.xp-bar-fill-purple {
+  background-color: var(--mbalo-purple);
+}
+
+/* ─── Star Rating ─── */
+.star-rating {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.star {
+  font-size: 1.4rem;
+  color: var(--mbalo-border);
+  transition: transform 0.2s var(--transition-bounce);
+}
+
+.star.filled {
+  color: var(--mbalo-yellow);
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+/* ─── Icon Circle ─── */
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.icon-circle-teal {
+  background-color: var(--mbalo-teal-light);
+  color: var(--mbalo-teal);
+}
+
+.icon-circle-orange {
+  background-color: var(--mbalo-orange-light);
+  color: var(--mbalo-orange);
+}
+
+.icon-circle-purple {
+  background-color: var(--mbalo-purple-light);
+  color: var(--mbalo-purple);
+}
+
+.icon-circle-yellow {
+  background-color: var(--mbalo-yellow-light);
+  color: var(--mbalo-yellow-dark);
+}
+
+.icon-circle-pink {
+  background-color: var(--mbalo-pink-light);
+  color: var(--mbalo-pink);
+}
+
+.icon-circle-green {
+  background-color: var(--mbalo-green-light);
+  color: var(--mbalo-green);
+}
+
+/* ─── Floating Emoji Decorations ─── */
+.float-emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatBounce 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes floatBounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(5deg); }
+}
+
+/* ─── Wobble Animation ─── */
+.wobble-hover:hover {
+  animation: wobble 0.6s ease-in-out;
+}
+
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(-5deg); }
+  30% { transform: rotate(4deg); }
+  45% { transform: rotate(-3deg); }
+  60% { transform: rotate(2deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ─── Pulse Animation ─── */
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ─── Pop-in Animation ─── */
+.pop-in {
+  animation: popIn 0.5s var(--transition-bounce) forwards;
+  opacity: 0;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ─── Bounce-in from bottom ─── */
+.bounce-in-up {
+  animation: bounceInUp 0.6s var(--transition-bounce) forwards;
+  opacity: 0;
+}
+
+@keyframes bounceInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Section spacing ─── */
+.section-spacing {
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
+}
+
+.section-spacing-sm {
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+}
+
+.quest-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--mbalo-border);
+  background-color: var(--mbalo-surface-soft);
+  color: var(--mbalo-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.safe-note {
+  background-color: var(--mbalo-green-light);
+  border: 2px solid var(--mbalo-green);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #286f36;
+}
+
+/* ─── Divider ─── */
+.divider-fun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin: var(--space-2xl) 0;
+}
+
+.divider-fun::before,
+.divider-fun::after {
+  content: '';
+  height: 3px;
+  flex: 1;
+  background-color: var(--mbalo-border);
+  border-radius: 3px;
+}
+
+/* ─── Responsive helpers ─── */
+@media (max-width: 768px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+
+  .section-spacing {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .btn-game {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Policy Pages ─── */
+.policy-page-container {
+  background-color: var(--mbalo-surface);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-content {
+  line-height: 1.8;
+  color: var(--mbalo-text);
+}
+
+.policy-content h3 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+  color: var(--mbalo-teal);
+  font-weight: 700;
+}
+
+.policy-content ul {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.policy-content li {
+  margin-bottom: var(--space-sm);
+}
+
+/* ─── Mascot Guide (Global) ─── */
+.mascot-guide-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+  position: relative;
+  padding-right: 15px;
+}
+
+.logo-img, .mascot-img-large, .mascot-celebration, .cta-mascot, .mascot-guide-img {
+  animation: mascot-float 3s ease-in-out infinite;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo-img:hover, .mascot-img-large:hover, .mascot-celebration:hover, .cta-mascot:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes mascot-float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatBounce {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.speech-bubble {
+  background-color: var(--mbalo-surface);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-lg);
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--mbalo-text);
+  box-shadow: var(--mbalo-shadow-md);
+  margin-right: -12px;
+  margin-bottom: 28px;
+  position: relative;
+  max-width: 220px;
+  line-height: 1.4;
+  animation: popIn 0.5s var(--transition-bounce) forwards;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--mbalo-surface);
+  border-right: 3px solid var(--mbalo-border);
+  border-bottom: 3px solid var(--mbalo-border);
+  transform: rotate(45deg);
+}
+
+@keyframes floatBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8) translateY(10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+/* ─── SweetAlert2 Custom Styling ─── */
+.mbalo-swal-popup {
+  background-color: var(--mbalo-bg) !important;
+  border-radius: var(--radius-xl) !important;
+  font-family: var(--font-primary) !important;
+  border: 4px solid var(--mbalo-border) !important;
+  padding: var(--space-xl) !important;
+}
+
+.mbalo-swal-title {
+  color: var(--mbalo-teal) !important;
+  font-family: var(--font-primary) !important;
+  font-weight: 800 !important;
+  font-size: 1.8rem !important;
+}
+
+.swal2-html-container {
+  font-family: var(--font-primary) !important;
+  color: var(--mbalo-text) !important;
+  font-weight: 500 !important;
+}
+
+.swal2-actions {
+  gap: var(--space-md) !important;
+}
+
+.swal2-styled {
+  border-radius: var(--radius-pill) !important;
+  font-family: var(--font-primary) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  padding: 14px 28px !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  color: white !important;
+}
+
+.swal2-styled:active {
+  transform: translateY(2px) !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: var(--mbalo-teal) !important;
+  box-shadow: 0 4px 0 var(--mbalo-teal-dark) !important;
+}
+
+.swal2-styled.swal2-confirm:hover {
+  background-color: var(--mbalo-teal-dark) !important;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: var(--mbalo-red) !important;
+  box-shadow: 0 4px 0 var(--mbalo-red-dark) !important;
+}
+
+.swal2-styled.swal2-cancel:hover {
+  background-color: var(--mbalo-red-dark) !important;
+}

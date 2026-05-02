@@ -1,0 +1,147 @@
+{
+  "grade": 3,
+  "subject": "Mathematics",
+  "curriculum": "South African CAPS",
+  "chapters": [
+    {
+      "id": "g3c1",
+      "title": "Addition & Subtraction to 999",
+      "modules": [
+        {
+          "id": "g3t1",
+          "title": "Adding Three-Digit Numbers",
+          "description": "Learning to add numbers up to 999 using place value.",
+          "learningGoal": "Add three-digit numbers with and without carrying.",
+          "difficulty": "Beginner",
+          "unit": 1,
+          "icon": "hash",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "g3l1",
+              "title": "Big Number Addition",
+              "type": "quiz",
+              "questions": [
+                {
+                  "id": "g3q1",
+                  "question": "What is 123 + 456?",
+                  "options": ["569", "579", "589", "679"],
+                  "correctAnswer": "579",
+                  "type": "multiple-choice",
+                  "explanation": "Add each column: 3+6=9, 2+5=7, 1+4=5. The answer is 579!"
+                },
+                {
+                  "id": "g3q2",
+                  "question": "What number comes next? 200, 300, 400, __",
+                  "sequence": [200, 300, 400],
+                  "options": ["450", "500", "550", "600"],
+                  "correctAnswer": "500",
+                  "type": "sequence",
+                  "explanation": "We are counting by hundreds: 200, 300, 400, 500!"
+                },
+                {
+                  "id": "g3q3",
+                  "question": "Is 350 + 150 = 500?",
+                  "options": ["True", "False"],
+                  "correctAnswer": "True",
+                  "type": "true-false",
+                  "explanation": "Yes! 350 + 150 = 500. 3 hundreds + 1 hundred = 4... wait, 5+1=5 in tens, and 0+0=0 in units. 500!"
+                },
+                {
+                  "id": "g3q4",
+                  "question": "Match the addition to the answer!",
+                  "matchPairs": [
+                    { "left": "100 + 200", "right": "300" },
+                    { "left": "250 + 250", "right": "500" },
+                    { "left": "400 + 400", "right": "800" }
+                  ],
+                  "options": [],
+                  "correctAnswer": "",
+                  "type": "drag-match",
+                  "explanation": "100+200=300, 250+250=500, and 400+400=800!"
+                },
+                {
+                  "id": "g3q5",
+                  "question": "What is 210 + 340?",
+                  "options": ["450", "540", "550", "650"],
+                  "correctAnswer": "550",
+                  "type": "multiple-choice",
+                  "explanation": "Add each place: 0+0=0 units, 1+4=5 tens, 2+3=5 hundreds. 550!"
+                }
+              ],
+              "isCompleted": false,
+              "pointsValue": 100
+            }
+          ]
+        },
+        {
+          "id": "g3t2",
+          "title": "Subtraction Strategies",
+          "description": "Subtracting numbers using mental math strategies.",
+          "learningGoal": "Subtract three-digit numbers confidently.",
+          "difficulty": "Intermediate",
+          "unit": 2,
+          "icon": "minus",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "g3l2",
+              "title": "Take Away Time",
+              "type": "quiz",
+              "questions": [
+                {
+                  "id": "g3q6",
+                  "question": "What is 500 - 200?",
+                  "options": ["200", "300", "400", "250"],
+                  "correctAnswer": "300",
+                  "type": "multiple-choice",
+                  "explanation": "5 hundreds - 2 hundreds = 3 hundreds = 300!"
+                },
+                {
+                  "id": "g3q7",
+                  "question": "What number comes next? 900, 800, 700, __",
+                  "sequence": [900, 800, 700],
+                  "options": ["500", "600", "650", "550"],
+                  "correctAnswer": "600",
+                  "type": "sequence",
+                  "explanation": "We are counting down by hundreds: 900, 800, 700, 600!"
+                },
+                {
+                  "id": "g3q8",
+                  "question": "Is 750 - 250 = 400?",
+                  "options": ["True", "False"],
+                  "correctAnswer": "False",
+                  "type": "true-false",
+                  "explanation": "750 - 250 = 500, not 400. 7-2=5 hundreds, 5-5=0 tens, 0-0=0 units."
+                },
+                {
+                  "id": "g3q9",
+                  "question": "What is 468 - 123?",
+                  "options": ["335", "345", "355", "445"],
+                  "correctAnswer": "345",
+                  "type": "multiple-choice",
+                  "explanation": "Subtract each column: 8-3=5, 6-2=4, 4-1=3. The answer is 345!"
+                },
+                {
+                  "id": "g3q10",
+                  "question": "Match the subtraction to the answer!",
+                  "matchPairs": [
+                    { "left": "600 - 100", "right": "500" },
+                    { "left": "999 - 99", "right": "900" },
+                    { "left": "800 - 350", "right": "450" }
+                  ],
+                  "options": [],
+                  "correctAnswer": "",
+                  "type": "drag-match",
+                  "explanation": "600-100=500, 999-99=900, and 800-350=450!"
+                }
+              ],
+              "isCompleted": false,
+              "pointsValue": 100
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

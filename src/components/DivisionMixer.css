@@ -1,0 +1,270 @@
+.division-mixer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  font-family: 'Fredoka', sans-serif;
+  color: var(--mbalo-brown);
+}
+
+.mixer-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mixer-machine {
+  position: relative;
+  background: var(--mbalo-blue-light);
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 0 8px 0 #D4E6F1;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.number-selectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.number-box {
+  background: var(--mbalo-surface);
+  border: 4px solid var(--mbalo-blue);
+  border-radius: 20px;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 4px 0 rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  color: var(--mbalo-blue-dark);
+}
+
+.number-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--mbalo-blue-dark);
+}
+
+.divide-sign {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--mbalo-blue-dark);
+}
+
+.mixer-btn {
+  background: var(--mbalo-blue);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--mbalo-blue-dark);
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mixer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 var(--mbalo-blue-dark);
+}
+
+.mixer-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 var(--mbalo-blue-dark);
+}
+
+.visual-teach-area {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: var(--mbalo-surface);
+  border-radius: 20px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.05);
+}
+
+.animal-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.animal-item {
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.combine-area {
+  margin-top: 2rem;
+  border-top: 4px dashed var(--mbalo-blue-light);
+  padding-top: 2rem;
+}
+
+.total-sum {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--mbalo-blue-dark);
+  margin-top: 1rem;
+  animation: bounceIn 0.5s;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.guess-input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.division-guess-input {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 150px;
+  border: 4px solid var(--mbalo-blue-light);
+  border-radius: 20px;
+  padding: 1rem;
+  outline: none;
+  font-family: 'Fredoka', sans-serif;
+  color: var(--mbalo-blue-dark);
+  font-weight: 900;
+}
+
+.division-guess-input:focus {
+  border-color: var(--mbalo-blue);
+}
+
+.teach-step-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--mbalo-blue-dark);
+}
+
+.random-dice {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--mbalo-blue);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--mbalo-blue-dark);
+  transition: all 0.2s;
+  color: white;
+}
+
+.random-dice:hover {
+  transform: translateY(-2px);
+}
+
+.random-dice:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--mbalo-blue-dark);
+}
+
+.teach-safari-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.teach-safari-group {
+  background: var(--mbalo-blue-light);
+  border: 3px solid var(--mbalo-blue);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 100px;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.teach-group-animals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .mixer-machine {
+    padding: 2rem 1rem;
+  }
+
+  .number-selectors {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .number-box {
+    width: 70px;
+    height: 70px;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .divide-sign {
+    font-size: 2.5rem;
+  }
+
+  .division-guess-input {
+    width: 100px;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  .mixer-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .total-sum {
+    font-size: 3rem;
+  }
+
+  .random-dice {
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+  }
+}

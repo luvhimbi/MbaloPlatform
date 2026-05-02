@@ -1,0 +1,28 @@
+{
+  "name": "Mbalo — Math Adventure",
+  "short_name": "Mbalo",
+  "description": "The fun, gamified math adventure for primary school kids. Learn addition, subtraction, multiplication & division through exciting games!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1BB5A5",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

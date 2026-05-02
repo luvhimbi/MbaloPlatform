@@ -1,0 +1,24 @@
+﻿{
+    "chapters":  [
+                     {
+                         "modules":  [
+                                         {
+                                             "id":  "g5m1",
+                                             "learningGoal":  "Explore Grade 5 curriculum.",
+                                             "lessons":  [
+
+                                                         ],
+                                             "description":  "Advanced math missions coming soon.",
+                                             "icon":  "star",
+                                             "status":  "available",
+                                             "difficulty":  "Advanced",
+                                             "title":  "Welcome to Grade 5",
+                                             "unit":  1
+                                         }
+                                     ],
+                         "title":  "Grade 5 Math Adventure",
+                         "id":  "g5c1"
+                     }
+                 ],
+    "grade":  5
+}
