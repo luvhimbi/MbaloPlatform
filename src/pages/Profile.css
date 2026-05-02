@@ -362,6 +362,7 @@ body.dark-mode .btn-dark-pill {
 @media (max-width: 768px) {
   .profile-main {
     padding: var(--space-lg) var(--space-md);
+    padding-bottom: 100px;
   }
 
   .settings-container {

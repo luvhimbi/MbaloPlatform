@@ -109,6 +109,7 @@ function Dashboard() {
             </button>
 
             {/* TEMP UPLOAD BUTTON */}
+            {/* 
             <button 
               onClick={handleUploadCurriculum} 
               disabled={isUploading}
@@ -116,7 +117,8 @@ function Dashboard() {
               style={{ padding: '8px 16px', fontSize: '0.75rem' }}
             >
               {isUploading ? 'UPLOADING...' : 'UPLOAD DATA TO DB'}
-            </button>
+            </button> 
+            */}
           </div>
         </header>
 

@@ -589,7 +589,7 @@
 @media (max-width: 600px) {
   .quiz-container {
     padding: var(--space-md);
-    padding-bottom: var(--space-md);
+    padding-bottom: 120px; /* Extra space so feedback bar/bottom of screen doesn't cover the last option */
   }
 
   .quiz-header {

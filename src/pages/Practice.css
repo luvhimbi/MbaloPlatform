@@ -184,6 +184,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .practice-hub-container {
+    padding-bottom: 100px;
+  }
+}
+
 /* ========================
    MOBILE (max 600px)
    ======================== */

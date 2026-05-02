@@ -72,11 +72,32 @@ function Onboarding() {
     }
   ]
 
-  const handleNext = () => {
+  const handleNext = async () => {
     setError(null)
+    const currentType = steps[step].type;
+
     // Validate inputs before moving to next step
-    if (steps[step].type === 'input_name' && !name.trim()) return;
-    if (steps[step].type === 'input_email' && !email.trim()) return;
+    if (currentType === 'input_name' && !name.trim()) return;
+    
+    if (currentType === 'input_email') {
+      if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setError('Please enter a valid email address.')
+        return;
+      }
+      
+      setIsRegistering(true);
+      try {
+        const exists = await authService.checkEmailExists(email);
+        if (exists) {
+          setError('This email is already registered. Please log in instead.');
+          setIsRegistering(false);
+          return;
+        }
+      } catch (err) {
+        console.error("Email check failed", err);
+      }
+      setIsRegistering(false);
+    }
     
     if (step < steps.length - 1) {
       setStep(step + 1)

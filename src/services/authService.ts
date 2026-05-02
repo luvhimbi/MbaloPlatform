@@ -78,18 +78,22 @@ class AuthService {
       const provider = new GoogleAuthProvider();
       const userCredential = await signInWithPopup(auth, provider);
       const firebaseUser = userCredential.user;
+      
+      const { getAdditionalUserInfo, deleteUser } = await import('firebase/auth');
+      const additionalInfo = getAdditionalUserInfo(userCredential);
+      
+      if (additionalInfo?.isNewUser) {
+        // Delete the newly created auth user because they must sign up via Onboarding
+        await deleteUser(firebaseUser);
+        await signOut(auth);
+        throw new Error('auth/user-not-found');
+      }
+
       let profile = await this.getUserProfile(firebaseUser.uid);
       
       if (!profile) {
-        profile = {
-          uid: firebaseUser.uid,
-          email: firebaseUser.email || '',
-          displayName: firebaseUser.displayName || 'Hero Learner',
-          grade: 1,
-          joinedAt: new Date().toISOString(),
-          stats: DEFAULT_STATS
-        };
-        await setDoc(doc(db, 'users', firebaseUser.uid), profile);
+        await signOut(auth);
+        throw new Error('auth/user-not-found');
       }
       return profile;
     } catch (error) {
@@ -104,6 +108,17 @@ class AuthService {
     } catch (error) {
       console.error("Password reset error:", error);
       throw error;
+    }
+  }
+
+  async checkEmailExists(email: string): Promise<boolean> {
+    try {
+      const { fetchSignInMethodsForEmail } = await import('firebase/auth');
+      const methods = await fetchSignInMethodsForEmail(auth, email);
+      return methods.length > 0;
+    } catch (error) {
+      console.error("Error checking email:", error);
+      return false; // Proceed if enumeration protection is active
     }
   }
 

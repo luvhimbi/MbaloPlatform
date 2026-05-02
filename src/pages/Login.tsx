@@ -194,8 +194,12 @@ function Login() {
                 setIsLoading(true)
                 try {
                   await authService.loginWithGoogle()
-                } catch (error) {
-                  setErrors({ general: 'Google sign-in failed. Please try again.' })
+                } catch (error: any) {
+                  if (error.message === 'auth/user-not-found') {
+                    setErrors({ general: 'You don\'t have an account yet. Please sign up first.' })
+                  } else {
+                    setErrors({ general: 'Google sign-in failed. Please try again.' })
+                  }
                 } finally {
                   setIsLoading(false)
                 }

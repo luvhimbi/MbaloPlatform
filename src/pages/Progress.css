@@ -317,6 +317,7 @@ body.dark-mode .alert-text h3 {
 @media (max-width: 768px) {
   .progress-main {
     padding: var(--space-md);
+    padding-bottom: 100px;
   }
 
   .progress-header h1 {
@@ -458,6 +459,7 @@ body.dark-mode .alert-text h3 {
 @media (max-width: 400px) {
   .progress-main {
     padding: 8px;
+    padding-bottom: 100px;
   }
 
   .stats-overview-grid {
