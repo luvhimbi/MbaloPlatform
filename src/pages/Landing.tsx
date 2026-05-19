@@ -25,7 +25,7 @@ function Landing() {
               </h1>
 
               <p className="hero-subtitle">
-                Mbalo turns the CAPS curriculum into a fun, dog-themed adventure. Join Tsumbo Masutha's vision of making every child a math hero!
+                Mbalo turns the CAPS curriculum into a fun, dog-themed adventure. Join Talifhani Luvhimbi's vision of making every child a math hero!
               </p>
 
               <div className="d-flex gap-3 flex-wrap btn-group-hero justify-content-center justify-content-lg-start">
@@ -282,7 +282,7 @@ function Landing() {
             <img src={mascotPlayful} alt="Playful Dog Mascot" className="cta-mascot" loading="lazy" />
             <h2 className="text-white">Ready for a <span className="text-fun" style={{ color: 'var(--mbalo-yellow)' }}>Math Adventure</span>?</h2>
             <p className="text-white" style={{ maxWidth: '520px', margin: '0 auto var(--space-xl)', opacity: 0.9 }}>
-              Join Tsumbo Masutha and thousands of students who are mastering math every day!
+              Join Talifhani Luvhimbi and thousands of students who are mastering math every day!
             </p>
 
             <div className="d-flex gap-3 justify-content-center flex-wrap">

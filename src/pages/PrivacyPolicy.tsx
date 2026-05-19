@@ -80,7 +80,7 @@ function PrivacyPolicy() {
 
                   <h3>6. Contact Us</h3>
                   <p>
-                    For any privacy-related inquiries, please contact Tsumbo Masutha's team at:
+                    For any privacy-related inquiries, please contact Talifhani Luvhimbi's team at:
                     <br />
                     <strong>Email:</strong> privacy@mbalo.com
                   </p>

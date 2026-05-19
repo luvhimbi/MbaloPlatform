@@ -49,7 +49,7 @@ function POPIAct() {
                     regarding any questions or concerns about how your data is handled.
                   </p>
                   <p>
-                    <strong>Information Officer:</strong> Tsumbo Masutha
+                    <strong>Information Officer:</strong> Talifhani Luvhimbi
                     <br />
                     <strong>Email:</strong> compliance@mbalo.com
                   </p>

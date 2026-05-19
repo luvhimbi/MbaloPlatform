@@ -24,7 +24,7 @@ function About() {
                   More than just numbers—Mbalo is a journey of discovery, growth, and fun, built specifically for the next generation of learners.
                 </p>
                 <div className="developer-badge">
-                  <span>Founder & Lead Developer: <strong>Tsumbo Masutha</strong></span>
+                  <span>Founder & Lead Developer: <strong>Talifhani Luvhimbi</strong></span>
                 </div>
               </div>
               <div className="col-lg-6 text-center">
@@ -40,12 +40,12 @@ function About() {
             <div className="row align-items-center flex-row-reverse">
               <div className="col-lg-6">
                 <div className="story-content">
-                  <h2 className="section-title">The Story of <span className="text-energy">Tsumbo Masutha</span></h2>
+                  <h2 className="section-title">The Story of <span className="text-energy">Talifhani Luvhimbi</span></h2>
                   <p>
-                    Tsumbo Masutha founded Mbalo with a single vision: to make math accessible and enjoyable for every child in South Africa and beyond. Growing up, Tsumbo realized that traditional education often missed the "spark" that keeps children engaged.
+                    Talifhani Luvhimbi founded Mbalo with a single vision: to make math accessible and enjoyable for every child in South Africa and beyond. Growing up, Talifhani realized that traditional education often missed the "spark" that keeps children engaged.
                   </p>
                   <p>
-                    With a background in software engineering and a passion for education, Tsumbo combined the mechanics of gamification with the rigor of the CAPS curriculum. The result is Mbalo—a platform that treats every math problem as a quest and every student as a hero.
+                    With a background in software engineering and a passion for education, Talifhani combined the mechanics of gamification with the rigor of the CAPS curriculum. The result is Mbalo—a platform that treats every math problem as a quest and every student as a hero.
                   </p>
                 </div>
               </div>

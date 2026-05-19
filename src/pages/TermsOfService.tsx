@@ -46,7 +46,7 @@ function TermsOfService() {
                   <h3>2. Intellectual Property</h3>
                   <p>
                     All content on Mbalo, including math lessons, graphics, mascot designs, and animations, 
-                    is the intellectual property of Mbalo and its founder, Tsumbo Masutha.
+                    is the intellectual property of Mbalo and its founder, Talifhani Luvhimbi.
                   </p>
                   <ul>
                     <li>You may not copy, modify, or distribute any part of the platform without our permission.</li>
