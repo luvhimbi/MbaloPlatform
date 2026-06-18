@@ -299,6 +299,43 @@ class AuthService {
       console.error("Error clearing struggle:", error);
     }
   }
+
+  // ─── Admin Methods ───
+
+  async getAllUsers(): Promise<UserProfile[]> {
+    try {
+      const { collection, getDocs } = await import('firebase/firestore');
+      const querySnapshot = await getDocs(collection(db, 'users'));
+      const users: UserProfile[] = [];
+      querySnapshot.forEach((docSnap) => {
+        users.push(docSnap.data() as UserProfile);
+      });
+      return users;
+    } catch (error) {
+      console.error("Error fetching all users:", error);
+      throw error;
+    }
+  }
+
+  async setUserRole(uid: string, role: 'learner' | 'admin'): Promise<void> {
+    try {
+      const userRef = doc(db, 'users', uid);
+      await setDoc(userRef, { role }, { merge: true });
+    } catch (error) {
+      console.error("Error setting user role:", error);
+      throw error;
+    }
+  }
+
+  async deleteUserProfile(uid: string): Promise<void> {
+    try {
+      await deleteDoc(doc(db, 'users', uid));
+    } catch (error) {
+      console.error("Error deleting user profile:", error);
+      throw error;
+    }
+  }
 }
 
 export const authService = new AuthService();
+

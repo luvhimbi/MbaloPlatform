@@ -7,6 +7,8 @@ export interface QuizQuestion {
   image?: string;
   explanation?: string;
   hint?: string;
+  lexemeIds?: string[]; // IDs of the mathematical concepts tested
+  difficulty?: number; // Intrinsic difficulty override (1.0 to 5.0)
   // Emoji counting
   emoji?: string;
   emojiCount?: number;

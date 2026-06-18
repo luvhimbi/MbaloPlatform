@@ -1,0 +1,211 @@
+/* =====================================================
+   ADMIN CURRICULUM PAGE STYLES
+   Mbalo Design System
+   ===================================================== */
+
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.admin-curriculum-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.admin-grade-card {
+  padding: 0 !important;
+  overflow: hidden;
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.admin-grade-card.expanded {
+  border-color: var(--mbalo-green);
+  box-shadow: 0 6px 0 var(--mbalo-border);
+}
+
+.admin-grade-header {
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--mbalo-surface);
+  transition: background-color 0.2s;
+}
+
+.admin-grade-header:hover {
+  background-color: var(--mbalo-surface-soft);
+}
+
+.admin-grade-card.expanded .admin-grade-header {
+  background-color: var(--mbalo-green-light);
+}
+
+.admin-grade-title-col {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.admin-grade-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--mbalo-blue);
+  color: var(--mbalo-white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 0 var(--mbalo-blue-dark);
+}
+
+.admin-grade-badge span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.admin-grade-badge strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.admin-status-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.admin-status-text.success {
+  color: var(--mbalo-green);
+}
+
+.admin-status-text.warning {
+  color: var(--mbalo-orange);
+}
+
+.admin-grade-stats-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.admin-grade-stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: var(--mbalo-surface-soft);
+  border: 2px solid var(--mbalo-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mbalo-text-muted);
+}
+
+.admin-grade-expand-icon {
+  color: var(--mbalo-text-light);
+  margin-left: var(--space-sm);
+  transition: transform 0.2s;
+}
+
+.admin-grade-card.expanded .admin-grade-expand-icon {
+  transform: rotate(180deg);
+  color: var(--mbalo-green);
+}
+
+/* Body */
+.admin-grade-body {
+  border-top: 2px solid var(--mbalo-border);
+  padding: var(--space-xl);
+  background-color: var(--mbalo-surface);
+}
+
+.admin-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.admin-detail-box {
+  background-color: var(--mbalo-surface-soft);
+  border: 2px solid var(--mbalo-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.admin-detail-val {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--mbalo-text);
+  line-height: 1.1;
+}
+
+.admin-detail-lbl {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--mbalo-text-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.admin-grade-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.admin-help-text {
+  font-size: 0.85rem;
+  color: var(--mbalo-text-muted);
+  margin: 0;
+}
+
+.admin-help-text code {
+  background-color: var(--mbalo-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-header-row {
+    flex-direction: column;
+  }
+  
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .admin-grade-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+  
+  .admin-grade-stats-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .admin-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

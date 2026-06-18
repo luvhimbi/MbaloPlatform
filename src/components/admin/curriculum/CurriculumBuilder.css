@@ -1,0 +1,303 @@
+/* =====================================================
+   CURRICULUM BUILDER STYLES
+   Mbalo Design System (Admin specific)
+   ===================================================== */
+
+.cb-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.cb-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.cb-grade-badge {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--mbalo-text);
+  background-color: var(--mbalo-surface);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--mbalo-border);
+}
+
+.cb-btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: var(--mbalo-surface);
+  border: 2px solid var(--mbalo-border);
+  border-radius: var(--radius-md);
+  color: var(--mbalo-text-muted);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cb-btn-outline:hover {
+  background-color: var(--mbalo-surface-soft);
+  color: var(--mbalo-text);
+}
+
+.cb-main-editor {
+  background-color: var(--mbalo-surface);
+  padding: var(--space-xl) !important;
+}
+
+/* ─── Shared Editor Elements ─── */
+.cb-drag-handle {
+  color: var(--mbalo-text-light);
+  cursor: grab;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.cb-meta {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--mbalo-text-light);
+  background: var(--mbalo-bg);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.cb-expand-icon {
+  color: var(--mbalo-text-light);
+  transition: transform 0.2s;
+}
+.cb-expand-icon.open {
+  transform: rotate(180deg);
+  color: var(--mbalo-green);
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: inline-flex;
+  transition: background-color 0.2s;
+}
+.btn-icon:hover {
+  background-color: var(--mbalo-bg);
+}
+.btn-icon.text-red { color: var(--mbalo-red); }
+
+/* ─── Forms ─── */
+.cb-form-row {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+.flex-1 { flex: 1; min-width: 150px; }
+.flex-2 { flex: 2; min-width: 250px; }
+
+.cb-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-md);
+}
+
+.cb-form-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--mbalo-text-muted);
+}
+
+.cb-input {
+  padding: 10px 14px;
+  border: 2px solid var(--mbalo-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  color: var(--mbalo-text);
+  background-color: var(--mbalo-white);
+  transition: border-color 0.2s;
+}
+.cb-input:focus {
+  outline: none;
+  border-color: var(--mbalo-green);
+}
+
+.cb-title-input {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* ─── Add Buttons ─── */
+.cb-btn-add, .cb-btn-add-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: transparent;
+  border: 2px dashed var(--mbalo-border);
+  color: var(--mbalo-text-muted);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.cb-btn-add {
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-sm);
+}
+.cb-btn-add-large {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 1.1rem;
+}
+.cb-btn-add:hover, .cb-btn-add-large:hover {
+  background-color: var(--mbalo-green-light);
+  border-color: var(--mbalo-green);
+  color: var(--mbalo-green);
+}
+
+/* ─── Chapter Card ─── */
+.cb-chapter-card {
+  border: 2px solid var(--mbalo-green);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  background: var(--mbalo-white);
+  overflow: hidden;
+}
+.cb-chapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--mbalo-green-light);
+  cursor: pointer;
+}
+.cb-chapter-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--mbalo-green-dark);
+}
+.cb-chapter-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.cb-chapter-body {
+  padding: var(--space-md);
+}
+
+/* ─── Module Card ─── */
+.cb-module-card {
+  border: 2px solid var(--mbalo-orange);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+  background: var(--mbalo-white);
+}
+.cb-module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--mbalo-orange-light);
+  cursor: pointer;
+}
+.cb-module-title {
+  font-weight: 700;
+  color: var(--mbalo-orange-dark);
+}
+.cb-module-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.cb-module-body {
+  padding: var(--space-md);
+  border-top: 1px solid var(--mbalo-orange-light);
+}
+
+/* ─── Lesson Card ─── */
+.cb-lesson-card {
+  border: 1px solid var(--mbalo-blue);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+  background: var(--mbalo-white);
+}
+.cb-lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px var(--space-md);
+  background: var(--mbalo-blue-light);
+  cursor: pointer;
+}
+.cb-lesson-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--mbalo-blue-dark);
+}
+.cb-lesson-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.cb-lesson-body {
+  padding: var(--space-md);
+  border-top: 1px solid var(--mbalo-blue-light);
+}
+
+/* ─── Question Editor ─── */
+.cb-question-editor {
+  background: var(--mbalo-bg);
+  border: 1px solid var(--mbalo-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+.cb-question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.cb-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cb-option-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cb-option-row .cb-input {
+  flex: 1;
+}
+.cb-btn-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: var(--mbalo-blue);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-top: 4px;
+}
+
+.cb-dynamic-fields {
+  background: var(--mbalo-white);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--mbalo-border);
+  margin-bottom: var(--space-md);
+}

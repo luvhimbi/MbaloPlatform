@@ -6,7 +6,7 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
 import Progress from './pages/Progress'
-import Quiz from './pages/Quiz'
+import Mission from './pages/Mission'
 import Onboarding from './pages/onboarding/Onboarding'
 import Practice from './pages/Practice'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -15,6 +15,13 @@ import About from './pages/About'
 import ForgotPassword from './pages/ForgotPassword'
 import POPIAct from './pages/POPIAct'
 import SelectGrade from './pages/SelectGrade'
+
+// Admin
+import { AdminRoute } from './components/AdminRoute'
+import AdminDashboard from './pages/admin/AdminDashboard'
+import AdminUsers from './pages/admin/AdminUsers'
+import AdminCurriculum from './pages/admin/AdminCurriculum'
+import AdminSettings from './pages/admin/AdminSettings'
 
 function App() {
   return (
@@ -51,15 +58,37 @@ function App() {
               <SelectGrade />
             </ProtectedRoute>
           } />
-          <Route path="/quiz/:lessonId" element={
+          <Route path="/mission/:lessonId" element={
             <ProtectedRoute>
-              <Quiz />
+              <Mission />
             </ProtectedRoute>
           } />
           <Route path="/practice" element={
             <ProtectedRoute>
               <Practice />
             </ProtectedRoute>
+          } />
+
+          {/* Admin Routes */}
+          <Route path="/admin" element={
+            <AdminRoute>
+              <AdminDashboard />
+            </AdminRoute>
+          } />
+          <Route path="/admin/users" element={
+            <AdminRoute>
+              <AdminUsers />
+            </AdminRoute>
+          } />
+          <Route path="/admin/curriculum" element={
+            <AdminRoute>
+              <AdminCurriculum />
+            </AdminRoute>
+          } />
+          <Route path="/admin/settings" element={
+            <AdminRoute>
+              <AdminSettings />
+            </AdminRoute>
           } />
         </Routes>
       </Router>

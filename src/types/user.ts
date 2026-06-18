@@ -4,6 +4,7 @@ export interface User {
   displayName: string;
   photoURL?: string;
   grade?: number;
+  role?: 'learner' | 'admin';
 }
 
 export interface UserStats {

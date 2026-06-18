@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { authService } from '../services/authService'
-import QuizFeedbackBar from '../components/QuizFeedbackBar'
-import QuizCelebration from '../components/QuizCelebration'
+import MissionFeedbackBar from '../components/MissionFeedbackBar'
+import MissionCelebration from '../components/MissionCelebration'
 import EmojiCountQuestion from '../components/questions/EmojiCountQuestion'
 import TrueFalseQuestion from '../components/questions/TrueFalseQuestion'
 import SequenceQuestion from '../components/questions/SequenceQuestion'
@@ -16,7 +16,7 @@ import SumCompositionQuestion from '../components/questions/SumCompositionQuesti
 import { Volume2, Lightbulb, Calculator as CalcIcon, MessageCircleQuestion, ArrowLeft, Plus, Minus } from 'lucide-react'
 import type { UserStats } from '../types/user'
 import Calculator from '../components/Calculator'
-import './Quiz.css' // Reuse quiz styles
+import './Mission.css' // Reuse mission styles
 import './Practice.css'
 import MultiplicationTable from '../components/MultiplicationTable'
 import AdditionMixer from '../components/AdditionMixer'
@@ -339,7 +339,7 @@ function Practice() {
           </div>
         </div>
       ) : (
-        <QuizCelebration
+        <MissionCelebration
           title="Great Practice!"
           text="You're getting stronger with every challenge!"
           lessonTitle="Personalized Review"
@@ -359,7 +359,7 @@ function Practice() {
       )}
 
       {feedback && (
-        <QuizFeedbackBar
+        <MissionFeedbackBar
           feedback={feedback}
           explanation={currentExplanation}
           onContinue={handleContinue}

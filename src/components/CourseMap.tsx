@@ -54,15 +54,15 @@ const CourseMap: React.FC<CourseMapProps> = ({
 }) => {
   if (!modules.length) return null;
 
-  // Find the first module with uncompleted lessons
+  // Find the first module with uncompleted levels
   const activeModuleIndex = modules.findIndex(m => m.lessons.some(l => !completedLessonIds.includes(l.id)));
   const theActiveModuleIndex = activeModuleIndex === -1 ? modules.length : activeModuleIndex;
 
-  // Calculate total progress for the chapter
-  const totalLessons = modules.reduce((acc, m) => acc + (m.lessons?.length || 0), 0);
+  // Calculate total progress for the world
+  const totalLevels = modules.reduce((acc, m) => acc + (m.lessons?.length || 0), 0);
   const completedCount = modules.reduce((acc, m) => 
     acc + (m.lessons?.filter(l => completedLessonIds.includes(l.id)).length || 0), 0);
-  const progressPercent = totalLessons > 0 ? Math.round((completedCount / totalLessons) * 100) : 0;
+  const progressPercent = totalLevels > 0 ? Math.round((completedCount / totalLevels) * 100) : 0;
 
   return (
     <div className="course-map">
@@ -72,7 +72,7 @@ const CourseMap: React.FC<CourseMapProps> = ({
             <Book size={24} strokeWidth={2.5} />
           </div>
           <div className="chapter-info">
-            <span className="chapter-label">CHAPTER {chapterNumber}</span>
+            <span className="chapter-label">WORLD {chapterNumber}</span>
             <h2 className="chapter-title">{chapterTitle.toUpperCase()}</h2>
           </div>
         </div>
@@ -89,7 +89,7 @@ const CourseMap: React.FC<CourseMapProps> = ({
         </div>
       </header>
 
-      {/* All modules and lessons in one continuous trail */}
+      {/* All modules and levels in one continuous trail */}
       <div className="lessons-list">
         {modules.map((module, moduleIndex) => {
           const isModuleLocked = moduleIndex > theActiveModuleIndex;
@@ -100,12 +100,12 @@ const CourseMap: React.FC<CourseMapProps> = ({
                               (idx === 0 || completedLessonIds.includes(module.lessons[idx - 1].id));
             const isLocked = isModuleLocked || (!isCompleted && !isNextToPlay);
 
-            // Check if this is the very last lesson of the very last module
+            // Check if this is the very last level of the very last module
             const isVeryLast = moduleIndex === modules.length - 1 && idx === (module.lessons?.length || 0) - 1;
 
             return (
               <React.Fragment key={lesson.id}>
-                {/* Show module title before the first lesson of each module */}
+                {/* Show module title before the first level of each module */}
                 {idx === 0 && (
                   <div className="module-divider">
                     <div className="node-column">
@@ -141,6 +141,9 @@ const CourseMap: React.FC<CourseMapProps> = ({
                   >
                     <div className="lesson-card-content">
                       <h4 className="lesson-card-title">{lesson.title.toUpperCase()}</h4>
+                      <div className="lesson-score">
+                        {lesson.score || 0} ⚡ Energy
+                      </div>
                       <span className="lesson-card-status">
                         {isCompleted ? 'REVIEW' : isNextToPlay ? 'START MISSION' : 'LOCKED'}
                       </span>
@@ -154,7 +157,7 @@ const CourseMap: React.FC<CourseMapProps> = ({
         })}
       </div>
 
-      {/* Chapter Navigation */}
+      {/* World Navigation */}
       {totalChapters > 1 && (
         <div className="chapter-navigation">
           <button 
@@ -164,7 +167,7 @@ const CourseMap: React.FC<CourseMapProps> = ({
           >
             <ChevronLeft size={20} />
             <div className="nav-btn-content">
-              <span className="nav-label">PREV</span>
+              <span className="nav-label">WORLD {currentIndex}</span>
               {prevChapterTitle && <span className="nav-title">{prevChapterTitle}</span>}
             </div>
           </button>

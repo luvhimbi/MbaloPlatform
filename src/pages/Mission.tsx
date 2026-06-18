@@ -6,8 +6,8 @@ import { curriculumService } from '../services/curriculumService'
 import type { Lesson, QuizQuestion } from '../types/curriculum'
 import mascot from '../assets/mascot.webp'
 import mascotSad from '../assets/mascot-sad.webp'
-import QuizFeedbackBar from '../components/QuizFeedbackBar'
-import QuizCelebration from '../components/QuizCelebration'
+import MissionFeedbackBar from '../components/MissionFeedbackBar'
+import MissionCelebration from '../components/MissionCelebration'
 import EmojiCountQuestion from '../components/questions/EmojiCountQuestion'
 import TrueFalseQuestion from '../components/questions/TrueFalseQuestion'
 import SequenceQuestion from '../components/questions/SequenceQuestion'
@@ -19,10 +19,10 @@ import PatternGridQuestion from '../components/questions/PatternGridQuestion'
 import SumCompositionQuestion from '../components/questions/SumCompositionQuestion'
 import { Volume2, Lightbulb, Calculator as CalcIcon, MessageCircleQuestion } from 'lucide-react'
 import Calculator from '../components/Calculator'
-import './Quiz.css'
+import './Mission.css'
 import { authService } from '../services/authService'
 
-function Quiz() {
+function Mission() {
   const { lessonId } = useParams<{ lessonId: string }>()
   const navigate = useNavigate()
   const { currentUser } = useAuth()
@@ -184,22 +184,11 @@ function Quiz() {
     });
   }
 
-  if (!lesson) return <div className="quiz-loading">Loading adventure...</div>
+  if (!lesson) return <div className="quiz-loading">Preparing your Mission...</div>
 
   const currentQuestion = lesson.questions[currentQuestionIndex]
   const totalQuestions = lesson.questions.length
   const progress = showCelebration ? 100 : ((currentQuestionIndex) / totalQuestions) * 100
-
-  const getCelebrationMessage = () => {
-    const percentage = (score / totalQuestions) * 100
-    if (percentage === 100) return { title: "Perfect Score!", text: "You're a Math Wizard!" }
-    if (percentage >= 80) return { title: "Amazing!", text: "Fantastic job!" }
-    if (percentage >= 50) return { title: "Great Job!", text: "You're doing well!" }
-    return { title: "Good Effort!", text: "Keep practicing, you'll get it!" }
-  }
-
-  const message = getCelebrationMessage()
-  const scorePercentage = (score / totalQuestions) * 100
 
   const handleAnswer = (isCorrect: boolean) => {
     if (feedback) return
@@ -372,6 +361,9 @@ function Quiz() {
       {!showCelebration ? (
         <div className="quiz-card card-game card-game-white">
           <div className="quiz-tools-top">
+            <div className="quiz-progress-text text-muted">
+              Mission Progress
+            </div>
             <button
               className={`tool-btn tts-btn ${isSpeaking ? 'is-speaking' : ''}`}
               onClick={() => handleSpeak(currentQuestion.question, currentQuestion.options)}
@@ -402,11 +394,11 @@ function Quiz() {
           </div>
         </div>
       ) : (
-        <QuizCelebration
-          title={message.title}
-          text={message.text}
+        <MissionCelebration
+          title="Mission Complete! 🚀"
+          text="Fantastic! You've successfully completed this mission."
           lessonTitle={lesson.title}
-          scorePercentage={scorePercentage}
+          scorePercentage={Math.round((score / lesson.questions.length) * 100)}
           score={score}
           totalQuestions={totalQuestions}
           timeTaken={Math.floor((Date.now() - quizStartTime.current) / 1000)}
@@ -426,7 +418,7 @@ function Quiz() {
       )}
 
       {feedback && (
-        <QuizFeedbackBar
+        <MissionFeedbackBar
           feedback={feedback}
           explanation={currentExplanation}
           onContinue={handleContinue}
@@ -459,4 +451,4 @@ function Quiz() {
   )
 }
 
-export default Quiz
+export default Mission

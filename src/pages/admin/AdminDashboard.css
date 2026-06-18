@@ -1,0 +1,256 @@
+/* =====================================================
+   ADMIN DASHBOARD STYLES
+   Mbalo Design System — no gradients, no purple
+   ===================================================== */
+
+/* ─── Page Layout ─── */
+.admin-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-xl);
+  width: 100%;
+}
+
+.admin-page-header {
+  margin-bottom: var(--space-2xl);
+}
+
+.admin-page-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: var(--space-xs);
+  color: var(--mbalo-text);
+}
+
+.admin-page-header p {
+  font-size: 1rem;
+  color: var(--mbalo-text-muted);
+  margin: 0;
+}
+
+/* ─── Loading ─── */
+.admin-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4xl);
+  gap: var(--space-lg);
+}
+
+.admin-loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--mbalo-border);
+  border-top-color: var(--mbalo-green);
+  border-radius: 50%;
+  animation: adminSpin 0.8s linear infinite;
+}
+
+@keyframes adminSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Stat Cards Grid ─── */
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.admin-stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl) !important;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.admin-stat-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.admin-stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-stat-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--mbalo-text);
+  line-height: 1.1;
+}
+
+.admin-stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mbalo-text-muted);
+  margin-top: 2px;
+}
+
+/* ─── Section Row (side-by-side panels) ─── */
+.admin-section-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.admin-panel {
+  padding: var(--space-xl) !important;
+}
+
+.admin-panel h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  color: var(--mbalo-text);
+}
+
+/* ─── Grade Distribution Chart ─── */
+.admin-grade-chart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.admin-grade-bar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.admin-grade-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--mbalo-text-muted);
+  width: 70px;
+  flex-shrink: 0;
+}
+
+.admin-grade-bar-track {
+  flex: 1;
+  height: 12px;
+  background-color: var(--mbalo-border);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.admin-grade-bar-fill {
+  height: 100%;
+  background-color: var(--mbalo-green);
+  border-radius: var(--radius-pill);
+  transition: width 0.6s var(--transition-bounce);
+  min-width: 4px;
+}
+
+.admin-grade-count {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--mbalo-text);
+  width: 30px;
+  text-align: right;
+}
+
+/* ─── Recent Signups ─── */
+.admin-recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.admin-recent-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s;
+}
+
+.admin-recent-item:hover {
+  background-color: var(--mbalo-surface-soft);
+}
+
+.admin-recent-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: var(--mbalo-orange);
+  color: var(--mbalo-white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 0 var(--mbalo-orange-dark);
+}
+
+.admin-recent-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-recent-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--mbalo-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-recent-meta {
+  font-size: 0.75rem;
+  color: var(--mbalo-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-recent-date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--mbalo-text-light);
+  flex-shrink: 0;
+}
+
+.admin-empty {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--mbalo-text-light);
+  font-style: italic;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-page {
+    padding: var(--space-md);
+    padding-bottom: 100px;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-section-row {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-page-header h1 {
+    font-size: 1.6rem;
+  }
+}

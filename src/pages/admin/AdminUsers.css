@@ -1,0 +1,267 @@
+/* =====================================================
+   ADMIN USERS PAGE STYLES
+   Mbalo Design System — no gradients, no purple
+   ===================================================== */
+
+/* ─── Toolbar ─── */
+.admin-toolbar {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.admin-search-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--mbalo-surface);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-md);
+  flex: 1;
+  min-width: 200px;
+  transition: border-color 0.2s;
+}
+
+.admin-search-box:focus-within {
+  border-color: var(--mbalo-green);
+}
+
+.admin-search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--mbalo-text);
+  width: 100%;
+}
+
+.admin-search-box input::placeholder {
+  color: var(--mbalo-text-light);
+}
+
+.admin-search-box svg {
+  color: var(--mbalo-text-light);
+  flex-shrink: 0;
+}
+
+.admin-filter-select {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--mbalo-surface);
+  border: 3px solid var(--mbalo-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--mbalo-text);
+  cursor: pointer;
+  min-width: 130px;
+}
+
+.admin-filter-select:focus {
+  border-color: var(--mbalo-green);
+  outline: none;
+}
+
+/* ─── Table ─── */
+.admin-table-wrap {
+  overflow-x: auto;
+  padding: 0 !important;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-table thead {
+  background-color: var(--mbalo-surface-soft);
+}
+
+.admin-table th {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--mbalo-text-muted);
+  border-bottom: 3px solid var(--mbalo-border);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.admin-table th.sortable {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.admin-table th.sortable:hover {
+  color: var(--mbalo-green);
+}
+
+.admin-table th svg {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.admin-table td {
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--mbalo-border);
+  color: var(--mbalo-text);
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.admin-user-row {
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.admin-user-row:hover {
+  background-color: var(--mbalo-surface-soft);
+}
+
+.admin-user-row.expanded {
+  background-color: var(--mbalo-green-light);
+}
+
+/* User cell */
+.admin-user-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.admin-user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: var(--mbalo-orange);
+  color: var(--mbalo-white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 0 var(--mbalo-orange-dark);
+}
+
+.admin-user-name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-user-email {
+  color: var(--mbalo-text-muted);
+  font-size: 0.85rem;
+}
+
+/* Actions */
+.admin-actions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.admin-action-btn {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--mbalo-border);
+  border-radius: var(--radius-sm);
+  background: var(--mbalo-surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  color: var(--mbalo-text-muted);
+}
+
+.admin-action-btn.promote:hover {
+  border-color: var(--mbalo-green);
+  color: var(--mbalo-green);
+  background-color: var(--mbalo-green-light);
+}
+
+.admin-action-btn.delete:hover {
+  border-color: var(--mbalo-red);
+  color: var(--mbalo-red);
+  background-color: var(--mbalo-red-light);
+}
+
+/* Detail row */
+.admin-detail-row td {
+  padding: 0;
+  border-bottom: 3px solid var(--mbalo-border);
+}
+
+.admin-user-detail {
+  padding: var(--space-lg) var(--space-xl);
+  background-color: var(--mbalo-surface-soft);
+}
+
+.admin-detail-stats {
+  display: flex;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.admin-detail-stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--mbalo-text);
+}
+
+.admin-detail-stat svg {
+  color: var(--mbalo-green);
+}
+
+.admin-detail-milestones {
+  margin-bottom: var(--space-sm);
+}
+
+.admin-detail-milestones strong {
+  font-size: 0.85rem;
+  color: var(--mbalo-text-muted);
+  margin-right: var(--space-sm);
+}
+
+.admin-milestone-tags {
+  display: inline-flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.admin-detail-struggles {
+  font-size: 0.85rem;
+  color: var(--mbalo-red);
+  font-weight: 600;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .admin-detail-stats {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}

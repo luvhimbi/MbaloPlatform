@@ -1,0 +1,178 @@
+/* =====================================================
+   ADMIN SIDEBAR — Mbalo Design System
+   Uses same tokens, no gradients, no purple
+   ===================================================== */
+
+.admin-sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: var(--mbalo-surface);
+  border-right: 4px solid var(--mbalo-border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ─── Brand ─── */
+.admin-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-3xl);
+  padding: 0 var(--space-sm);
+}
+
+.admin-brand-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--mbalo-green);
+  color: var(--mbalo-white);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 0 var(--mbalo-green-dark);
+  flex-shrink: 0;
+}
+
+.admin-sidebar-title {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--mbalo-text);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.admin-sidebar-subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--mbalo-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ─── Nav Links ─── */
+.admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+}
+
+.admin-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 12px 18px;
+  color: var(--mbalo-text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s var(--transition-smooth);
+  border: 2px solid transparent;
+}
+
+.admin-sidebar-link:hover {
+  background-color: var(--mbalo-green-light);
+  color: var(--mbalo-green);
+  transform: translateX(4px);
+}
+
+.admin-sidebar-link.active {
+  background-color: var(--mbalo-green);
+  color: var(--mbalo-white);
+  box-shadow: 0 4px 0 var(--mbalo-green-dark);
+  font-weight: 700;
+}
+
+/* ─── Footer ─── */
+.admin-sidebar-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-top: var(--space-xl);
+  border-top: 2px solid var(--mbalo-border);
+}
+
+.admin-sidebar-link.back-link {
+  color: var(--mbalo-blue);
+}
+
+.admin-sidebar-link.back-link:hover {
+  background-color: var(--mbalo-blue-light);
+  color: var(--mbalo-blue-dark);
+}
+
+.admin-sidebar-logout {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 12px 18px;
+  color: var(--mbalo-red);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  border: 2px solid var(--mbalo-border);
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.admin-sidebar-logout:hover {
+  background-color: var(--mbalo-red-light);
+  border-color: var(--mbalo-red);
+  transform: translateY(-2px);
+}
+
+/* ─── Mobile Nav ─── */
+.admin-mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    display: none;
+  }
+
+  .admin-mobile-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: var(--mbalo-surface);
+    border-top: 4px solid var(--mbalo-border);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 var(--space-md);
+  }
+
+  .admin-mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: var(--mbalo-text-muted);
+    font-weight: 700;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex: 1;
+  }
+
+  .admin-mobile-nav-item.active {
+    color: var(--mbalo-green);
+    transform: translateY(-4px);
+  }
+
+  .admin-mobile-nav-item:active {
+    transform: scale(0.9);
+  }
+}

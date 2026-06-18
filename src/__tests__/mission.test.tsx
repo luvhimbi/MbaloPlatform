@@ -50,29 +50,31 @@ vi.mock('../assets/mascot-playful.webp', () => ({ default: '/m-play.webp' }))
 vi.mock('../assets/mascot-studying.webp', () => ({ default: '/m-study.webp' }))
 vi.mock('sweetalert2', () => ({ default: { fire: vi.fn(() => Promise.resolve({ isConfirmed: false })) } }))
 
-import Quiz from '../pages/Quiz'
-import QuizFeedbackBar from '../components/QuizFeedbackBar'
-import QuizCelebration from '../components/QuizCelebration'
+import Mission from '../pages/Mission'
+import MissionFeedbackBar from '../components/MissionFeedbackBar'
+import MissionCelebration from '../components/MissionCelebration'
 import MultipleChoiceQuestion from '../components/questions/MultipleChoiceQuestion'
 import { curriculumService } from '../services/curriculumService'
 
 describe('Quiz Engine', () => {
   beforeEach(() => { vi.clearAllMocks(); localStorage.clear() })
 
-  describe('Quiz Page', () => {
-    it('renders loading state before lesson loads', () => {
-      vi.mocked(curriculumService.getLessonWithContext).mockReturnValueOnce(new Promise(() => {}))
-      render(<MemoryRouter initialEntries={['/quiz/test-lesson-1']}><Quiz /></MemoryRouter>)
-      expect(screen.getByText(/Loading adventure/i)).toBeInTheDocument()
+  describe('Mission Page', () => {
+    it('renders loading state initially', () => {
+      vi.mocked(curriculumService.getCurriculumByGrade).mockResolvedValue(null)
+      render(<MemoryRouter initialEntries={['/mission/test-lesson-1']}><Mission /></MemoryRouter>)
+      expect(screen.getByText(/Preparing your Mission/i)).toBeInTheDocument()
     })
 
-    it('renders question after lesson loads', async () => {
-      render(<MemoryRouter initialEntries={['/quiz/test-lesson-1']}><Quiz /></MemoryRouter>)
-      await waitFor(() => { expect(screen.getByText('What is 2 + 3?')).toBeInTheDocument() })
+    it('renders mission questions correctly', async () => {
+      render(<MemoryRouter initialEntries={['/mission/test-lesson-1']}><Mission /></MemoryRouter>)
+      await waitFor(() => {
+        expect(screen.getByText('What is 2 + 3?')).toBeInTheDocument()
+      })
     })
 
-    it('renders progress bar', async () => {
-      render(<MemoryRouter initialEntries={['/quiz/test-lesson-1']}><Quiz /></MemoryRouter>)
+    it('handles correct answers and shows feedback', async () => {
+      render(<MemoryRouter initialEntries={['/mission/test-lesson-1']}><Mission /></MemoryRouter>)
       await waitFor(() => { expect(document.querySelector('.quiz-progress-bar')).toBeInTheDocument() })
     })
   })
@@ -108,35 +110,36 @@ describe('Quiz Engine', () => {
     })
   })
 
-  describe('QuizFeedbackBar', () => {
-    it('renders correct feedback with continue button', () => {
-      render(<QuizFeedbackBar feedback="correct" explanation={null} onContinue={vi.fn()} />)
-      expect(screen.getByText(/Continue/i)).toBeInTheDocument()
+  describe('MissionFeedbackBar', () => {
+    it('renders correct feedback', () => {
+      render(<MissionFeedbackBar feedback="correct" explanation={null} onContinue={vi.fn()} />)
+      expect(screen.getByText(/Combo Strike/i)).toBeInTheDocument()
     })
 
-    it('renders explanation on incorrect feedback', () => {
-      render(<QuizFeedbackBar feedback="incorrect" explanation="2 plus 3 equals 5" onContinue={vi.fn()} />)
+    it('renders incorrect feedback with explanation', () => {
+      render(<MissionFeedbackBar feedback="incorrect" explanation="2 plus 3 equals 5" onContinue={vi.fn()} />)
+      expect(screen.getByText(/Oops/i)).toBeInTheDocument()
       expect(screen.getByText('2 plus 3 equals 5')).toBeInTheDocument()
     })
 
     it('calls onContinue when clicked', async () => {
       const user = userEvent.setup(); const onContinue = vi.fn()
-      render(<QuizFeedbackBar feedback="correct" explanation={null} onContinue={onContinue} />)
+      render(<MissionFeedbackBar feedback="correct" explanation={null} onContinue={onContinue} />)
       await user.click(screen.getByText(/Continue/i))
       expect(onContinue).toHaveBeenCalledOnce()
     })
   })
 
-  describe('QuizCelebration', () => {
-    it('renders celebration with title and score', () => {
-      render(<MemoryRouter><QuizCelebration title="Amazing!" text="Fantastic!" lessonTitle="Test" scorePercentage={80} score={4} totalQuestions={5} timeTaken={120} onBack={vi.fn()} onRetry={vi.fn()} /></MemoryRouter>)
-      expect(screen.getByText('Amazing!')).toBeInTheDocument()
+  describe('MissionCelebration', () => {
+    it('renders full score celebration', () => {
+      render(<MemoryRouter><MissionCelebration title="Mission Complete!" text="Fantastic!" lessonTitle="Test" scorePercentage={80} score={4} totalQuestions={5} timeTaken={120} onBack={vi.fn()} onRetry={vi.fn()} /></MemoryRouter>)
+      expect(screen.getByText('Mission Complete!')).toBeInTheDocument()
       expect(screen.getByText('Fantastic!')).toBeInTheDocument()
     })
 
     it('calls onRetry when retry clicked', async () => {
       const user = userEvent.setup(); const onRetry = vi.fn()
-      render(<MemoryRouter><QuizCelebration title="Good!" text="Try more!" lessonTitle="T" scorePercentage={60} score={3} totalQuestions={5} timeTaken={60} onBack={vi.fn()} onRetry={onRetry} /></MemoryRouter>)
+      render(<MemoryRouter><MissionCelebration title="Good!" text="Try more!" lessonTitle="T" scorePercentage={60} score={3} totalQuestions={5} timeTaken={60} onBack={vi.fn()} onRetry={onRetry} /></MemoryRouter>)
       await user.click(screen.getByText(/Try Again/i))
       expect(onRetry).toHaveBeenCalledOnce()
     })

@@ -4,7 +4,9 @@ import mascot from '../assets/mascot.webp'
 import confetti from 'canvas-confetti'
 import { RotateCcw } from 'lucide-react'
 
-interface QuizCelebrationProps {
+import Lottie from 'lottie-react'
+
+interface MissionCelebrationProps {
   title: string
   text: string
   lessonTitle: string
@@ -16,7 +18,7 @@ interface QuizCelebrationProps {
   timeTaken: number // in seconds
 }
 
-const QuizCelebration: React.FC<QuizCelebrationProps> = ({ 
+const MissionCelebration: React.FC<MissionCelebrationProps> = ({ 
   title, 
   text, 
   lessonTitle, 
@@ -27,7 +29,15 @@ const QuizCelebration: React.FC<QuizCelebrationProps> = ({
   totalQuestions,
   timeTaken
 }) => {
+  const [starAnimation, setStarAnimation] = React.useState<any>(null);
+
   useEffect(() => {
+    // Fetch a fun star/trophy animation
+    fetch('https://assets3.lottiefiles.com/packages/lf20_touohxv0.json')
+      .then(res => res.json())
+      .then(data => setStarAnimation(data))
+      .catch(e => console.log('Lottie fetch failed', e));
+
     if (scorePercentage >= 50) {
       // Trigger confetti
       confetti({
@@ -54,11 +64,17 @@ const QuizCelebration: React.FC<QuizCelebrationProps> = ({
   return (
     <div className="celebration-screen pop-in">
       <h1 className={scorePercentage < 50 ? 'text-try-again' : ''}>{title}</h1>
-      <img 
-        src={scorePercentage >= 50 ? mascotCheering : mascot} 
-        alt="Mascot" 
-        className="mascot-celebration" 
-      />
+      {scorePercentage >= 50 && starAnimation ? (
+        <div style={{ width: 200, margin: '0 auto' }}>
+          <Lottie animationData={starAnimation} loop={true} />
+        </div>
+      ) : (
+        <img 
+          src={scorePercentage >= 50 ? mascotCheering : mascot} 
+          alt="Mascot" 
+          className="mascot-celebration" 
+        />
+      )}
       <p className="question-text">{text}</p>
       
       <div className="celebration-actions">
@@ -95,4 +111,4 @@ const QuizCelebration: React.FC<QuizCelebrationProps> = ({
   )
 }
 
-export default QuizCelebration
+export default MissionCelebration

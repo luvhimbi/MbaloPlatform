@@ -16,7 +16,6 @@ function Dashboard() {
   const { currentUser } = useAuth()
   const user = currentUser // Alias for existing code
   const [chapters, setChapters] = useState<Chapter[]>([])
-  const [isUploading, setIsUploading] = useState(false)
   const [isLoadingChapter, setIsLoadingChapter] = useState(true)
   const [activeChapterIndex, setActiveChapterIndex] = useState(0)
 
@@ -59,38 +58,8 @@ function Dashboard() {
     return () => { isMounted = false };
   }, [user?.grade, user?.uid]);
 
-  const handleUploadCurriculum = async () => {
-    setIsUploading(true);
-    try {
-      await curriculumService.uploadCurriculum();
-      Swal.fire({
-        title: 'Success!',
-        text: 'Curriculum data uploaded to Firestore successfully!',
-        icon: 'success',
-        heightAuto: false
-      });
-      // reload all chapters
-      const grade = user?.grade || 1;
-      const curriculum = await curriculumService.getCurriculumByGrade(grade);
-      setChapters(curriculum?.chapters || []);
-    } catch(error) {
-      console.error(error);
-      Swal.fire({
-        title: 'Error',
-        text: 'Failed to upload data. Ensure you have proper permissions in firestore.rules.',
-        icon: 'error',
-        heightAuto: false
-      });
-    } finally {
-      setIsUploading(false);
-    }
-  }
-
-
-
-
   const handleStartLesson = (lessonId: string) => {
-    navigate(`/quiz/${lessonId}`);
+    navigate(`/mission/${lessonId}`);
   }
 
   if (!user) return null
@@ -107,18 +76,6 @@ function Dashboard() {
               <span className="grade-text">Grade {user.grade || 1}</span>
               <ChevronDown size={20} />
             </button>
-
-            {/* TEMP UPLOAD BUTTON */}
-            {/* 
-            <button 
-              onClick={handleUploadCurriculum} 
-              disabled={isUploading}
-              className="btn-dark-pill"
-              style={{ padding: '8px 16px', fontSize: '0.75rem' }}
-            >
-              {isUploading ? 'UPLOADING...' : 'UPLOAD DATA TO DB'}
-            </button> 
-            */}
           </div>
         </header>
 

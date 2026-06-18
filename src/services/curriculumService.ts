@@ -123,6 +123,19 @@ class CurriculumService {
       throw error;
     }
   }
+
+  // Save curriculum directly from builder
+  async saveCurriculumByGrade(grade: number, curriculum: GradeCurriculum): Promise<void> {
+    try {
+      const docRef = doc(db, 'curriculum', `grade_${grade}`);
+      await setDoc(docRef, curriculum);
+      // Update cache
+      this.cache[grade] = curriculum;
+    } catch (error) {
+      console.error(`Error saving curriculum for grade ${grade}:`, error);
+      throw error;
+    }
+  }
 }
 
 export const curriculumService = new CurriculumService();

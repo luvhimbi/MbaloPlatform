@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, browserLocalPersistence, setPersistence } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
@@ -19,5 +19,11 @@ const app = initializeApp(firebaseConfig);
 // Initialize core services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+// Explicitly set persistence to LOCAL to ensure PWA sessions survive app closes
+setPersistence(auth, browserLocalPersistence)
+  .catch((error) => {
+    console.error("Failed to set Firebase Auth persistence:", error);
+  });
 
 export default app;
